@@ -42,7 +42,7 @@ def index():
             total_questions = len(questions)
             return render_template("result.html", correct_answers=correct_answers, total_questions=total_questions)
     else:
-        current_question_index = 0
+        current_question_index = 0  # Move this line outside of the 'else' block
         return render_template("start.html", current_question_index=current_question_index)
 
 @app.route("/question", methods=["GET"])
@@ -50,7 +50,7 @@ def question():
     global current_question_index
     if current_question_index < len(questions):
         question = questions[current_question_index]
-        return render_template("question.html", question=question)
+        return render_template("question.html", question=question, current_question_index=current_question_index)  # Pass current_question_index to the template
     else:
         return redirect(url_for("index"))
 
