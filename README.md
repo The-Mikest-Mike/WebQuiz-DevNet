@@ -1,4 +1,4 @@
-# Quizz App Devnet Demo Exam + flask
+# Flask-Web-Quiz-App-DevNet-Demo-Exam
 
 This is a flask quiz app that allows users to answer multiple-choice questions.
 The app provides questions, answer options, and explanations for correct answers. 
