@@ -8,7 +8,7 @@ Users can navigate through the questions and get their score at the end.
 1. Make sure you have Flask installed:
 pip install flask
 
-2. clone repository and run "python app.py"
+2. clone repository and run "app.py"
 3. Open your web browser and navigate to http://localhost:5000/ to start the quiz.
 
 ## Features
