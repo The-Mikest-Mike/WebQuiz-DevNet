@@ -1,3 +1,0 @@
-1. create a .py file
-2. identify all the "variables" and list them at the top of the code
-3. to be defined
