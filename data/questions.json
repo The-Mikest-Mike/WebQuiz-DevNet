@@ -1,6 +1,6 @@
 [
     {
-        "question": "Which of the following is a characteristic of XML format??",
+        "question": "Which of the following is a characteristic of XML format?",
         "options": ["Pre-defined tags", "Concerned with carrying data", "Used for displaying data", "Key:value pairs"],
         "answer": "Concerned with carrying data",
         "explanation": "XML is a format that includes predefined tags for structuring and representing data. It is primarily used for carrying and structuring data, including but not limited to data interchange and storage. While XML is not limited to displaying data, it can be used for this purpose as well. Unlike JSON and YAML, XML does not use key:value pairs as its primary syntax."
@@ -9,6 +9,54 @@
         "question": "Which data format is used by Cisco Modeling Labs (CML) for importing and exporting lab files?",
         "options": ["XML", "IOSXE", "JSON", "YAML"],
         "answer": "YAML",
-        "explanation": "While YAML does share similarities with JSON in terms of using key-value pairs and having a hierarchical structure, CML primarily uses YAML, not JSON, for lab file import and export.YAML is a human-readable data serialization format and is commonly used for defining network topologies and configurations in CML. IOS-XE (Internetwork Operating System - Extended Edition) is a different technology. It's an operating system used in Cisco's networking hardware, particularly in routers and switches."
-    }
+        "explanation": "While YAML does share similarities with JSON in terms of using key-value pairs and having a hierarchical structure, CML primarily uses YAML, not JSON, for lab file import and export. YAML is a human-readable data serialization format and is commonly used for defining network topologies and configurations in CML. IOS-XE (Internetwork Operating System - Extended Edition) is a different technology. It's an operating system used in Cisco's networking hardware, particularly in routers and switches."
+    },
+    {
+        "question": "Which built-in Python library can be used to parse XML data?",
+        "options": ["ElementTree", "XMLTree", "Tree.getroot", "print(root)"],
+        "answer": "ElementTree",
+        "explanation": "Parsing means we are converting a certain set of data into another format. When parsing XML using Python, the built-in 'ElementTree' library has functionality for reading and manipulating XML data. There is no built-in library or module called 'XMLTree'. 'Tree.getroot' is not a standalone library or module; it appears to be a fragment of code that is used in combination with ElementTree but is not a complete solution on its own. 'print(root)' is not a valid statement; it should be lowercase and is used for displaying output."
+    },
+    {
+        "question": "Reference the following abbreviated snippet from a JSON file: {“device”:{“hostname”:”R1”,”interface”:[{“GigabitEthernet”. . . What will be the returned output when parsing through the data using the built-in JSON library in Python, ending with the following print statement: print(data['device']['hostname'])?",
+        "options": ["hostname", "device", "interface", "R1"],
+        "answer": "R1",
+        "explanation": "The provided print statement accesses the 'hostname' key within the JSON data structure. In this JSON snippet, the 'hostname' key is associated with the value 'R1'. Therefore, the output of the print statement will be 'R1'."
+    },
+    {
+        "question": "Which of the following print statements can be used to return the value 'R1' when parsing through the YAML data in Python?",
+        "options": ["print(data['OFFICE'])", "print(data['OFFICE']['device']['hostname'])", "print(data['hostname'])", "print(data['device']['hostname'])"],
+        "answer": "print(data['OFFICE']['device']['hostname'])",
+        "explanation": "To access the value 'R1' in the YAML data structure, you need to follow the hierarchy. The correct print statement is 'print(data['OFFICE']['device']['hostname'])', which accesses the 'hostname' key nested within the 'device' key, which is in turn nested within the 'OFFICE' key."
+    },
+    {
+        "question": "What is the initial phase used when implementing the Test-Driven Development methodology?",
+        "options": ["Coding", "Planning", "Testing", "Debugging"],
+        "answer": "Testing",
+        "explanation": "Test-Driven Development (TDD) begins with a testing phase, where developers write tests before writing code. This approach leads to shorter development cycles, better code quality, and the creation of reusable unit tests."
+    },
+    {
+        "question": "What is the term for our general plan at the beginning of development when using the Agile Method?",
+        "options": ["Sprint", "Product Backlog", "Cycle", "Scrum"],
+        "answer": "Product Backlog",
+        "explanation": "The Agile Method starts with a plan that is open to changes informed by feedback and review, creating a more general idea that we develop as we go along. This starting point is referred to as our Product Backlog, which includes details about all the features that need to be included in the product and what needs to be accomplished. However, it's important to note that in Agile, the broader, high-level plan or vision is often referred to as the 'Product Vision' or 'Project Vision,' which outlines the overall goals and direction of the project. The other options represent different aspects or phases within Agile but do not directly correspond to the initial plan."
+    },
+    {
+        "question": "What is the final step in the Lean Method before the cycle repeats?",
+        "options": ["Seek perfection", "Create flow", "Map value stream", "Establish pull"],
+        "answer": "Seek perfection",
+        "explanation": "In the Lean Methodology, the final step before the cycle repeats is known as 'Seek Perfection.' This step underscores the continuous pursuit of improvements and efficiency to deliver the highest possible value to the customer. It acknowledges that while perfection may never be fully achieved, the Lean Method embraces a cyclical model that encourages ongoing enhancement. The aim is to create a culture of continuous improvement where teams consistently seek ways to optimize processes and eliminate waste, ensuring that the organization remains agile and responsive to changing customer needs and market conditions."
+    },
+    {
+        "question": "Which of the following is a characteristic of the Waterfall Method?",
+        "options": ["Customer feedback is timely and constant", "Value is created throughout the process", "Much more inexpensive than other methods", "Everything is planned at the beginning of a project"],
+        "answer": "Everything is planned at the beginning of a project",
+        "explanation": "One of the key characteristics of the Waterfall Method is that 'Everything is planned at the beginning of a project.' In the Waterfall approach, the entire project, including all requirements and phases, is meticulously planned upfront. While this approach may seem structured, it has limitations, particularly in modern software development. The challenge lies in its limited adaptability; once the plan is set, it becomes harder to pivot or make changes when needed. Additionally, no value is created until the end of the process, meaning that stakeholders do not see tangible results until the project is completed. Furthermore, the lack of timely feedback can pose a challenge for ensuring quality and meeting evolving customer needs. In contrast to more iterative and Agile methodologies, where adaptability, continuous value delivery, and feedback are emphasized, the Waterfall Method's characteristic of extensive upfront planning may not align well with today's dynamic development landscape."
+    },
+    {
+        "question": "Which Python structure allows us to run the same piece of code multiple times in a program to repurpose the code?",
+        "options": ["Classes", "Modules", "Functions", "Blocks"],
+        "answer": "Functions",
+        "explanation": "In Python, 'Functions' are a fundamental programming construct that allows us to define a block of code that can be reused multiple times within a program. By encapsulating a piece of code within a function, we create a named and reusable unit of code. This practice significantly improves code organization and maintenance, as it eliminates the need to write the same code repeatedly at different parts of the program. When we encounter a situation where the same task or operation needs to be performed multiple times, we can simply call the function, passing the necessary arguments, rather than duplicating the code. This not only saves time but also enhances code readability and reduces the chances of errors. In essence, functions serve as a powerful tool for code repurposing and are a cornerstone of efficient and maintainable Python programming."
+    }    
 ]
