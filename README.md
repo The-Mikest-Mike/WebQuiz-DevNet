@@ -14,7 +14,7 @@ Structure of the folders:
 
 ## Usage
 1. Clone repository (templates and app.py) and make sure you have Flask installed:
-pip install flask
+pip install Flask
 
 2. clone repository and run "app.py"
 3. Open your web browser and navigate to http://localhost:5000/ to start the quiz.
@@ -25,14 +25,4 @@ pip install flask
 - Provides explanations for correct answers.
 - Simple navigation between questions.
 
-## Adding Questions
-You can add more questions to the quiz by extending the questions list in the code. 
-Each question is represented by a Question object, and you can add as many questions as you like by following the existing format:
-
-Question(
-    "Your question goes here?",
-    ["Option A", "Option B", "Option C", "Option D"],
-    "Correct Option (A, B, C, or D)",
-    "Explanation for the correct answer."
-)
 
