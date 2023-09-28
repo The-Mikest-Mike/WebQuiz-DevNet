@@ -1,0 +1,31 @@
+BUG 1: '404 NOT Found'
+SEV: P2
+TYPE: blocker (no further testing work can be done)
+STATUS: New
+REPORT TYPE: Coding Error
+WORKAROUND: [YES] type directly the url http://127.0.0.1:5000/question/1 or url http://127.0.0.1:5000/question/0 
+
+    Steps to replicate: 
+        1. user click on 'submit answer' 
+        2. user is redirected to url 'http://127.0.0.1:5000/question' and getting a 404 not found.
+    
+PROGRESS: (plan > code > build > test > release > deploy > operate > monitor)
+    Plan: complete
+    Code: Reviewing app.py code from line 5 @app.route('/question//<int:question_index>', methods=['GET', 'POST'])
+
+
+
+BUG [Insert Bug Number]: '[Insert Bug Title]'
+SEV: [Insert Severity Level]
+TYPE: [Insert Type]
+STATUS: [Insert Status]
+REPORT TYPE: [Insert Report Type]
+WORKAROUND: [Insert Workaround]
+
+Steps to replicate:
+
+[Insert Step 1]
+[Insert Step 2]
+PROGRESS: (plan > code > build > test > release > deploy > operate > monitor)
+Plan: [Insert Progress Status]
+Code: [Insert Progress Status]

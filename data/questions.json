@@ -1,0 +1,14 @@
+[
+    {
+        "question": "Which of the following is a characteristic of XML format??",
+        "options": ["Pre-defined tags", "Concerned with carrying data", "Used for displaying data", "Key:value pairs"],
+        "answer": "Concerned with carrying data",
+        "explanation": "XML is a format that includes predefined tags for structuring and representing data. It is primarily used for carrying and structuring data, including but not limited to data interchange and storage. While XML is not limited to displaying data, it can be used for this purpose as well. Unlike JSON and YAML, XML does not use key:value pairs as its primary syntax."
+    },
+    {
+        "question": "Which data format is used by Cisco Modeling Labs (CML) for importing and exporting lab files?",
+        "options": ["XML", "IOSXE", "JSON", "YAML"],
+        "answer": "YAML",
+        "explanation": "While YAML does share similarities with JSON in terms of using key-value pairs and having a hierarchical structure, CML primarily uses YAML, not JSON, for lab file import and export.YAML is a human-readable data serialization format and is commonly used for defining network topologies and configurations in CML. IOS-XE (Internetwork Operating System - Extended Edition) is a different technology. It's an operating system used in Cisco's networking hardware, particularly in routers and switches."
+    }
+]
