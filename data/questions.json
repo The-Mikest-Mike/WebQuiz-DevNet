@@ -25,6 +25,7 @@
     },
     {
         "question": "Which of the following print statements can be used to return the value 'R1' when parsing through the YAML data in Python?",
+        "yaml_snippet": "OFFICE:\n  device:\n    hostname: R1\n  interface:\n    GigabitEthernet:\n      ...",
         "options": ["print(data['OFFICE'])", "print(data['OFFICE']['device']['hostname'])", "print(data['hostname'])", "print(data['device']['hostname'])"],
         "answer": "print(data['OFFICE']['device']['hostname'])",
         "explanation": "To access the value 'R1' in the YAML data structure, you need to follow the hierarchy. The correct print statement is 'print(data['OFFICE']['device']['hostname'])', which accesses the 'hostname' key nested within the 'device' key, which is in turn nested within the 'OFFICE' key."
