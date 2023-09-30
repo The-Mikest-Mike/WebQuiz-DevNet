@@ -25,8 +25,14 @@ class Question:    # define 'Question' class to represent quiz questions
 
  # initialize Flask application. '__name__' determines the root path of the application and locates resources like templates and static files
 app = Flask(__name__)   
-    
-# reads quiz questions from the 'questions.json' file located in 'data' folder, parses the JSON data, and stores it in the 'questions' variable as a list of dictionaries containing quiz questions. 
+
+# read quiz questtions from the 'questions.json' file located in 'data' folder and get the count of questions
+with open('data/questions.json', 'r') as json_file:
+    questions = json.load(json_file)    
+total_questions = len(questions)
+print(f'THE TOTAL NUMBER OF QUESTIONS IS: {total_questions}')
+
+# reads quiz questions from the 'questions.json' file, parses the JSON data, and stores it in the 'questions' variable as a list of dictionaries containing quiz questions. 
 with open('data/questions.json', 'r') as json_file:
     questions = json.load(json_file)
 
