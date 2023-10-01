@@ -3,13 +3,13 @@
         "question": "Which of the following is a characteristic of XML format?",
         "options": ["Pre-defined tags", "Concerned with carrying data", "Used for displaying data", "Key:value pairs"],
         "answer": "Concerned with carrying data",
-        "explanation": "XML is a format that includes predefined tags for structuring and representing data. It is primarily used for carrying and structuring data, including but not limited to data interchange and storage. While XML is not limited to displaying data, it can be used for this purpose as well. Unlike JSON and YAML, XML does not use key:value pairs as its primary syntax."
+        "explanation": "XML is a format that includes predefined tags for structuring and representing data. It is primarily used for carrying and structuring data, including but not limited to data interchange and storage. While XML is not limited to displaying data, it can be used for this purpose as well but HTML is better suited for that purpose. Unlike JSON and YAML, XML does not use key:value pairs as its primary syntax."
     },
     {
         "question": "Which data format is used by Cisco Modeling Labs (CML) for importing and exporting lab files?",
         "options": ["XML", "IOSXE", "JSON", "YAML"],
         "answer": "YAML",
-        "explanation": "While YAML does share similarities with JSON in terms of using key-value pairs and having a hierarchical structure, CML primarily uses YAML, not JSON, for lab file import and export. YAML is a human-readable data serialization format and is commonly used for defining network topologies and configurations in CML. IOS-XE (Internetwork Operating System - Extended Edition) is a different technology. It's an operating system used in Cisco's networking hardware, particularly in routers and switches."
+        "explanation": "While YAML does share similarities with JSON in terms of using key-value pairs and having a hierarchical structure, CML primarily uses YAML, for lab file import and export. YAML is a human-readable data serialization format and is commonly used for defining network topologies and configurations in CML. IOS-XE (Internetwork Operating System - Extended Edition) is a different technology. It's an operating system used in Cisco's networking hardware, particularly in routers and switches."
     },
     {
         "question": "Which built-in Python library can be used to parse XML data?",
@@ -52,12 +52,202 @@
         "question": "Which of the following is a characteristic of the Waterfall Method?",
         "options": ["Customer feedback is timely and constant", "Value is created throughout the process", "Much more inexpensive than other methods", "Everything is planned at the beginning of a project"],
         "answer": "Everything is planned at the beginning of a project",
-        "explanation": "One of the key characteristics of the Waterfall Method is that 'Everything is planned at the beginning of a project.' In the Waterfall approach, the entire project, including all requirements and phases, is meticulously planned upfront. While this approach may seem structured, it has limitations, particularly in modern software development. The challenge lies in its limited adaptability; once the plan is set, it becomes harder to pivot or make changes when needed. Additionally, no value is created until the end of the process, meaning that stakeholders do not see tangible results until the project is completed. Furthermore, the lack of timely feedback can pose a challenge for ensuring quality and meeting evolving customer needs. In contrast to more iterative and Agile methodologies, where adaptability, continuous value delivery, and feedback are emphasized, the Waterfall Method's characteristic of extensive upfront planning may not align well with today's dynamic development landscape."
+        "explanation": "One of the key characteristics of the Waterfall Method is that 'Everything is planned at the beginning of a project.' In the Waterfall approach, the entire project, including all requirements and phases, is meticulously planned upfront. While this approach may seem structured, it has limitations, particularly in modern software development. The challenge lies in its limited adaptability; once the plan is set, it becomes harder to pivot or make changes when needed. Additionally, no value is created until the end of the process, meaning that stakeholders do not see tangible results until the project is completed. Furthermore, the lack of timely feedback can pose a challenge for ensuring quality and meeting evolving customer needs. In contrast to more iterative and Agile methodologies, where adaptability, continuous value delivery, and feedback are emphasized."
     },
     {
         "question": "Which Python structure allows us to run the same piece of code multiple times in a program to repurpose the code?",
         "options": ["Classes", "Modules", "Functions", "Blocks"],
         "answer": "Functions",
-        "explanation": "In Python, 'Functions' are a fundamental programming construct that allows us to define a block of code that can be reused multiple times within a program. By encapsulating a piece of code within a function, we create a named and reusable unit of code. This practice significantly improves code organization and maintenance, as it eliminates the need to write the same code repeatedly at different parts of the program. When we encounter a situation where the same task or operation needs to be performed multiple times, we can simply call the function, passing the necessary arguments, rather than duplicating the code. This not only saves time but also enhances code readability and reduces the chances of errors. In essence, functions serve as a powerful tool for code repurposing and are a cornerstone of efficient and maintainable Python programming."
-    }    
+        "explanation": "In Python, 'Functions' are a fundamental programming construct that allows us to define a block of code that can be reused multiple times within a program. By encapsulating a piece of code within a function, we create a named and reusable unit of code. This practice significantly improves code organization and maintenance, as it eliminates the need to write the same code repeatedly at different parts of the program. When we encounter a situation where the same task or operation needs to be performed multiple times, we can simply call the function, passing the necessary arguments, rather than duplicating the code."
+    },
+    {
+        "question": "Which Python structure is closely associated with objects?",
+        "options": ["Modules", "Classes", "Functions", "Blocks"],
+        "answer": "Classes",
+        "explanation": "In Python, classes are closely associated with objects, serving as templates for creating objects. Objects encapsulate both data (attributes) and functions (methods) that operate on that data."
+    },
+    {
+        "question": "Which Python structure allows us to import code from other external files into our main code?",
+        "options": ["Blocks", "Functions", "Modules", "Classes"],
+        "answer": "Modules",
+        "explanation": "Modules are another way we can save time when coding and decrease the overall size of our main code. By using an import statement, we can insert custom created modules or built-in Python modules into our code from an external file. This also helps modularize and organize code"
+    },
+    {
+        "question": "Which design method leverages the Separation of Concerns (SoC) principle for designing modular code?",
+        "options": ["Model-View-Controller (MVC)", "Observer", "Version Control", "Git"],
+        "answer": "Model-View-Controller (MVC)",
+        "explanation": "Model-View-Controller (MVC) leverages the Separation of Concerns (SoC) principle. SoC is a design principle for breaking our code into smaller, separate modular pieces. By doing this, we have more opportunity for upgrading software by changing the smaller components, rather than changing the larger overall code."
+    },
+    {
+        "question": "Which design pattern is commonly used to implement distributed event handling systems, where an object maintains a list of its dependents and notifies them of state changes?",
+        "options": ["Model-View-Controller (MVC)", "Singleton", "Factory Method", "Observer"],
+        "answer": "Observer",
+        "explanation": "The Observer pattern is used to implement distributed event handling systems. In this pattern, a subject (the object of interest) maintains a list of its dependents (observers) and notifies them of any state changes. This pattern is commonly used for scenarios where multiple objects need to be updated when the state of a subject changes."
+    },
+    {
+        "question": "Which principle means we are tracking all the changes made to a file or a set of files in a historical perspective?",
+        "options": ["Observer", "Version Control", "Model-View-Controller (MVC)", "Logging"],
+        "answer": "Version Control",
+        "explanation": "Version control, often implemented using systems like Git, is a fundamental practice in software development. It involves systematically tracking changes made to code files, creating a historical record of modifications. This practice offers several benefits, including the ability to track changes, revert to previous code states, facilitate collaboration among developers, manage code branches for feature development, ensure backup and recovery of code, and more. By maintaining a comprehensive history of code changes, version control systems enhance code stability, support teamwork, and provide a safety net for software projects."
+    },
+    {
+        "question": "Which Git version control operation allows us to create a copy of a repository on our local file system?",
+        "options": ["Commit", "Clone", "Push", "Merge"],
+        "answer": "Clone",
+        "explanation": "The Git 'clone' operation enables us to duplicate an entire repository onto our local computer. This process, executed with the 'git clone' command followed by the repository's URL, creates an independent copy of the project locally, allowing us to work on it without altering the original version. It's akin to borrowing a library book, where you get your own copy to read at home."
+    },
+    {
+        "question": "Which Git version control operation allows us to track the status of a file including any changes made?",
+        "options": ["Add/Remove", "Diff", "Branch", "Clone"],
+        "answer": "Add/Remove",
+        "explanation": "The Git 'add/remove' operation allows us to track file changes. Using 'git add,' we specify which files to monitor for changes within our Git repository. This operation is crucial for keeping an eye on file status and alterations."
+    },
+    {
+        "question": "Which Git version control operation moves a file from our index (or staging area) to our local repository?",
+        "options": ["Merge", "Push", "Commit", "Diff"],
+        "answer": "Commit",
+        "explanation": "The commit operation moves a file from our staging area and commits the file changes to our local repository. This is how we sync our staging area to the local repository. In Git, there are three stages: Working Directory, Staging Area, and Local Repository. Changes start in the Working Directory, move to the Staging Area when ready for a commit, and finally get committed to the Local Repository. The 'git status' command will show any changes that are ready to be committed, and the 'git commit' command is how we finalize the file commit."
+    },
+    {
+        "question": "Which Git version control operation will add all tracked files from our local file system to a central remote repository such as GitHub?",
+        "options": ["Commit", "Push", "Clone", "Diff"],
+        "answer": "Push",
+        "explanation": "The 'git push' operation uploads local file changes to a central remote repository, like GitHub, facilitating collaborative development by enabling multiple developers to access and work on the same codebase stored remotely."
+      },
+      {
+        "question": "Which Git version control operation allows us a safe way to separate our development area from a main local repository containing known working code?",
+        "options": ["Clone", "Add/Remove", "Diff", "Branch"],
+        "answer": "Branch",
+        "explanation": "Branches are a feature which allow us to separate our development area from a main local repository, providing a safe way to work on new features or updates without affecting the stable codebase. To view a list of all local branches, you can use the command 'git branch --list' or 'git branch'. To create a new branch for development, you can use 'git branch <branch_name>'. For a detailed view of branches, including commit messages and commit hashes of the latest commits, you can use 'git branch -v' or 'git branch --verbose'"
+    },
+    {
+        "question": "Which Git version control operation allows us to join the contents of a branch development area with a main repository locally?",
+        "options": ["Diff", "Push/Pull", "Merge", "Add/Remove"],
+        "answer": "Merge",
+        "explanation": "The merge operation allows us to join multiple branches together into a main coding repository. When working in the main repository, the 'git merge' command, followed by the name of the branch we want to add into this repository, will show any conflicts and attempt to merge the files. It's important to note that for the merge to be successful, the changes in the branches being merged should have been committed using the 'git commit' command. Git considers only committed changes for merging, so ensure that changes are committed before performing a merge operation."
+    },
+    {
+        "question": "Which Git version control operation is used as a file comparison tool?",
+        "options": ["Merge", "Branch", "Clone", "Diff"],
+        "answer": "Diff",
+        "explanation": "The 'diff' operation serves as a file comparison tool, allowing developers to visualize the differences in a set of files or development branches. This tool is particularly valuable when merging branches or when multiple developers are collaborating on the same files. It provides a detailed, line-by-line breakdown of changes, enabling developers to review and understand modifications made to the codebase. Additionally, it aids in the identification and resolution of conflicts during code collaboration and merging processes."
+    },
+    {
+        "question": "Which method of authentication for REST API is typically limited only to operations where the READ function is required?",
+        "options": ["Basic Authentication", "OAuth Authentication", "Open Authentication", "API Key Authentication"],
+        "answer": "API Key Authentication",
+        "explanation": "API Key Authentication uses pre-shared keys for client-server authentication. It's typically limited to READ operations to minimize security risks if the key is intercepted. Other options Basic Authentication and OAuth Authentication offer broader access control, including both READ and WRITE operations. Open Authentication is not a recognized authentication method in this context."
+    },
+    {
+        "question": "What type of HTTP messages are used by Webhooks?",
+        "options": ["HTTP UPDATE", "HTTP READ", "HTTP POST", "HTTP DELETE"],
+        "answer": "HTTP POST",
+        "explanation": "Webhooks are HTTP POST messages triggered by specific events in an automated manner, designed for receiving real-time notification messages about events on a system. HTTP UPDATE, READ, and DELETE are not appropriate options because Webhooks are specifically tailored for event-driven notifications, not for making updates (UPDATE), reading existing data (READ), or deleting resources (DELETE)."
+    },
+    {
+        "question": "Which of the following is NOT a characteristic of a true RESTful API?",
+        "options": ["Stateful", "Uniform Interface", "Cacheable or Non-cacheable Label", "Layered System"],
+        "answer": "Stateful",
+        "explanation": "True RESTful APIs adhere to specific constraints (rules), including a Uniform Interface, Cacheable or Non-cacheable Label, and a Layered System. However, they should be 'stateless' rather than 'stateful.' Being stateless means that the server doesn't retain information about client actions between requests, treating each request independently."
+    },
+    {
+        "question": "When using Python to make a REST API call, which built-in library can be used in the script to perform a GET request?",
+        "options": ["Requests", "Get", "Math", "XML"],
+        "answer": "Requests",
+        "explanation": "When using Python to make a REST API call, you can leverage the built-in 'requests' library. To get started, you need to import this library at the beginning of your script using 'import requests'. Then, you can use the 'requests.get()' method to send a GET request to the defined URL for example 'api_url = 'https://api.example.com/data', and then send a GET request with 'response = requests.get(api_url)'. After receiving the response, you can handle it, check the status code, and parse the data as needed. This library provides various features and options for making HTTP requests and is a powerful tool for interacting with RESTful APIs."
+    },
+    {
+        "question": "Which range of HTTP response codes are used to indicate a client-side error?",
+        "options": ["2XX codes", "3XX codes", "4XX codes", "5XX codes"],
+        "answer": "4XX codes",
+        "explanation": "The 400 range of HTTP response codes are sent by the server to indicate that the client's request has issues, such as incorrect syntax/bad request (400), unauthorized (401), forbidden (403) or other client-related problems. When you encounter a 4XX response code, it typically means there is something wrong with the client's request, and the client needs to take corrective action."
+    },
+    {
+        "question": "In which part of an HTTP response would we see things like the host, user agent, and cookie?",
+        "options": ["URL", "Response code", "Arguments", "Headers"],
+        "answer": "Headers",
+        "explanation": "In an HTTP response, the headers contain important metadata and information about the response details like the host, user agent, and cookies, also include details about the server, the client (user agent),and more."
+    },
+    {
+        "question": "Which HTTP response code indicates a likely issue with incorrect authentication credentials?",
+        "options": ["500 Internal Server Error", "403 Forbidden", "401 Unauthorized", "501 Not Implemented"],
+        "answer": "401 Unauthorized",
+        "explanation": "The 401 Unauthorized HTTP response code indicates that authentication credentials have not been provided or are incorrect. This is in contrast to a 403 Forbidden HTTP response code, where credentials are valid but the account does not have the required permission to access the resource."
+    },
+    {
+        "question": "Which API authentication mechanism is the least secure?",
+        "options": ["OAUTH Authentication", "Basic Authentication", "Token Authentication", "API Key Authentication"],
+        "answer": "Basic Authentication",
+        "explanation": "Basic authentication is the least secure method for API authentication, where credentials are passed in an unencrypted manner when using HTTP instead of HTTPS. Basic authentication uses a simple username and password for authentication."
+    },
+    {
+        "question": "Which API authentication mechanism allows us to enter our username and password a single time to generate an encrypted value for accessing resources?",
+        "options": ["Token Authentication", "API Key Authentication", "Basic Authentication", "Secure Authentication"],
+        "answer": "Token Authentication",
+        "explanation": "Token authentication allows us to use a valid username and password combination to retrieve a valid encrypted token for access to resource access. This method means we do not have to continuously enter the login credentials or pass those in an unsecure manner inside of the request we are making. Tokens can have limited time-based access which will provide expiring access rather than indefinite access."
+    },
+    {
+        "question": "Which API authentication mechanism is primarily used for overall project access rather than at the individual user level?",
+        "options": ["General Authentication", "Encrypted Authentication", "Token Authentication", "API Key Authentication"],
+        "answer": "API Key Authentication",
+        "explanation": "API key authentication is straightforward and commonly used for project-level access, such as when your entire app needs access to an API, rather than individual user-level authentication. This is in contrast with token authentication, which is primarily utilized at the individual user level."
+    },
+    {
+        "question": "Which subset of common HTTP methods are used by Remote Procedure Calls (RPCs)?",
+        "options": ["POST and PUT", "PATCH and DELETE", "GET and POST", "PUT and GET"],
+        "answer": "C",
+        "explanation": "As opposed to REST APIs which use GET, POST, PUT, PATCH, and DELETE HTTP methods, Remote Procedure Calls (RPCs) use only the GET and POST methods. For this reason, RPCs are action-oriented, where we are concerned with executing code on a remote device. Remote Procedure Calls (RPCs) are a way to invoke functions or procedures on a remote server, as if they were local. In Python you can use 'xmlrpc.client' library to make RPC's over HTTP"
+    },
+    {
+        "question": "Which style of API does not use real-time communication?",
+        "options": ["Synchronous", "Asynchronous", "One-way", "Delayed"],
+        "answer": "Asynchronous",
+        "explanation": "Asynchronous APIs do not communicate in real-time, as opposed to synchronous APIs which feature scheduled real-time communication and interaction. Like Email communication, where there is no need to instantly respond within a timeframe and responses can be delayed."
+    },
+    {
+        "question": "What is the common name for a set of tools, libraries, and documentation that allows us to interact with a REST API?",
+        "options": ["Framework", "Program", "Script", "SDK"],
+        "answer": "SDK",
+        "explanation": "A software development kit (SDK) is a set of tools, libraries, and documentation provided by the manufacturer of a hardware platform, operating system, or programming language. It provides the necessary components for interacting with a system. Examples of Cisco SDK products include DevNet SDK, Meraki SDK, and Webex SDK."
+    },
+    {
+        "question": "Which of the following is appropriate for obtaining a list of the organizations available through the GET method when using Postman to interact with the Cisco Meraki API?",
+        "options": [
+            "{{baseURL}}/organizations/:organizationId",
+            "{{baseURL}}/organizations",
+            "{{baseURL}}/organizations/:organizationId/networks",
+            "{{baseURL}}/organizations/:organizationId/devices"
+        ],
+        "answer": "{{baseURL}}/organizations",
+        "explanation": "When using the GET method to perform a request against the Meraki API using Postman the URLs follow a hierarchical structure, starting from the base URL and drilling down to specific resources or actions, making the API organized and easy to navigate.:\n- {{baseURL}}: The base URL where all API requests begin.\n- /organizations: Retrieves a list of organizations.\n- /organizations/:organizationId: Accesses a specific organization using its unique ID.\n- /organizations/:organizationId/networks: Fetches information about networks within a specific organization.\n- /organizations/:organizationId/devices: Retrieves details about devices associated with a specific organization.\n"
+    },
+    {
+        "question": "Which type of API authentication method is used by Cisco DNA Center?",
+        "options": [
+            "Token Authentication",
+            "Basic Authentication",
+            "API Key Authentication",
+            "Open Authentication"
+        ],
+        "answer": "Token Authentication",
+        "explanation": "Cisco DNA Center uses token authentication, where we need to retrieve a token to obtain access to information. Using the Cisco DNAC Sandbox collection provides a preconfigured POST method that can be used to retrieve a token, which we can save in our Postman environment for interaction. An example of a Cisco DNA Center (DNAC) token might look like a long string of alphanumeric characters and symbols, similar to this: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MTU4ODMwNjF9.m4zP1bC5Kchxq8VKR-5Dk1kVv1hJ4DVOHavvcgr_JfE\n To confirm Token Authentication, you can make an API request with the obtained token included in the Authorization header. For example, you can use a tool like curl or Postman to make a GET request to this endpoint:\n\n```\ncurl -X GET \"https://YOUR_DNAC_URL/dna/intent/api/v1/network-device\" -H \"Authorization: Bearer YOUR_TOKEN_HERE\"\n```\n\nReplace `YOUR_DNAC_URL` with the URL of your Cisco DNA Center instance and `YOUR_TOKEN_HERE` with your actual token"
+    },
+    {
+        "question": "Which type of API authentication method is used by Cisco APIC?",
+        "options": ["Open Authentication", "API Key Authentication", "Basic Authentication", "Token Authentication"],
+        "answer": "Token Authentication",
+        "explanation": "Just as with Cisco DNA Center, Cisco APIC requires a token to interact through the API. This requires sending a POST method with the basic username and password, requesting a validation token from APIC. Performing methods without this token will result in a 403 Forbidden HTTP response code."
+    },
+    {
+        "question": "Which area in Postman allows you to create preconfigured areas to be used with specific devices, which can hold key:value pairs for variables like the base URL, the token, the username, and the password?",
+        "options": ["Environments", "Flows", "Collections", "Requests"],
+        "answer": "Environments",
+        "explanation": "A Postman environment is a set of variables that can be used for requests. An environment can store key: value pairs for specific devices, which can be referenced in our requests using variables, which saves us from entering the same information multiple times with our methods. Common information stored in an environment include the device base URL, the token, the username, and the password.\n Flows in Postman refer to the sequence of requests within a collection, not to store variables. \n Collections are sets of saved requests, not specifically designed for storing variables. \n Requests are individual API call configurations within a collection and do not provide the environment for storing variables."
+    },
+    {
+        "question": "With Cisco Network Services Orchestrator, what are required to translate between XML format and our network configuration?",
+        "options": ["YAML", "JSON", "NEDS", "LIB"],
+        "answer": "NEDS",
+        "explanation": "Network Element Drivers (NEDS) are necessary to translate between XML data and a valid network configuration. Cisco NSO provides NEDS for various versions of the Cisco CLI since many devices use different commands. Some of those include NEDS for Cisco ASA, Cisco IOS-XR, and Cisco IOS-NX.\n A Network Element Driver (NED) in the context of Cisco Network Services Orchestrator (NSO) is designed to interface with specific network devices or platforms and translate between NSO's XML-based configuration model and the device's native configuration language. \n A NED template for example, can be used to translate configuration data provided by NSO into the XML format expected by the Cisco IOS-XE device, ensuring that the device's configuration is synchronized with NSO's intended state."
+    }             
 ]
