@@ -1,0 +1,63 @@
+FEATURE 1: 'Practice Exam'
+SEV: P4
+TYPE: new feature request (no affecting functionality)
+STATUS: New
+
+    Description:
+        add the practice.html page as an additional feature or enhancement to your main quiz application. Users can directly start the quiz without going through the practice page. The practice page provides an optional feature for users who want to practice answering questions before taking the actual quiz.
+        It's a good approach to offer this as an optional feature rather than making it a mandatory step before taking the quiz. Users who are confident can skip the practice and go straight to the quiz, while others who want some warm-up or practice can use the practice page.
+        So, you can keep it as an optional feature, and users can choose whether or not to use it. If you ever want to enhance your application further, you can promote the practice feature as a way for users to prepare for the quiz, but it's not a requirement for using the main quiz application.
+
+PROGESS: (plan > code > build > test > release > deploy > operate > monitor)
+    plan: complete
+    code: working on starting a new route:    
+
+        @app.route('/practice.html', methods=['GET', 'POST'])
+             def practice():
+            return render_template('practice.html')
+
+
+
+FEATURE 2: 'Explanation to wrong answers'
+SEV: P3
+TYPE: Improve functionality (no affecting functionality)
+STATUS: New
+
+    Description:
+        currently the code is designed to show the explanation when the answer is correctly answered. Its better if for a practice purpose or a way to stay on-sharp, whenever a question is wrong answered,
+        the user could see the explanation to learn more about it. Said that, it would be great if the explanation could be triggered either if the user answers correctly or incorrectly. Then is the user's
+        choice to read it or not.
+
+PROGRESS: (plan > code > build > test > release > deploy > operate > monitor)
+    plan: at planning phase
+
+
+    
+FEATURE 3: 'Create and Allow 2+ choosing questions and options'
+SEV: P3
+TYPE: Improve functionality (no affecting functionality)
+STATUS: New
+
+    Description:
+        sometimes at quizzes there are answers that specify you to choose more than 1 option. This will make this application much better and complete.
+
+PROGRESS: (plan > code > build > test > release > deploy > operate > monitor)
+plan: at planning phase
+
+
+
+
+
+
+
+FEATURE [Insert Feature Number]:
+SEV: [Insert Severity Level]
+TYPE: [Insert Type]
+STATUS: [Insert Status]
+
+Description:
+
+[Insert Description]
+
+PROGRESS: (plan > code > build > test > release > deploy > operate > monitor)
+plan: [Insert Progress Status]
