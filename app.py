@@ -1,96 +1,129 @@
-# import necessary Flask components:
-# - 'Flask': The main Flask application class.
-# - 'render_template': Used for rendering HTML templates in your web application.
-# - 'request': Used for handling HTTP requests and accessing request data.
-# - 'redirect': Used for redirecting users to different URLs.
-# - 'url_for': Used for generating URLs for routes defined in your Flask application.
-
-from flask import Flask, render_template, request, redirect, url_for
-
-# import 'random' module for generating random questions
+# import necessary libraries and Flask components:
+from flask import Flask, render_template, request, redirect, url_for, session, flash, send_from_directory
 import random
-# import Python standard library module 'json' for reading 'questions.json' file that contains the quiz questions
 import json
+
 # classes and methods
-class Question:    # define 'Question' class to represent quiz questions
+class Question:
+    """Represents a quiz question."""
+
     def __init__(self, question, options, answer, explanation):
+        """
+        Initialize a Question object.
+
+        Args:
+            question (str): The question text.
+            options (list): A list of answer options.
+            answer (str): The correct answer.
+            explanation (str): An explanation of the correct answer.
+        """
         self.question = question
         self.options = options
         self.answer = answer
         self.explanation = explanation
-        self.user_answer = None    # this value will depend on the user's interaction
+        self.user_answer = None  # this value will depend on the user's interaction
 
     def check_answer(self, user_answer):
+        """
+        Check if the provided answer is correct.
+
+        Args:
+            user_answer (str): The user's answer.
+
+        Returns:
+            bool: True if the answer is correct, False otherwise.
+        """
         return user_answer == self.answer
 
- # initialize Flask application. '__name__' determines the root path of the application and locates resources like templates and static files
-app = Flask(__name__)   
+# initialize Flask application.
+app = Flask(__name__)
 
-# read quiz questtions from the 'questions.json' file located in 'data' folder and get the count of questions
+# Set a secret key for session management (change this to a secret key in the real application).
+app.secret_key = 'your_secret_key_here'
+
+# read quiz questions from the 'questions.json' file located in 'data' folder,
+# store it in the 'questions' variable, and get the count of questions
 with open('data/questions.json', 'r') as json_file:
-    questions = json.load(json_file)    
+    questions = json.load(json_file)
 total_questions = len(questions)
 print(f'THE TOTAL NUMBER OF QUESTIONS IS: {total_questions}')
 
-# reads quiz questions from the 'questions.json' file, parses the JSON data, and stores it in the 'questions' variable as a list of dictionaries containing quiz questions. 
-with open('data/questions.json', 'r') as json_file:
-    questions = json.load(json_file)
-
-# shuffle the list of questions before starting a quiz
+# Shuffle the list of questions before starting a quiz.
 random.shuffle(questions)
 
-# define and initialize global variable:
-current_question_index = 0
-
-# Flask '@app.route' decorator associate a function with routes handlers for the URL paths
+# Route for the initial page where the user starts the quiz.
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    global current_question_index
+    """
+    Display the index page with a 'Start Exam' button.
+
+    If a POST request is received, redirect to the start_exam route.
+    """
+    current_question_index = session.get('current_question_index', 0)
     if request.method == 'POST':
-        current_question_index = 0
-        return redirect(url_for('question', question_index=current_question_index))
-    return render_template("start.html")
-
-
-# sets up a Flask route to handle requests to URLs like /question/1, /question/2, etc., where the 'question_index' parameter captures the specific question index from the URL
-
-@app.route('/question//<int:question_index>', methods=['GET', 'POST'])
-def question(question_index):
-    global current_question_index  # access the global variable
-    if request.method == 'POST':
-        # get the user's answer from the form
-        user_answer = request.form.get('user_answer')
-        # get the current question based on the current_question_index
-        current_question = questions[current_question_index]
-        
-        if current_question.check_answer(user_answer):
-            # if the answer is correct, display 'correct.html' with explanation
-            explanation = current_question.explanation
-            return render_template('correct.html', explanation=explanation)
-        else:
-            # if the answer is incorrect, display 'incorrect.html' with explanation
-            explanation = current_question.explanation
-            return render_template('incorrect.html', explanation=explanation)
-
-    if current_question_index < len(questions):
-        # render the 'question.html' template with the current question
-        return render_template('question.html', question=questions[current_question_index], question_index=question_index, current_question_index=current_question_index)
+        return redirect(url_for('start_exam', current_question_index=current_question_index))
     else:
-        # if all questions have been answered, redirect to the result page
-        return redirect(url_for('result'))
+        return render_template("start.html")
 
-@app.route('/correct.html')
-def correct():
-    return render_template('correct.html')
+# Route for starting the exam, which redirects to the first question.
+@app.route('/start', methods=['GET', 'POST'])
+def start_exam():
+    """
+    Start the exam by redirecting to the first question.
 
-@app.route('/incorrect.html')
-def incorrect():
-    return render_template('incorrect.html')
+    If the exam is already in progress, increment the current question index.
+    """
+    current_question_index = session.get('current_question_index', 0)
+    session['current_question_index'] = current_question_index + 1
+    return redirect(url_for('question'))
 
-@app.route('/result.html')
+# Route for displaying quiz questions and explanations.
+@app.route('/question', methods=['GET', 'POST'], endpoint='question')
+def display_question():
+    """
+    Display quiz questions and explanations.
+
+    If a POST request is received, check the user's answer and redirect to the next question with explanation.
+    """
+    current_question_index = session.get('current_question_index', 0)
+    if current_question_index < total_questions:
+        current_question = questions[current_question_index]
+
+        if request.method == 'POST':
+            user_answer = request.form.get('user_answer')  # Get the user's answer from the form
+            explanation = current_question['explanation']  # Get the explanation from the JSON data
+
+            # Increment the question index and redirect to the next question with explanation.
+            session['current_question_index'] = current_question_index + 1
+
+            return render_template('question.html', question=current_question, current_question_index=current_question_index, explanation=explanation)
+
+        return render_template('question.html', question=current_question, current_question_index=current_question_index)
+    else:
+        flash('Invalid access to question.html')
+        return redirect(url_for('index'))
+
+# Route for displaying the result of the quiz.
+@app.route('/result')
 def result():
-    return render_template('result.html')
+    """
+    Display the quiz result, showing the number of correct answers and the total number of questions.
+    """
+    # Calculate the number of correct answers by iterating through questions.
+    correct_answers = sum(1 for question in questions if question.check_answer(question.user_answer))
+    return render_template('result.html', correct_answers=correct_answers, total_questions=total_questions)
 
-# Start the Flask application if this script is executed
+# Route for serving static files (if any) from the 'static' folder.
+@app.route('/static/<path:filename>')
+def serve_static(filename):
+    """
+    Serve static files from the 'static' folder.
+
+    Args:
+        filename (str): The filename of the static file to be served.
+    """
+    return send_from_directory('static', filename)
+
+# Start the Flask application if this script is executed.
 if __name__ == "__main__":
     app.run(debug=True)

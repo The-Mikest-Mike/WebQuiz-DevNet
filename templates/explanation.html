@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Incorrect</title>
+    <title>Explanation</title>
 </head>
 <body>
-    <h1>Incorrect...</h1>
+    <h1>Explanation</h1>
     <p>{{ explanation }}</p>
-    <a href="{{ url_for('question', question_index=current_question_index + 1) }}">Next Question</a>
+    <a href="{{ url_for('question') }}">Next Question</a>
 </body>
 </html>
