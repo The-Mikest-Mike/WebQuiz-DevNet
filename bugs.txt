@@ -1,18 +1,33 @@
-BUG 1: '404 NOT Found'
-SEV: P2
-TYPE: blocker (no further testing work can be done)
-STATUS: New
+BUG 1: 'Missing Explanation'
+SEV: 3
+TYPE: Logical Errors
+STATUS: new
 REPORT TYPE: Coding Error
-WORKAROUND: [YES] type directly the url http://127.0.0.1:5000/question/1 or url http://127.0.0.1:5000/question/0 
+WORKAROUND: [NO]
 
-    Steps to replicate: 
-        1. user click on 'submit answer' 
-        2. user is redirected to url 'http://127.0.0.1:5000/question' and getting a 404 not found.
-    
+Steps to replicate:
+    1. user click on 'submit answer'
+    2. user is redirected to the next question instead of receiving the explanation regardless if it's correct or wrong.
+
 PROGRESS: (plan > code > build > test > release > deploy > operate > monitor)
-    Plan: complete
-    Code: Reviewing app.py code from line 5 @app.route('/question//<int:question_index>', methods=['GET', 'POST'])
+Plan: In progress
 
+
+BUG 2: 'Missing Result'
+SEV: 3
+TYPE: Logical Errors
+STATUS: new
+REPORT TYPE: Coding Error
+WORKAROUND: [NO]
+
+Steps to replicate:
+    1. user finishes answering all the questions
+    2. user is redirected to the start.html template route instead of receiving the result.html with their score
+
+PROGRESS: (plan > code > build > test > release > deploy > operate > monitor)
+Plan: In progress
+
+---
 
 
 BUG [Insert Bug Number]: '[Insert Bug Title]'
