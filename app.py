@@ -83,7 +83,7 @@ def display_question():
     """
     Display quiz questions and explanations.
 
-    If a POST request is received, check the user's answer and redirect to the next question with explanation.
+    If a POST request is received, check the user's answer and display the explanation.
     """
     current_question_index = session.get('current_question_index', 0)
     if current_question_index < total_questions:
@@ -93,10 +93,10 @@ def display_question():
             user_answer = request.form.get('user_answer')  # Get the user's answer from the form
             explanation = current_question['explanation']  # Get the explanation from the JSON data
 
-            # Increment the question index and redirect to the next question with explanation.
+            # Update the question index to move to the next question
             session['current_question_index'] = current_question_index + 1
 
-            return render_template('question.html', question=current_question, current_question_index=current_question_index, explanation=explanation)
+            return render_template('explanation.html', explanation=explanation)
 
         return render_template('question.html', question=current_question, current_question_index=current_question_index)
     else:
