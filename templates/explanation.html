@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explanation</title>
+    <style>
+        /* CSS styles to increase the size of the header */
+        h1 {
+            font-size: 24px; /* Adjust the font size as needed */
+        }
+        /* CSS styles to increase the size of the explanation content */
+        p.explanation-text {
+            font-size: 20px; /* Adjust the font size as needed */
+        }
+        /* CSS styles for the correct and incorrect result messages */
+        p.correct-result {
+            font-size: 20px;
+            color: green; /* Green color for correct results */
+        }
+        p.incorrect-result {
+            font-size: 20px;
+            color: red; /* Red color for incorrect results */
+        }
+        /* CSS styles for the "Next Question" link */
+        a.next-question {
+            font-size: 18px;
+            background-color: #007BFF; /* Background color for the link */
+            color: #fff; /* Text color for the link */
+            padding: 10px 20px; /* Add padding for spacing */
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px; /* Add margin for spacing */
+        }
+    </style>
 </head>
 <body>
     <h1>Explanation</h1>
-    <p>{{ explanation }}</p>
-    <p>{{ result }}</p>
-    <a href="{{ url_for('display_question') }}">Next Question</a>
+    <p class="explanation-text">{{ explanation }}</p>
+
+    {% if result == 'Correct' %}
+        <p class="correct-result">{{ result }}</p>
+    {% else %}
+        <p class="incorrect-result">{{ result }}</p>
+    {% endif %}
+
+    <a href="{{ url_for('display_question') }}" class="next-question">Next Question</a>
 </body>
 </html>

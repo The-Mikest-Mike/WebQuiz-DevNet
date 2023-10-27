@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results</title>
+    <style>
+        /* Add CSS styles to increase the size of the header */
+        h1 {
+            font-size: 24px; /* Adjust the font size as needed */
+        }
+        /* Add CSS styles to increase the size of the result text */
+        p.result-text {
+            font-size: 20px; /* Adjust the font size as needed */
+        }
+    </style>
 </head>
 <body>
     <h1>Exam Results</h1>
     <p>You answered {{ correct_answers }} out of {{ total_questions }} questions correctly</p>
-    <p>{{ result }}</p>
+    <p class="result-text">{{ result }}</p>
 </body>
 </html>

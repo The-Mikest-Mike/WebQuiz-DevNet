@@ -4,13 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question</title>
+    <style>
+        /* Add CSS styles to increase the size of options */
+        .option-label {
+            font-size: 18px; /* You can adjust the font size as needed */
+            margin: 5px; /* Add margin for spacing */
+        }
+        /* Add CSS styles to increase the size of the question text */
+        h1.question-number {
+            font-size: 24px; /* Adjust the font size as needed */
+        }
+        p.question-text {
+            font-size: 20px; /* Adjust the font size as needed */
+        }
+        /* Add margin to the submit button to lower it */
+        input[type="submit"] {
+            margin-top: 30px; /* Adjust the margin as needed */
+        }
+        /* CSS styles to increase the size of the button and make it stand out */
+        input[type="submit"] {
+            font-size: 20px;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>Question {{ current_question_index + 1 }}</h1>
-    <p>{{ question.question }}</p>
+    <h1 class="question-number">Question {{ current_question_index + 1 }}</h1>
+    <p class="question-text">{{ question.question }}</p>
     <form action="{{ url_for('display_question', question_index=current_question_index + 1) }}" method="POST">
         {% for option in question.options %}
-        <label>
+        <label class="option-label">
             <input type="radio" name="user_answer" value="{{ option }}" required>
             {{ option }}
         </label><br>

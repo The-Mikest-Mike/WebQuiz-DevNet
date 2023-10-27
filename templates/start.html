@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start</title>
+    <style>
+        /* CSS styles to increase the size of the header */
+        h1 {
+            font-size: 24px;
+        }
+        /* CSS styles to increase the size of the button and make it stand out */
+        input[type="submit"] {
+            font-size: 20px;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        /* CSS styles to increase the size of the text */
+        p {
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to the Exam</h1>
-    <p>Click the button below to start the exam.</p>
+    <p>Test your knowledge and prepare for success with our certification preparation mock exam. 
+        <br><br> Click the button below to start.</p>
     <form action="/start" method="POST">
         <input type="submit" value="Start Exam">
     </form>

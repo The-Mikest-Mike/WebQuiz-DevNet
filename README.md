@@ -22,6 +22,7 @@ pip install Flask
 ## Features
 - Multiple-choice questions with options.
 - Keeps track of user answers and calculates the score.
+- Instantly know by colors whether correct or incorrect.
 - Provides explanations for correct answers.
 - Simple navigation between questions.
 
