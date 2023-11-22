@@ -229,7 +229,7 @@
             "Open Authentication"
         ],
         "answer": "Token Authentication",
-        "explanation": "Cisco DNA Center uses token authentication, where we need to retrieve a token to obtain access to information. Using the Cisco DNAC Sandbox collection provides a preconfigured POST method that can be used to retrieve a token, which we can save in our Postman environment for interaction. An example of a Cisco DNA Center (DNAC) token might look like a long string of alphanumeric characters and symbols, similar to this: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MTU4ODMwNjF9.m4zP1bC5Kchxq8VKR-5Dk1kVv1hJ4DVOHavvcgr_JfE<br> To confirm Token Authentication, you can make an API request with the obtained token included in the Authorization header. For example, you can use a tool like curl or Postman to make a GET request to this endpoint:<br><br>```<br>curl -X GET \"https://YOUR_DNAC_URL/dna/intent/api/v1/network-device\" -H \"Authorization: Bearer YOUR_TOKEN_HERE\"<br>```<br><br>Replace `YOUR_DNAC_URL` with the URL of your Cisco DNA Center instance and `YOUR_TOKEN_HERE` with your actual token"
+        "explanation": "Cisco DNA Center uses token authentication, where we need to retrieve a token to obtain access to information. Using the Cisco DNAC Sandbox collection provides a preconfigured POST method that can be used to retrieve a token, which we can save in our Postman environment for interaction. An example of a Cisco DNA Center (DNAC) token might look like a long string of alphanumeric characters and symbols, similar to this: <br> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MTU4ODMwNjF9.m4zP1bC5Kchxq8VKR-5Dk1kVv1hJ4DVOHavvcgr_JfE <br> To confirm Token Authentication, you can make an API request with the obtained token included in the Authorization header. For example, you can use a tool like curl or Postman to make a GET request to this endpoint:<br><br>```<br>curl -X GET \"https://YOUR_DNAC_URL/dna/intent/api/v1/network-device\" -H \"Authorization: Bearer YOUR_TOKEN_HERE\"<br>```<br><br>Replace `YOUR_DNAC_URL` with the URL of your Cisco DNA Center instance and `YOUR_TOKEN_HERE` with your actual token"
     },
     {
         "question": "Which type of API authentication method is used by Cisco APIC?",
@@ -269,7 +269,7 @@
     },
     {
         "question": "What is a method?",
-        "options": ["A variable applied to a class", "Syntax notation", "A function within a class or an object", "Something that is not used in a class"],
+        "options": ["A variable applied to a class", "Syntax notation", "A f<br>unction within a class or an object", "Something that is not used in a class"],
         "answer": "A function within a class or an object",
         "explanation": "A method, is a function that is defined within a class or an object. Methods are used to define the behavior and operations associated with the class or object. They allow you to perform actions and manipulate data specific to that class or object."
     },

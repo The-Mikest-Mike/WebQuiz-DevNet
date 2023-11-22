@@ -34,7 +34,7 @@
 </head>
 <body>
     <h1 class="question-number">Question {{ current_question_index + 1 }}</h1>
-    <p class="question-text">{{ question.question }}</p>
+    <p class="question-text">{{ question.question|safe }}</p> <!--use 'safe' filter to ensure HTML tags are not escaped font size as needed. This is part of Flask Jinja-->
     <form action="{{ url_for('display_question', question_index=current_question_index + 1) }}" method="POST">
         {% for option in question.options %}
         <label class="option-label">
