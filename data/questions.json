@@ -9,7 +9,7 @@
         "question": "Which data format is used by Cisco Modeling Labs (CML) for importing and exporting lab files?",
         "options": ["XML", "IOSXE", "JSON", "YAML"],
         "answer": "YAML",
-        "explanation": "While YAML does share similarities with JSON in terms of using key-value pairs and having a hierarchical structure, CML primarily uses YAML, for lab file import and export. YAML is a human-readable data serialization format and is commonly used for defining network topologies and configurations in CML. IOS-XE (Internetwork Operating System - Extended Edition) is a different technology. It's an operating system used in Cisco's networking hardware, particularly in routers and switches."
+        "explanation": "While YAML does share similarities with JSON in terms of using key-value pairs and having a hierarchical structure, CML primarily uses YAML, for lab file import and export. YAML is a human-readable data serialization format and is commonly used for defining network topologies and configurations in CML. IOS-XE (Internetwork Operating System - Extended Edition) is a different technology. It is an operating system used in Cisco's networking hardware, particularly in routers and switches."
     },
     {
         "question": "Which built-in Python library can be used to parse XML data?",
@@ -24,7 +24,7 @@
         "explanation": "The provided print statement accesses the 'hostname' key within the JSON data structure. In this JSON snippet, the 'hostname' key is associated with the value 'R1'. Therefore, the output of the print statement will be 'R1'."
     },
     {
-        "question": "Which of the following print statements can be used to return the value 'R1' when parsing through the YAML data in Python? \n yaml snippet: OFFICE:\n  device:\n    hostname: R1\n  interface:\n    GigabitEthernet:\n      ...",
+        "question": "Which of the following print statements can be used to return the value 'R1' when parsing through the YAML data in Python? <br> yaml snippet: OFFICE:<br>  device:<br>    hostname: R1<br>  interface:<br>    GigabitEthernet:<br>      ...",
         "options": ["print(data['OFFICE'])", "print(data['OFFICE']['device']['hostname'])", "print(data['hostname'])", "print(data['device']['hostname'])"],
         "answer": "print(data['OFFICE']['device']['hostname'])",
         "explanation": "To access the value 'R1' in the YAML data structure, you need to follow the hierarchy. The correct print statement is 'print(data['OFFICE']['device']['hostname'])', which accesses the 'hostname' key nested within the 'device' key, which is in turn nested within the 'OFFICE' key."
@@ -39,7 +39,7 @@
         "question": "What is the term for our general plan at the beginning of development when using the Agile Method?",
         "options": ["Sprint", "Product Backlog", "Cycle", "Scrum"],
         "answer": "Product Backlog",
-        "explanation": "The Agile Method starts with a plan that is open to changes informed by feedback and review, creating a more general idea that we develop as we go along. This starting point is referred to as our Product Backlog, which includes details about all the features that need to be included in the product and what needs to be accomplished. However, it's important to note that in Agile, the broader, high-level plan or vision is often referred to as the 'Product Vision' or 'Project Vision,' which outlines the overall goals and direction of the project. The other options represent different aspects or phases within Agile but do not directly correspond to the initial plan."
+        "explanation": "The Agile Method starts with a plan that is open to changes informed by feedback and review, creating a more general idea that we develop as we go along. This starting point is referred to as our Product Backlog, which includes details about all the features that need to be included in the product and what needs to be accomplished. However, it is important to note that in Agile, the broader, high-level plan or vision is often referred to as the 'Product Vision' or 'Project Vision,' which outlines the overall goals and direction of the project. The other options represent different aspects or phases within Agile but do not directly correspond to the initial plan."
     },
     {
         "question": "What is the final step in the Lean Method before the cycle repeats?",
@@ -93,7 +93,7 @@
         "question": "Which Git version control operation allows us to create a copy of a repository on our local file system?",
         "options": ["Commit", "Clone", "Push", "Merge"],
         "answer": "Clone",
-        "explanation": "The Git 'clone' operation enables us to duplicate an entire repository onto our local computer. This process, executed with the 'git clone' command followed by the repository's URL, creates an independent copy of the project locally, allowing us to work on it without altering the original version. It's akin to borrowing a library book, where you get your own copy to read at home."
+        "explanation": "The Git 'clone' operation enables us to duplicate an entire repository onto our local computer. This process, executed with the 'git clone' command followed by the repository's URL, creates an independent copy of the project locally, allowing us to work on it without altering the original version. It is akin to borrowing a library book, where you get your own copy to read at home."
     },
     {
         "question": "Which Git version control operation allows us to track the status of a file including any changes made?",
@@ -123,7 +123,7 @@
         "question": "Which Git version control operation allows us to join the contents of a branch development area with a main repository locally?",
         "options": ["Diff", "Push/Pull", "Merge", "Add/Remove"],
         "answer": "Merge",
-        "explanation": "The merge operation allows us to join multiple branches together into a main coding repository. When working in the main repository, the 'git merge' command, followed by the name of the branch we want to add into this repository, will show any conflicts and attempt to merge the files. It's important to note that for the merge to be successful, the changes in the branches being merged should have been committed using the 'git commit' command. Git considers only committed changes for merging, so ensure that changes are committed before performing a merge operation."
+        "explanation": "The merge operation allows us to join multiple branches together into a main coding repository. When working in the main repository, the 'git merge' command, followed by the name of the branch we want to add into this repository, will show any conflicts and attempt to merge the files. It is important to note that for the merge to be successful, the changes in the branches being merged should have been committed using the 'git commit' command. Git considers only committed changes for merging, so ensure that changes are committed before performing a merge operation."
     },
     {
         "question": "Which Git version control operation is used as a file comparison tool?",
@@ -135,7 +135,7 @@
         "question": "Which method of authentication for REST API is typically limited only to operations where the READ function is required?",
         "options": ["Basic Authentication", "OAuth Authentication", "Open Authentication", "API Key Authentication"],
         "answer": "API Key Authentication",
-        "explanation": "API Key Authentication uses pre-shared keys for client-server authentication. It's typically limited to READ operations to minimize security risks if the key is intercepted. Other options Basic Authentication and OAuth Authentication offer broader access control, including both READ and WRITE operations. Open Authentication is not a recognized authentication method in this context."
+        "explanation": "'API Key Authentication' uses pre-shared keys for client-server authentication. It is typically limited to READ operations to minimize security risks if the key is intercepted. The other options 'Basic Authentication' and 'OAuth Authentication' offer broader access control, including both READ and WRITE operations. The other option 'Open Authentication' is not a recognized authentication method in this context."
     },
     {
         "question": "What type of HTTP messages are used by Webhooks?",
@@ -147,7 +147,7 @@
         "question": "Which of the following is NOT a characteristic of a true RESTful API?",
         "options": ["Stateful", "Uniform Interface", "Cacheable or Non-cacheable Label", "Layered System"],
         "answer": "Stateful",
-        "explanation": "True RESTful APIs adhere to specific constraints (rules), including a Uniform Interface, Cacheable or Non-cacheable Label, and a Layered System. However, they should be 'stateless' rather than 'stateful.' Being stateless means that the server doesn't retain information about client actions between requests, treating each request independently."
+        "explanation": "True RESTful APIs adhere to specific constraints (rules), including a Uniform Interface, Cacheable or Non-cacheable Label, and a Layered System. However, they should be 'stateless' rather than 'stateful.' Being stateless means that the server does not retain information about client actions between requests, treating each request independently."
     },
     {
         "question": "When using Python to make a REST API call, which built-in library can be used in the script to perform a GET request?",
@@ -159,7 +159,7 @@
         "question": "Which range of HTTP response codes are used to indicate a client-side error?",
         "options": ["2XX codes", "3XX codes", "4XX codes", "5XX codes"],
         "answer": "4XX codes",
-        "explanation": "The 400 range of HTTP response codes are sent by the server to indicate that the client's request has issues, such as incorrect syntax/bad request (400), unauthorized (401), forbidden (403) or other client-related problems. When you encounter a 4XX response code, it typically means there is something wrong with the client's request, and the client needs to take corrective action."
+        "explanation": "The 400 range of HTTP response codes are sent by the server to indicate that the client's request has issues, such as: <br> incorrect syntax/bad request (400), <br> unauthorized (401), <br> forbidden (403) <br> not found (404)<br> request timeout (408)<br>When you encounter a '4XX' response code, it typically means there is something wrong with the client's request, and the client needs to take corrective action."
     },
     {
         "question": "In which part of an HTTP response would we see things like the host, user agent, and cookie?",
@@ -218,7 +218,7 @@
             "{{baseURL}}/organizations/:organizationId/devices"
         ],
         "answer": "{{baseURL}}/organizations",
-        "explanation": "When using the GET method to perform a request against the Meraki API using Postman the URLs follow a hierarchical structure, starting from the base URL and drilling down to specific resources or actions, making the API organized and easy to navigate.:\n- {{baseURL}}: The base URL where all API requests begin.\n- /organizations: Retrieves a list of organizations.\n- /organizations/:organizationId: Accesses a specific organization using its unique ID.\n- /organizations/:organizationId/networks: Fetches information about networks within a specific organization.\n- /organizations/:organizationId/devices: Retrieves details about devices associated with a specific organization.\n"
+        "explanation": "When using the GET method to perform a request against the Meraki API using Postman the URLs follow a hierarchical structure, starting from the base URL and drilling down to specific resources or actions, making the API organized and easy to navigate.:<br>- {{baseURL}}: The base URL where all API requests begin.<br>- /organizations: Retrieves a list of organizations.<br>- /organizations/:organizationId: Accesses a specific organization using its unique ID.<br>- /organizations/:organizationId/networks: Fetches information about networks within a specific organization.<br>- /organizations/:organizationId/devices: Retrieves details about devices associated with a specific organization.<br>"
     },
     {
         "question": "Which type of API authentication method is used by Cisco DNA Center?",
@@ -229,7 +229,7 @@
             "Open Authentication"
         ],
         "answer": "Token Authentication",
-        "explanation": "Cisco DNA Center uses token authentication, where we need to retrieve a token to obtain access to information. Using the Cisco DNAC Sandbox collection provides a preconfigured POST method that can be used to retrieve a token, which we can save in our Postman environment for interaction. An example of a Cisco DNA Center (DNAC) token might look like a long string of alphanumeric characters and symbols, similar to this: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MTU4ODMwNjF9.m4zP1bC5Kchxq8VKR-5Dk1kVv1hJ4DVOHavvcgr_JfE\n To confirm Token Authentication, you can make an API request with the obtained token included in the Authorization header. For example, you can use a tool like curl or Postman to make a GET request to this endpoint:\n\n```\ncurl -X GET \"https://YOUR_DNAC_URL/dna/intent/api/v1/network-device\" -H \"Authorization: Bearer YOUR_TOKEN_HERE\"\n```\n\nReplace `YOUR_DNAC_URL` with the URL of your Cisco DNA Center instance and `YOUR_TOKEN_HERE` with your actual token"
+        "explanation": "Cisco DNA Center uses token authentication, where we need to retrieve a token to obtain access to information. Using the Cisco DNAC Sandbox collection provides a preconfigured POST method that can be used to retrieve a token, which we can save in our Postman environment for interaction. An example of a Cisco DNA Center (DNAC) token might look like a long string of alphanumeric characters and symbols, similar to this: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MTU4ODMwNjF9.m4zP1bC5Kchxq8VKR-5Dk1kVv1hJ4DVOHavvcgr_JfE<br> To confirm Token Authentication, you can make an API request with the obtained token included in the Authorization header. For example, you can use a tool like curl or Postman to make a GET request to this endpoint:<br><br>```<br>curl -X GET \"https://YOUR_DNAC_URL/dna/intent/api/v1/network-device\" -H \"Authorization: Bearer YOUR_TOKEN_HERE\"<br>```<br><br>Replace `YOUR_DNAC_URL` with the URL of your Cisco DNA Center instance and `YOUR_TOKEN_HERE` with your actual token"
     },
     {
         "question": "Which type of API authentication method is used by Cisco APIC?",
@@ -241,13 +241,13 @@
         "question": "Which area in Postman allows you to create preconfigured areas to be used with specific devices, which can hold key:value pairs for variables like the base URL, the token, the username, and the password?",
         "options": ["Environments", "Flows", "Collections", "Requests"],
         "answer": "Environments",
-        "explanation": "A Postman environment is a set of variables that can be used for requests. An environment can store key: value pairs for specific devices, which can be referenced in our requests using variables, which saves us from entering the same information multiple times with our methods. Common information stored in an environment include the device base URL, the token, the username, and the password.\n Flows in Postman refer to the sequence of requests within a collection, not to store variables. \n Collections are sets of saved requests, not specifically designed for storing variables. \n Requests are individual API call configurations within a collection and do not provide the environment for storing variables."
+        "explanation": "A Postman environment is a set of variables that can be used for requests. An environment can store key: value pairs for specific devices, which can be referenced in our requests using variables, which saves us from entering the same information multiple times with our methods. Common information stored in an environment include the device base URL, the token, the username, and the password.<br> Flows in Postman refer to the sequence of requests within a collection, not to store variables. <br> Collections are sets of saved requests, not specifically designed for storing variables. <br> Requests are individual API call configurations within a collection and do not provide the environment for storing variables."
     },
     {
         "question": "With Cisco Network Services Orchestrator, what are required to translate between XML format and our network configuration?",
         "options": ["YAML", "JSON", "NEDS", "LIB"],
         "answer": "NEDS",
-        "explanation": "Network Element Drivers (NEDS) are necessary to translate between XML data and a valid network configuration. Cisco NSO provides NEDS for various versions of the Cisco CLI since many devices use different commands. Some of those include NEDS for Cisco ASA, Cisco IOS-XR, and Cisco IOS-NX.\n A Network Element Driver (NED) in the context of Cisco Network Services Orchestrator (NSO) is designed to interface with specific network devices or platforms and translate between NSO's XML-based configuration model and the device's native configuration language. \n A NED template for example, can be used to translate configuration data provided by NSO into the XML format expected by the Cisco IOS-XE device, ensuring that the device's configuration is synchronized with NSO's intended state."
+        "explanation": "Network Element Drivers (NEDS) are necessary to translate between XML data and a valid network configuration. Cisco NSO provides NEDS for various versions of the Cisco CLI since many devices use different commands. Some of those include NEDS for Cisco ASA, Cisco IOS-XR, and Cisco IOS-NX.<br> A Network Element Driver (NED) in the context of Cisco Network Services Orchestrator (NSO) is designed to interface with specific network devices or platforms and translate between NSO's XML-based configuration model and the device's native configuration language. <br> A NED template for example, can be used to translate configuration data provided by NSO into the XML format expected by the Cisco IOS-XE device, ensuring that the device's configuration is synchronized with NSO's intended state."
     },
     {
         "question": "Which of the following is the correct syntax for a Python function?",
@@ -266,6 +266,29 @@
         "options": ["Multi-line text", "A docstring", "A string value including double or single quotation marks", "None of the above"],
         "answer": "A docstring",
         "explanation": "When three single quotation marks or double, are used directly after defining a function, it indicates a docstring. A docstring is a multi-line string that provides documentation or a description of the function's purpose, parameters, and behavior. It is used to document code and provide information for developers."
+    },
+    {
+        "question": "What is a method?",
+        "options": ["A variable applied to a class", "Syntax notation", "A function within a class or an object", "Something that is not used in a class"],
+        "answer": "A function within a class or an object",
+        "explanation": "A method, is a function that is defined within a class or an object. Methods are used to define the behavior and operations associated with the class or object. They allow you to perform actions and manipulate data specific to that class or object."
+    },
+    {
+        "question": "Which of the following describes inheritance?",
+        "options": ["A hierarchy for functions in Python", "Class attributes and methods used as the starting point for another class", "A function only applied to methods being used in another class","None of the above"],
+        "answer": "Class attributes and methods used as the starting point for another class",
+        "explanation": "Inheritance, is a fundamental concept in object-oriented programming where class attributes and methods are used as the starting point for creating a new class. This allows the new class to inherit the properties and behaviors of the parent class, promoting code reusability and creating a hierarchy of classes."
+    },
+    {
+        "question": "Which module provides access to the file system and directory structure?",
+        "options": ["filesystem", "open", "devnetats","ncclient"],
+        "answer": "open",
+        "explanation": "The 'open' module in Python provides access to the file system and directory structure. It allows you to open, read, write, and manipulate files and directories. The other options do not provide direct access to the file system."
+    },
+    {
+        "question": "Which module is a testing framework for Cisco infrastructure?",
+        "options": ["pyATS", "pyang", "devnetats", "ncclient"],
+        "answer": "pyATS",
+        "explanation": "The 'pyATS' (Python Automation and Test System) framework is a testing framework designed for Cisco infrastructure and network automation testing. It provides a comprehensive set of tools and libraries for testing Cisco devices and network configurations. Other options do not relate to testing Cisco infrastructure."
     }
-
 ]

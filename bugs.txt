@@ -1,35 +1,3 @@
-BUG 1: 'Missing Explanation'
-SEV: 3
-TYPE: Logical Errors
-STATUS: new
-REPORT TYPE: Coding Error
-WORKAROUND: [NO]
-
-Steps to replicate:
-    1. user click on 'submit answer'
-    2. user is redirected to the next question instead of receiving the explanation regardless if it's correct or wrong.
-
-PROGRESS: (plan > code > build > test > release > deploy > operate > monitor)
-Plan: In progress
-
-
-BUG 2: 'Missing Result'
-SEV: 3
-TYPE: Logical Errors
-STATUS: new
-REPORT TYPE: Coding Error
-WORKAROUND: [NO]
-
-Steps to replicate:
-    1. user finishes answering all the questions
-    2. user is redirected to the start.html template route instead of receiving the result.html with their score
-
-PROGRESS: (plan > code > build > test > release > deploy > operate > monitor)
-Plan: In progress
-
----
-
-
 BUG [Insert Bug Number]: '[Insert Bug Title]'
 SEV: [Insert Severity Level]
 TYPE: [Insert Type]

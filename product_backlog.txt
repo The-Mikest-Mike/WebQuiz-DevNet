@@ -16,22 +16,6 @@ PROGESS: (plan > code > build > test > release > deploy > operate > monitor)
              def practice():
             return render_template('practice.html')
 
-
-
-FEATURE 2: 'Explanation to wrong answers'
-SEV: P3
-TYPE: Improve functionality (no affecting functionality)
-STATUS: New
-
-    Description:
-        currently the code is designed to show the explanation when the answer is correctly answered. Its better if for a practice purpose or a way to stay on-sharp, whenever a question is wrong answered,
-        the user could see the explanation to learn more about it. Said that, it would be great if the explanation could be triggered either if the user answers correctly or incorrectly. Then is the user's
-        choice to read it or not.
-
-PROGRESS: (plan > code > build > test > release > deploy > operate > monitor)
-    plan: at planning phase
-
-
     
 FEATURE 3: 'Create and Allow 2+ choosing questions and options'
 SEV: P3

@@ -1,5 +1,5 @@
 # import necessary libraries and Flask components:
-from flask import Flask, render_template, request, session, redirect, url_for, flash, send_from_directory, session, jsonify
+from flask import Flask, render_template, request, session, redirect, url_for, flash, send_from_directory, session
 import random
 import json
 
