@@ -3,7 +3,7 @@
         "question": "Which of the following is a characteristic of XML format?",
         "options": ["Pre-defined tags", "Concerned with carrying data", "Used for displaying data", "Key:value pairs"],
         "answer": "Concerned with carrying data",
-        "explanation": "XML is a format that includes predefined tags for structuring and representing data. It is primarily used for carrying and structuring data, including but not limited to data interchange and storage. While XML is not limited to displaying data, it can be used for this purpose as well but HTML is better suited for that purpose. Unlike JSON and YAML, XML does not use key:value pairs as its primary syntax."
+        "explanation": "XML is a format that includes predefined tags for structuring and representing data. It is primarily used for carrying and structuring data, including but not limited to data interchange and storage. <br> <br> While XML is not limited to displaying data, it can be used for this purpose as well but HTML is better suited for that purpose. <br> <br> Unlike JSON and YAML, XML does not use key:value pairs as its primary syntax."
     },
     {
         "question": "Which data format is used by Cisco Modeling Labs (CML) for importing and exporting lab files?",
@@ -15,7 +15,7 @@
         "question": "Which built-in Python library can be used to parse XML data?",
         "options": ["ElementTree", "XMLTree", "Tree.getroot", "print(root)"],
         "answer": "ElementTree",
-        "explanation": "Parsing means we are converting a certain set of data into another format. When parsing XML using Python, the built-in 'ElementTree' library has functionality for reading and manipulating XML data. There is no built-in library or module called 'XMLTree'. 'Tree.getroot' is not a standalone library or module; it appears to be a fragment of code that is used in combination with ElementTree but is not a complete solution on its own. 'print(root)' is not a valid statement; it should be lowercase and is used for displaying output."
+        "explanation": "Parsing means we are converting a certain set of data into another format. When parsing XML using Python, the built-in 'ElementTree' library has functionality for reading and manipulating XML data. <br> <br> There is no built-in library or module called 'XMLTree'. <br> <br> 'Tree.getroot' is not a standalone library or module; it appears to be a fragment of code that is used in combination with ElementTree but is not a complete solution on its own. <br> <br> 'print(root)' is not a valid statement; is used for displaying output."
     },
     {
         "question": "Reference the following abbreviated snippet from a JSON file: {“device”:{“hostname”:”R1”,”interface”:[{“GigabitEthernet”. . . What will be the returned output when parsing through the data using the built-in JSON library in Python, ending with the following print statement: print(data['device']['hostname'])?",
@@ -27,7 +27,7 @@
         "question": "Which of the following print statements can be used to return the value 'R1' when parsing through the YAML data in Python? <br> yaml snippet: OFFICE: <br>  device: <br>    hostname: R1 <br>  interface: <br>    GigabitEthernet: <br>      ...",
         "options": ["print(data['OFFICE'])", "print(data['OFFICE']['device']['hostname'])", "print(data['hostname'])", "print(data['device']['hostname'])"],
         "answer": "print(data['OFFICE']['device']['hostname'])",
-        "explanation": "To access the value 'R1' in the YAML data structure, you need to follow the hierarchy. The correct print statement is 'print(data['OFFICE']['device']['hostname'])', which accesses the 'hostname' key nested within the 'device' key, which is in turn nested within the 'OFFICE' key."
+        "explanation": "To access the value 'R1' in the YAML data structure, you need to follow the hierarchy. <br> <br> The correct print statement is 'print(data['OFFICE']['device']['hostname'])', <br> <br> which accesses the 'hostname' key nested within the 'device' key, which is in turn nested within the 'OFFICE' key."
     },
     {
         "question": "What is the initial phase used when implementing the Test-Driven Development methodology?",
@@ -39,7 +39,7 @@
         "question": "What is the term for our general plan at the beginning of development when using the Agile Method?",
         "options": ["Sprint", "Product Backlog", "Cycle", "Scrum"],
         "answer": "Product Backlog",
-        "explanation": "The Agile Method starts with a plan that is open to changes informed by feedback and review, creating a more general idea that we develop as we go along. This starting point is referred to as our Product Backlog, which includes details about all the features that need to be included in the product and what needs to be accomplished. However, it is important to note that in Agile, the broader, high-level plan or vision is often referred to as the 'Product Vision' or 'Project Vision,' which outlines the overall goals and direction of the project. The other options represent different aspects or phases within Agile but do not directly correspond to the initial plan."
+        "explanation": "The Agile Method starts with a plan that is open to changes informed by feedback and review, creating a more general idea that we develop as we go along. <br> <br> This starting point is referred to as our Product Backlog, which includes details about all the features that need to be included in the product and what needs to be accomplished. However, it is important to note that in Agile, the broader, high-level plan or vision is often referred to as the 'Product Vision' or 'Project Vision,' which outlines the overall goals and direction of the project. <br> <br> The other options represent different aspects or phases within Agile but do not directly correspond to the initial plan."
     },
     {
         "question": "What is the final step in the Lean Method before the cycle repeats?",
@@ -57,7 +57,7 @@
         "question": "Which Python structure allows us to run the same piece of code multiple times in a program to repurpose the code?",
         "options": ["Classes", "Modules", "Functions", "Blocks"],
         "answer": "Functions",
-        "explanation": "In Python, 'Functions' are a fundamental programming construct that allows us to define a block of code that can be reused multiple times within a program. By encapsulating a piece of code within a function, we create a named and reusable unit of code. This practice significantly improves code organization and maintenance, as it eliminates the need to write the same code repeatedly at different parts of the program. When we encounter a situation where the same task or operation needs to be performed multiple times, we can simply call the function, passing the necessary arguments, rather than duplicating the code."
+        "explanation": "In Python, 'Functions' are a fundamental programming construct that allows us to define a block of code that can be reused multiple times within a program. By encapsulating a piece of code within a function, we create a named and reusable unit of code. <br> This practice significantly improves code organization and maintenance, as it eliminates the need to write the same code repeatedly at different parts of the program. When we encounter a situation where the same task or operation needs to be performed multiple times, we can simply call the function, passing the necessary arguments, rather than duplicating the code."
     },
     {
         "question": "Which Python structure is closely associated with objects?",
@@ -129,7 +129,7 @@
         "question": "Which Git version control operation is used as a file comparison tool?",
         "options": ["Merge", "Branch", "Clone", "Diff"],
         "answer": "Diff",
-        "explanation": "The 'diff' operation serves as a file comparison tool, allowing developers to visualize the differences in a set of files or development branches. This tool is particularly valuable when merging branches or when multiple developers are collaborating on the same files. It provides a detailed, line-by-line breakdown of changes, enabling developers to review and understand modifications made to the codebase. Additionally, it aids in the identification and resolution of conflicts during code collaboration and merging processes."
+        "explanation": "The 'diff' operation serves as a file comparison tool, allowing developers to visualize the differences in a set of files or development branches. This tool is particularly valuable when merging branches or when multiple developers are collaborating on the same files. <br> It provides a detailed, line-by-line breakdown of changes, enabling developers to review and understand modifications made to the codebase. Additionally, it aids in the identification and resolution of conflicts during code collaboration and merging processes."
     },
     {
         "question": "Which method of authentication for REST API is typically limited only to operations where the READ function is required?",
@@ -141,13 +141,13 @@
         "question": "What type of HTTP messages are used by Webhooks?",
         "options": ["HTTP UPDATE", "HTTP READ", "HTTP POST", "HTTP DELETE"],
         "answer": "HTTP POST",
-        "explanation": "Webhooks are HTTP POST messages triggered by specific events in an automated manner, designed for receiving real-time notification messages about events on a system. HTTP UPDATE, READ, and DELETE are not appropriate options because Webhooks are specifically tailored for event-driven notifications, not for making updates (UPDATE), reading existing data (READ), or deleting resources (DELETE)."
+        "explanation": "Webhooks are HTTP POST messages triggered by specific events in an automated manner, designed for receiving real-time notification messages about events on a system. <br> HTTP UPDATE, READ, and DELETE are not appropriate options because Webhooks are specifically tailored for event-driven notifications, not for making updates (UPDATE), reading existing data (READ), or deleting resources (DELETE)."
     },
     {
         "question": "Which of the following is NOT a characteristic of a true RESTful API?",
         "options": ["Stateful", "Uniform Interface", "Cacheable or Non-cacheable Label", "Layered System"],
         "answer": "Stateful",
-        "explanation": "True RESTful APIs adhere to specific constraints (rules), including a Uniform Interface, Cacheable or Non-cacheable Label, and a Layered System. However, they should be 'stateless' rather than 'stateful.' Being stateless means that the server does not retain information about client actions between requests, treating each request independently."
+        "explanation": "True RESTful APIs adhere to specific constraints (rules), including a Uniform Interface, Cacheable or Non-cacheable Label, and a Layered System. However, they should be 'stateless' rather than 'stateful.' <br>  Being stateless means that the server does not retain information about client actions between requests, treating each request independently."
     },
     {
         "question": "When using Python to make a REST API call, which built-in library can be used in the script to perform a GET request?",
@@ -159,7 +159,7 @@
         "question": "Which range of HTTP response codes are used to indicate a client-side error?",
         "options": ["2XX codes", "3XX codes", "4XX codes", "5XX codes"],
         "answer": "4XX codes",
-        "explanation": "The 400 range of HTTP response codes are sent by the server to indicate that the client's request has issues, such as: <br> - incorrect syntax/bad request (400), <br> - unauthorized (401), <br> - forbidden (403) <br> - not found (404)<br> - request timeout (408) <br> When you encounter a '4XX' response code, it typically means there is something wrong with the client's request, and the client needs to take corrective action."
+        "explanation": "The 400 range of HTTP response codes are sent by the server to indicate that the client's request has issues, such as: <br><br> - incorrect syntax/bad request (400), <br> - unauthorized (401), <br> - forbidden (403) <br> - not found (404)<br> - request timeout (408) <br><br> When you encounter a '4XX' response code, it typically means there is something wrong with the client's request, and the client needs to take corrective action."
     },
     {
         "question": "In which part of an HTTP response would we see things like the host, user agent, and cookie?",
@@ -171,31 +171,31 @@
         "question": "Which HTTP response code indicates a likely issue with incorrect authentication credentials?",
         "options": ["500 Internal Server Error", "403 Forbidden", "401 Unauthorized", "501 Not Implemented"],
         "answer": "401 Unauthorized",
-        "explanation": "The 401 Unauthorized HTTP response code indicates that authentication credentials have not been provided or are incorrect. This is in contrast to a 403 Forbidden HTTP response code, where credentials are valid but the account does not have the required permission to access the resource."
+        "explanation": "The 401 Unauthorized HTTP response code indicates that authentication credentials have not been provided or are incorrect. <br> This is in contrast to a 403 Forbidden HTTP response code, where credentials are valid but the account does not have the required permission to access the resource."
     },
     {
         "question": "Which API authentication mechanism is the least secure?",
         "options": ["OAUTH Authentication", "Basic Authentication", "Token Authentication", "API Key Authentication"],
         "answer": "Basic Authentication",
-        "explanation": "Basic authentication is the least secure method for API authentication, where credentials are passed in an unencrypted manner when using HTTP instead of HTTPS. Basic authentication uses a simple username and password for authentication."
+        "explanation": "'Basic authentication' is the least secure method for API authentication, where credentials are passed in an unencrypted manner when using HTTP instead of HTTPS. 'Basic authentication' uses a simple 'username' and 'password' for authentication."
     },
     {
         "question": "Which API authentication mechanism allows us to enter our username and password a single time to generate an encrypted value for accessing resources?",
         "options": ["Token Authentication", "API Key Authentication", "Basic Authentication", "Secure Authentication"],
         "answer": "Token Authentication",
-        "explanation": "Token authentication allows us to use a valid username and password combination to retrieve a valid encrypted token for access to resource access. This method means we do not have to continuously enter the login credentials or pass those in an unsecure manner inside of the request we are making. Tokens can have limited time-based access which will provide expiring access rather than indefinite access."
+        "explanation": "<strong>'Token authentication'</strong> allows us to use a valid <strong>username</strong> and <strong>password</strong> combination to <strong>retrieve</strong> a valid <strong>encrypted token</strong> for access to resource access. <br> This method means we do not have to continuously enter the login credentials or pass those in an unsecure manner inside of the request we are making. Tokens can have limited time-based access which will provide expiring access rather than indefinite access."
     },
     {
         "question": "Which API authentication mechanism is primarily used for overall project access rather than at the individual user level?",
         "options": ["General Authentication", "Encrypted Authentication", "Token Authentication", "API Key Authentication"],
         "answer": "API Key Authentication",
-        "explanation": "API key authentication is straightforward and commonly used for project-level access, such as when your entire app needs access to an API, rather than individual user-level authentication. This is in contrast with token authentication, which is primarily utilized at the individual user level."
+        "explanation": "<strong>'API key authentication'</strong> is straightforward and commonly used for <strong>project-level access</strong>, such as when your entire app needs access to an API, rather than individual user-level authentication. <br> This is in contrast with token authentication, which is primarily utilized at the individual user level."
     },
     {
         "question": "Which subset of common HTTP methods are used by Remote Procedure Calls (RPCs)?",
         "options": ["POST and PUT", "PATCH and DELETE", "GET and POST", "PUT and GET"],
         "answer": "C",
-        "explanation": "As opposed to REST APIs which use GET, POST, PUT, PATCH, and DELETE HTTP methods, Remote Procedure Calls (RPCs) use only the GET and POST methods. For this reason, RPCs are action-oriented, where we are concerned with executing code on a remote device. Remote Procedure Calls (RPCs) are a way to invoke functions or procedures on a remote server, as if they were local. In Python you can use 'xmlrpc.client' library to make RPC's over HTTP"
+        "explanation": "As opposed to REST APIs which use GET, POST, PUT, PATCH, and DELETE HTTP methods, <strong>'Remote Procedure Calls (RPCs)</strong> use only the <strong>GET and POST methods</strong>. <br> For this reason, RPCs are action-oriented, where we are concerned with executing code on a remote device. Remote Procedure Calls (RPCs) are a way to invoke functions or procedures on a remote server, as if they were local. <br><br> In Python you can use 'xmlrpc.client' library to make RPC's over HTTP"
     },
     {
         "question": "Which style of API does not use real-time communication?",
@@ -207,7 +207,7 @@
         "question": "What is the common name for a set of tools, libraries, and documentation that allows us to interact with a REST API?",
         "options": ["Framework", "Program", "Script", "SDK"],
         "answer": "SDK",
-        "explanation": "A software development kit (SDK) is a set of tools, libraries, and documentation provided by the manufacturer of a hardware platform, operating system, or programming language. It provides the necessary components for interacting with a system. Examples of Cisco SDK products include DevNet SDK, Meraki SDK, and Webex SDK."
+        "explanation": "A software development kit (SDK) is a set of tools, libraries, and documentation provided by the manufacturer of a hardware platform, operating system, or programming language. It provides the necessary components for interacting with a system. <br> Examples of Cisco SDK products include DevNet SDK, Meraki SDK, and Webex SDK."
     },
     {
         "question": "Which of the following is appropriate for obtaining a list of the organizations available through the GET method when using Postman to interact with the Cisco Meraki API?",
@@ -218,7 +218,7 @@
             "{{baseURL}}/organizations/:organizationId/devices"
         ],
         "answer": "{{baseURL}}/organizations",
-        "explanation": "When using the GET method to perform a request against the Meraki API using Postman the URLs follow a hierarchical structure, starting from the base URL and drilling down to specific resources or actions, making the API organized and easy to navigate.:  <br>  - {{baseURL}}: The base URL where all API requests begin.  <br>  - /organizations: Retrieves a list of organizations.  <br>  - /organizations/:organizationId: Accesses a specific organization using its unique ID.  <br>  - /organizations/:organizationId/networks: Fetches information about networks within a specific organization.  <br>  - /organizations/:organizationId/devices: Retrieves details about devices associated with a specific organization.  <br>  "
+        "explanation": "When using the GET method to perform a request against the Meraki API using Postman the URLs follow a hierarchical structure, starting from the base URL and drilling down to specific resources or actions, making the API organized and easy to navigate.: <br><br> - <strong>{{baseURL}}</strong>: The base URL where all API requests begin.  <br> - <strong>/organizations</strong>: Retrieves a list of organizations.  <br> - <strong>/organizations/:organizationId</strong>: Accesses a specific organization using its unique ID.  <br> - <strong>/organizations/:organizationId/networks</strong>: Fetches information about networks within a specific organization.  <br> - <strong>/organizations/:organizationId/devices</strong>: Retrieves details about devices associated with a specific organization."
     },
     {
         "question": "Which type of API authentication method is used by Cisco DNA Center?",
@@ -229,43 +229,43 @@
             "Open Authentication"
         ],
         "answer": "Token Authentication",
-        "explanation": "Cisco DNA Center uses token authentication, where we need to retrieve a token to obtain access to information. Using the Cisco DNAC Sandbox collection provides a preconfigured POST method that can be used to retrieve a token, which we can save in our Postman environment for interaction. An example of a Cisco DNA Center (DNAC) token might look like a long string of alphanumeric characters and symbols, similar to this: <br> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MTU4ODMwNjF9.m4zP1bC5Kchxq8VKR-5Dk1kVv1hJ4DVOHavvcgr_JfE <br>  To confirm Token Authentication, you can make an API request with the obtained token included in the Authorization header. For example, you can use a tool like curl or Postman to make a GET request to this endpoint: <br> <br> ``` <br> curl -X GET \"https://YOUR_DNAC_URL/dna/intent/api/v1/network-device\" -H \"Authorization: Bearer YOUR_TOKEN_HERE\" <br> ``` <br> <br> Replace `YOUR_DNAC_URL` with the URL of your Cisco DNA Center instance and `YOUR_TOKEN_HERE` with your actual token"
+        "explanation": "Cisco DNA Center uses token authentication, where we need to retrieve a token to obtain access to information. <br>Using the Cisco DNAC Sandbox collection provides a preconfigured POST method that can be used to retrieve a token, which we can save in our Postman environment for interaction. <br>An example of a Cisco DNA Center (DNAC) token might look like a long string of alphanumeric characters and symbols, similar to this: <br><br> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MTU4ODMwNjF9.m4zP1bC5Kchxq8VKR-5Dk1kVv1hJ4DVOHavvcgr_JfE <br><br> To confirm Token Authentication, you can make an API request with the obtained token included in the Authorization header. For example, you can use a tool like curl or Postman to make a GET request to this endpoint: <br><br> <strong>curl -X GET \"https://YOUR_DNAC_URL/dna/intent/api/v1/network-device\" -H \"Authorization: Bearer YOUR_TOKEN_HERE\" </strong> <br> <br> Replace `YOUR_DNAC_URL` with the URL of your Cisco DNA Center instance and `YOUR_TOKEN_HERE` with your actual token"
     },
     {
         "question": "Which type of API authentication method is used by Cisco APIC?",
         "options": ["Open Authentication", "API Key Authentication", "Basic Authentication", "Token Authentication"],
         "answer": "Token Authentication",
-        "explanation": "Just as with Cisco DNA Center, Cisco APIC requires a token to interact through the API. This requires sending a POST method with the basic username and password, requesting a validation token from APIC. Performing methods without this token will result in a 403 Forbidden HTTP response code."
+        "explanation": "Just as with Cisco DNA Center, Cisco APIC requires a token to interact through the API. This requires sending a POST method with the basic username and password, requesting a validation token from APIC. <br>Performing methods without this token will result in a 403 Forbidden HTTP response code."
     },
     {
         "question": "Which area in Postman allows you to create preconfigured areas to be used with specific devices, which can hold key:value pairs for variables like the base URL, the token, the username, and the password?",
         "options": ["Environments", "Flows", "Collections", "Requests"],
         "answer": "Environments",
-        "explanation": "A Postman environment is a set of variables that can be used for requests. An environment can store key: value pairs for specific devices, which can be referenced in our requests using variables, which saves us from entering the same information multiple times with our methods. Common information stored in an environment include the device base URL, the token, the username, and the password. <br> Flows in Postman refer to the sequence of requests within a collection, not to store variables. <br> Collections are sets of saved requests, not specifically designed for storing variables. <br> Requests are individual API call configurations within a collection and do not provide the environment for storing variables."
+        "explanation": "A Postman environment is a set of variables that can be used for requests. An environment can store key: value pairs for specific devices, which can be referenced in our requests using variables, which saves us from entering the same information multiple times with our methods. <br>Common information stored in an environment include the device base URL, the token, the username, and the password. <br> Flows in Postman refer to the sequence of requests within a collection, not to store variables. <br> Collections are sets of saved requests, not specifically designed for storing variables. <br> Requests are individual API call configurations within a collection and do not provide the environment for storing variables."
     },
     {
         "question": "With Cisco Network Services Orchestrator, what are required to translate between XML format and our network configuration?",
         "options": ["YAML", "JSON", "NEDS", "LIB"],
         "answer": "NEDS",
-        "explanation": "Network Element Drivers (NEDS) are necessary to translate between XML data and a valid network configuration. Cisco NSO provides NEDS for various versions of the Cisco CLI since many devices use different commands. Some of those include NEDS for Cisco ASA, Cisco IOS-XR, and Cisco IOS-NX. <br> A Network Element Driver (NED) in the context of Cisco Network Services Orchestrator (NSO) is designed to interface with specific network devices or platforms and translate between NSO's XML-based configuration model and the device's native configuration language. <br> A NED template for example, can be used to translate configuration data provided by NSO into the XML format expected by the Cisco IOS-XE device, ensuring that the device's configuration is synchronized with NSO's intended state."
+        "explanation": "Network Element Drivers (NEDS) are necessary to translate between XML data and a valid network configuration. Cisco NSO provides NEDS for various versions of the Cisco CLI since many devices use different commands.<br>Some of those include NEDS for Cisco ASA, Cisco IOS-XR, and Cisco IOS-NX. <br> A Network Element Driver (NED) in the context of Cisco Network Services Orchestrator (NSO) is designed to interface with specific network devices or platforms and translate between NSO's XML-based configuration model and the device's native configuration language. <br> A NED template for example, can be used to translate configuration data provided by NSO into the XML format expected by the Cisco IOS-XE device, ensuring that the device's configuration is synchronized with NSO's intended state."
     },
     {
         "question": "Which of the following is the correct syntax for a Python function?",
         "options": ["define function (arg)", "function function(arg)", "def function(arg)", "func function(arg)"],
         "answer": "def function(arg)",
-        "explanation": "In Python, functions are defined using the 'def' keyword followed by the function name and a pair of parentheses that may contain optional function parameters. The correct syntax for defining a Python function is as follows: 'def function_name(parameters):' "
+        "explanation": "In Python, functions are defined using the <strong>'def'</strong> keyword followed by the <strong>function name</strong> and a pair of <strong>parentheses'()'</strong> that may contain optional function parameters. The correct syntax for defining a Python function is as follows: <strong>'def function_name(parameters):'</strong> "
     },
     {
         "question": "Which of the following is a valid Python function name?",
         "options": ["1function", "__init__", "True", "Funct1on"],
         "answer": "__init__",
-        "explanation": "In Python, valid function names must follow certain rules. They should start with a letter or an underscore, followed by letters, numbers, or underscores. Option '1function' starts with a digit, which is not a valid starting character for function names. Option 'True' is not recommended as it can conflict with a Python keyword. Option 'Funct1on' is a valid function name but not the best practice due to the use of numbers. Option '__init__' is a valid and commonly used function name, often associated with constructors in Python classes."
+        "explanation": "In Python, valid function names must follow certain rules. They should start with a letter or an underscore, followed by letters, numbers, or underscores. <br>Option '1function' starts with a digit, which is not a valid starting character for function names. <br>Option 'True' is not recommended as it can conflict with a Python keyword. <br>Option 'Funct1on' is a valid function name but not the best practice due to the use of numbers. <br>Option <strong>'__init__'</strong> is a <strong>valid and commonly used function name</strong>, often associated with constructors in Python classes."
     },
     {
         "question": "When three single quotation marks are used on the next line directly after defining a function, what does this indicate?",
         "options": ["Multi-line text", "A docstring", "A string value including double or single quotation marks", "None of the above"],
         "answer": "A docstring",
-        "explanation": "When three single quotation marks or double, are used directly after defining a function, it indicates a docstring. A docstring is a multi-line string that provides documentation or a description of the function's purpose, parameters, and behavior. It is used to document code and provide information for developers."
+        "explanation": "When three single quotation marks or double, are used directly after defining a function, it indicates a docstring. A docstring is a multi-line string that provides documentation or a description of the function's purpose, parameters, and behavior. <br>It is used to document code and provide information for developers."
     },
     {
         "question": "What is a method?",
@@ -277,18 +277,18 @@
         "question": "Which of the following describes inheritance?",
         "options": ["A hierarchy for functions in Python", "Class attributes and methods used as the starting point for another class", "A function only applied to methods being used in another class","None of the above"],
         "answer": "Class attributes and methods used as the starting point for another class",
-        "explanation": "Inheritance, is a fundamental concept in object-oriented programming where class attributes and methods are used as the starting point for creating a new class. This allows the new class to inherit the properties and behaviors of the parent class, promoting code reusability and creating a hierarchy of classes."
+        "explanation": "Inheritance, is a fundamental concept in object-oriented programming where class attributes and methods are used as the starting point for creating a new class. <br>This allows the new class to inherit the properties and behaviors of the parent class, promoting code reusability and creating a hierarchy of classes."
     },
     {
         "question": "Which module provides access to the file system and directory structure?",
         "options": ["filesystem", "open", "devnetats","ncclient"],
         "answer": "open",
-        "explanation": "The 'open' module in Python provides access to the file system and directory structure. It allows you to open, read, write, and manipulate files and directories. The other options do not provide direct access to the file system."
+        "explanation": "The 'open' module in Python provides access to the file system and directory structure. It allows you to <strong>open, read, write, and manipulate files and directories</strong>. <br>The other options do not provide direct access to the file system."
     },
     {
         "question": "Which module is a testing framework for Cisco infrastructure?",
         "options": ["pyATS", "pyang", "devnetats", "ncclient"],
         "answer": "pyATS",
-        "explanation": "The 'pyATS' (Python Automation and Test System) framework is a testing framework designed for Cisco infrastructure and network automation testing. It provides a comprehensive set of tools and libraries for testing Cisco devices and network configurations. Other options do not relate to testing Cisco infrastructure."
+        "explanation": "The 'pyATS' (Python Automation and Test System) framework is a testing framework designed for Cisco infrastructure and network automation testing. It provides a comprehensive set of tools and libraries for testing Cisco devices and network configurations. <br>Other options do not relate to testing Cisco infrastructure."
     }
 ]
