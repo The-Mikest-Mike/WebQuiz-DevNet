@@ -45,14 +45,13 @@
     </style>
 </head>
 <body>
+    {% if result == 'Correct' %}
+    <p class="correct-result">{{ result }}</p>
+    {% else %}
+    <p class="incorrect-result">{{ result }}</p>
+    {% endif %}
     <h1>Explanation</h1>
     <p class="explanation-text">{{ explanation|safe }}</p> <!--use 'safe' filter to ensure HTML tags are not escaped font size as needed. This is part of Flask Jinja-->
-
-    {% if result == 'Correct' %}
-        <p class="correct-result">{{ result }}</p>
-    {% else %}
-        <p class="incorrect-result">{{ result }}</p>
-    {% endif %}
 
     <a href="{{ url_for('display_question') }}" class="next-question">Next Question</a>
 </body>

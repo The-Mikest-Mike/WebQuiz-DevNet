@@ -9,22 +9,22 @@
         "question": "Which data format is used by Cisco Modeling Labs (CML) for importing and exporting lab files?",
         "options": ["XML", "IOSXE", "JSON", "YAML"],
         "answer": "YAML",
-        "explanation": "While YAML does share similarities with JSON in terms of using key-value pairs and having a hierarchical structure, CML primarily uses YAML, for lab file import and export. YAML is a human-readable data serialization format and is commonly used for defining network topologies and configurations in CML. IOS-XE (Internetwork Operating System - Extended Edition) is a different technology. It is an operating system used in Cisco's networking hardware, particularly in routers and switches."
+        "explanation": "While YAML does share similarities with JSON in terms of using key-value pairs and having a hierarchical structure, <strong> CML primarily uses YAML, for lab file import and export.</strong> YAML is a human-readable data serialization format and is commonly used for defining network topologies and configurations in CML. <br><br>Other option 'IOS-XE' (Internetwork Operating System - Extended Edition) is an operating system used in Cisco's networking hardware, particularly in routers and switches."
     },
     {
         "question": "Which built-in Python library can be used to parse XML data?",
         "options": ["ElementTree", "XMLTree", "Tree.getroot", "print(root)"],
         "answer": "ElementTree",
-        "explanation": "Parsing means we are converting a certain set of data into another format. When parsing XML using Python, the built-in 'ElementTree' library has functionality for reading and manipulating XML data. <br> <br> There is no built-in library or module called 'XMLTree'. <br> <br> 'Tree.getroot' is not a standalone library or module; it appears to be a fragment of code that is used in combination with ElementTree but is not a complete solution on its own. <br> <br> 'print(root)' is not a valid statement; is used for displaying output."
+        "explanation": "Parsing means we are converting a certain set of data into another format. When parsing XML using Python, the built-in <strong>'ElementTree' library has functionality for reading and manipulating XML data.</strong> <br> <br> There is no built-in library or module called 'XMLTree'. <br> <br> 'Tree.getroot' is not a standalone library or module; it appears to be a fragment of code that is used in combination with ElementTree but is not a complete solution on its own. <br> <br> 'print(root)' is not a valid statement; is used for displaying output."
     },
     {
-        "question": "Reference the following abbreviated snippet from a JSON file: {“device”:{“hostname”:”R1”,”interface”:[{“GigabitEthernet”. . . What will be the returned output when parsing through the data using the built-in JSON library in Python, ending with the following print statement: print(data['device']['hostname'])?",
+        "question": "Reference the following abbreviated snippet from a JSON file: <strong> {“device”:{“hostname”:”R1”,”interface”:[{“GigabitEthernet”. . . </strong> What will be the returned output when parsing through the data using the built-in JSON library in Python, ending with the following print statement: <strong> print(data['device']['hostname'])</strong>?",
         "options": ["hostname", "device", "interface", "R1"],
         "answer": "R1",
-        "explanation": "The provided print statement accesses the 'hostname' key within the JSON data structure. In this JSON snippet, the 'hostname' key is associated with the value 'R1'. Therefore, the output of the print statement will be 'R1'."
+        "explanation": "In the print statement, the 'hostname' key is associated with the value 'R1'. Therefore, the output of the print statement will be 'R1'."
     },
     {
-        "question": "Which of the following print statements can be used to return the value 'R1' when parsing through the YAML data in Python? <br> yaml snippet: OFFICE: <br>  device: <br>    hostname: R1 <br>  interface: <br>    GigabitEthernet: <br>      ...",
+        "question": "Which of the following print statements can be used to return the value 'R1' when parsing through the YAML data in Python? <br><br> <strong>yaml snippet:</strong> OFFICE: <br>  device: <br>    hostname: R1 <br>  interface: <br>    GigabitEthernet: <br>      ...",
         "options": ["print(data['OFFICE'])", "print(data['OFFICE']['device']['hostname'])", "print(data['hostname'])", "print(data['device']['hostname'])"],
         "answer": "print(data['OFFICE']['device']['hostname'])",
         "explanation": "To access the value 'R1' in the YAML data structure, you need to follow the hierarchy. <br> <br> The correct print statement is 'print(data['OFFICE']['device']['hostname'])', <br> <br> which accesses the 'hostname' key nested within the 'device' key, which is in turn nested within the 'OFFICE' key."
@@ -39,7 +39,7 @@
         "question": "What is the term for our general plan at the beginning of development when using the Agile Method?",
         "options": ["Sprint", "Product Backlog", "Cycle", "Scrum"],
         "answer": "Product Backlog",
-        "explanation": "The Agile Method starts with a plan that is open to changes informed by feedback and review, creating a more general idea that we develop as we go along. <br> <br> This starting point is referred to as our Product Backlog, which includes details about all the features that need to be included in the product and what needs to be accomplished. However, it is important to note that in Agile, the broader, high-level plan or vision is often referred to as the 'Product Vision' or 'Project Vision,' which outlines the overall goals and direction of the project. <br> <br> The other options represent different aspects or phases within Agile but do not directly correspond to the initial plan."
+        "explanation": "The Agile Method starts with a plan that is open to changes informed by feedback and review, creating a more general idea that we develop as we go along. <br> <br> This starting point is referred to as our <strong> Product Backlog, which includes details about all the features that need to be included in the product and what needs to be accomplished.</strong> However, it is important to note that in Agile, the broader, high-level plan or vision is often referred to as the 'Product Vision' or 'Project Vision,' which outlines the overall goals and direction of the project. <br> <br> The other options represent different aspects or phases within Agile but do not directly correspond to the initial plan."
     },
     {
         "question": "What is the final step in the Lean Method before the cycle repeats?",
@@ -57,7 +57,7 @@
         "question": "Which Python structure allows us to run the same piece of code multiple times in a program to repurpose the code?",
         "options": ["Classes", "Modules", "Functions", "Blocks"],
         "answer": "Functions",
-        "explanation": "In Python, 'Functions' are a fundamental programming construct that allows us to define a block of code that can be reused multiple times within a program. By encapsulating a piece of code within a function, we create a named and reusable unit of code. <br> This practice significantly improves code organization and maintenance, as it eliminates the need to write the same code repeatedly at different parts of the program. When we encounter a situation where the same task or operation needs to be performed multiple times, we can simply call the function, passing the necessary arguments, rather than duplicating the code."
+        "explanation": "In Python, 'Functions' are a fundamental programming construct that allows us to define a block of code that can be reused multiple times within a program. By encapsulating a piece of code within a function, we create a named and reusable unit of code. <br><br> This practice significantly improves code organization and maintenance, as it eliminates the need to write the same code repeatedly at different parts of the program. When we encounter a situation where the same task or operation needs to be performed multiple times, we can simply call the function, passing the necessary arguments, rather than duplicating the code."
     },
     {
         "question": "Which Python structure is closely associated with objects?",
@@ -135,19 +135,19 @@
         "question": "Which method of authentication for REST API is typically limited only to operations where the READ function is required?",
         "options": ["Basic Authentication", "OAuth Authentication", "Open Authentication", "API Key Authentication"],
         "answer": "API Key Authentication",
-        "explanation": "'API Key Authentication' uses pre-shared keys for client-server authentication. It is typically limited to READ operations to minimize security risks if the key is intercepted. The other options 'Basic Authentication' and 'OAuth Authentication' offer broader access control, including both READ and WRITE operations. The other option 'Open Authentication' is not a recognized authentication method in this context."
+        "explanation": "<strong> 'API Key Authentication' uses pre-shared keys for client-server authentication. It is typically limited to READ operations to minimize security risks if the key is intercepted. </strong> <br><br> The other options 'Basic Authentication' and 'OAuth Authentication' offer broader access control, including both READ and WRITE operations. <br>The other option 'Open Authentication' is not a recognized authentication method in this context."
     },
     {
         "question": "What type of HTTP messages are used by Webhooks?",
         "options": ["HTTP UPDATE", "HTTP READ", "HTTP POST", "HTTP DELETE"],
         "answer": "HTTP POST",
-        "explanation": "Webhooks are HTTP POST messages triggered by specific events in an automated manner, designed for receiving real-time notification messages about events on a system. <br> HTTP UPDATE, READ, and DELETE are not appropriate options because Webhooks are specifically tailored for event-driven notifications, not for making updates (UPDATE), reading existing data (READ), or deleting resources (DELETE)."
+        "explanation": "<strong> Webhooks </strong> are <strong> HTTP POST </strong> messages triggered by specific events in an automated manner, designed for receiving real-time notification messages about events on a system. <br> HTTP UPDATE, READ, and DELETE are not appropriate options because Webhooks are specifically tailored for event-driven notifications, not for making updates (UPDATE), reading existing data (READ), or deleting resources (DELETE)."
     },
     {
         "question": "Which of the following is NOT a characteristic of a true RESTful API?",
         "options": ["Stateful", "Uniform Interface", "Cacheable or Non-cacheable Label", "Layered System"],
         "answer": "Stateful",
-        "explanation": "True RESTful APIs adhere to specific constraints (rules), including a Uniform Interface, Cacheable or Non-cacheable Label, and a Layered System. However, they should be 'stateless' rather than 'stateful.' <br>  Being stateless means that the server does not retain information about client actions between requests, treating each request independently."
+        "explanation": "True <strong> RESTful APIs </strong> adhere to specific rules, including a Uniform Interface, Cacheable or Non-cacheable Label, and a Layered System. However, they should be <strong> 'stateless' </strong> rather than 'stateful.' <br><br>  Being stateless means that the server does not retain information about client actions between requests, treating each request independently."
     },
     {
         "question": "When using Python to make a REST API call, which built-in library can be used in the script to perform a GET request?",
