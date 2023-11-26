@@ -5,25 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start</title>
     <style>
+        /* Center the content */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
         /* CSS styles to increase the size of the header */
         h1 {
-            font-size: 24px;
-            font-family: Arial, Helvetica, sans-serif; /* Set font Arial, and fall back to Helvetica and sans-serif if Arial is not available */
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
         }
         /* CSS styles to increase the size of the button and make it stand out */
         input[type="submit"] {
-            font-size: 20px;
+            font-size: 21px;
             background-color: #007BFF;
             color: #fff;
             padding: 10px 20px;
             border: none;
             cursor: pointer;
             font-family: Arial, Helvetica, sans-serif;
+            transition: color 0.3s; /* Add transition for a smooth color change when cursor is over button */
+        }
+        /* Add hover effect: Change text color to light gray on hover */
+        input[type="submit"]:hover {
+            color: #DDDDDD;
         }
         /* CSS styles to increase the size of the text */
         p {
-            font-size: 22px;
+            font-size: 23px;
             font-family: Arial, Helvetica, sans-serif;
+            text-align: center; /* Center-align the text */
         }
     </style>
 </head>
