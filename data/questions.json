@@ -269,7 +269,7 @@
     },
     {
         "question": "What is a method?",
-        "options": ["A variable applied to a class", "Syntax notation", "A f<br>unction within a class or an object", "Something that is not used in a class"],
+        "options": ["A variable applied to a class", "Syntax notation", "A function within a class or an object", "Something that is not used in a class"],
         "answer": "A function within a class or an object",
         "explanation": "A method, is a function that is defined within a class or an object. Methods are used to define the behavior and operations associated with the class or object. <br> They allow you to perform actions and manipulate data specific to that class or object."
     },
