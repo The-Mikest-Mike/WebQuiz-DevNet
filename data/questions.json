@@ -153,7 +153,7 @@
         "question": "When using Python to make a REST API call, which built-in library can be used in the script to perform a GET request?",
         "options": ["Requests", "Get", "Math", "XML"],
         "answer": "Requests",
-        "explanation": "When using Python to make a REST API call, you can leverage the built-in 'requests' library. To get started, you need to import this library at the beginning of your script using 'import requests'. Then, you can use the 'requests.get()' method to send a GET request to the defined URL for example 'api_url = 'https://api.example.com/data', and then send a GET request with 'response = requests.get(api_url)'. After receiving the response, you can handle it, check the status code, and parse the data as needed. This library provides various features and options for making HTTP requests and is a powerful tool for interacting with RESTful APIs."
+        "explanation": "When using Python to make a REST API call, you can leverage the built-in <strong> 'requests' library </strong>. <br> To get started, you need to import this library at the beginning of your script using <strong> 'import requests' </strong> Then, you can use the <strong>'requests.get()' </strong> method to send a GET request to the defined URL for example: <br><br> 'api_url = 'https://api.example.com/data', <br> and then send a GET request with: <br><br> 'response = requests.get(api_url)'. <br><br> After receiving the response, you can handle it, check the status code, and parse the data as needed. This library provides various features and options for making HTTP requests and is a powerful tool for interacting with RESTful APIs."
     },
     {
         "question": "Which range of HTTP response codes are used to indicate a client-side error?",
@@ -171,13 +171,13 @@
         "question": "Which HTTP response code indicates a likely issue with incorrect authentication credentials?",
         "options": ["500 Internal Server Error", "403 Forbidden", "401 Unauthorized", "501 Not Implemented"],
         "answer": "401 Unauthorized",
-        "explanation": "The 401 Unauthorized HTTP response code indicates that authentication credentials have not been provided or are incorrect. <br> This is in contrast to a 403 Forbidden HTTP response code, where credentials are valid but the account does not have the required permission to access the resource."
+        "explanation": "The <strong> 401 Unauthorized HTTP </strong> response code indicates that <strong> authentication credentials have not been provided or are incorrect. </strong> <br> This is in contrast to a 403 Forbidden HTTP response code, where credentials are valid but the account does not have the required permission to access the resource."
     },
     {
         "question": "Which API authentication mechanism is the least secure?",
         "options": ["OAUTH Authentication", "Basic Authentication", "Token Authentication", "API Key Authentication"],
         "answer": "Basic Authentication",
-        "explanation": "'Basic authentication' is the least secure method for API authentication, where credentials are passed in an unencrypted manner when using HTTP instead of HTTPS. 'Basic authentication' uses a simple 'username' and 'password' for authentication."
+        "explanation": "<strong>'Basic authentication'</strong> is the <strong> least secure </strong> method for <strong> API authentication </strong>, where credentials are passed in an unencrypted manner when using HTTP instead of HTTPS. <br>'Basic authentication' uses a simple 'username' and 'password' for authentication."
     },
     {
         "question": "Which API authentication mechanism allows us to enter our username and password a single time to generate an encrypted value for accessing resources?",
@@ -195,13 +195,13 @@
         "question": "Which subset of common HTTP methods are used by Remote Procedure Calls (RPCs)?",
         "options": ["POST and PUT", "PATCH and DELETE", "GET and POST", "PUT and GET"],
         "answer": "C",
-        "explanation": "As opposed to REST APIs which use GET, POST, PUT, PATCH, and DELETE HTTP methods, <strong>'Remote Procedure Calls (RPCs)</strong> use only the <strong>GET and POST methods</strong>. <br> For this reason, RPCs are action-oriented, where we are concerned with executing code on a remote device. Remote Procedure Calls (RPCs) are a way to invoke functions or procedures on a remote server, as if they were local. <br><br> In Python you can use 'xmlrpc.client' library to make RPC's over HTTP"
+        "explanation": "As opposed to REST APIs which use GET, POST, PUT, PATCH, and DELETE HTTP methods, <strong>'Remote Procedure Calls (RPCs)</strong> use only the <strong> GET and POST methods </strong>. <br> For this reason, RPCs are action-oriented, where we are concerned with executing code on a remote device. Remote Procedure Calls (RPCs) are a way to invoke functions or procedures on a remote server, as if they were local. <br><br> In Python you can use <strong> 'xmlrpc.client' </strong> library to <strong> make RPC's over HTTP </strong>"
     },
     {
         "question": "Which style of API does not use real-time communication?",
         "options": ["Synchronous", "Asynchronous", "One-way", "Delayed"],
         "answer": "Asynchronous",
-        "explanation": "Asynchronous APIs do not communicate in real-time, as opposed to synchronous APIs which feature scheduled real-time communication and interaction. Like Email communication, where there is no need to instantly respond within a timeframe and responses can be delayed."
+        "explanation": "Asynchronous APIs do not communicate in real-time, as opposed to synchronous APIs which feature scheduled real-time communication and interaction. <br> Like Email communication, where there is no need to instantly respond within a timeframe and responses can be delayed."
     },
     {
         "question": "What is the common name for a set of tools, libraries, and documentation that allows us to interact with a REST API?",
@@ -218,7 +218,7 @@
             "{{baseURL}}/organizations/:organizationId/devices"
         ],
         "answer": "{{baseURL}}/organizations",
-        "explanation": "When using the GET method to perform a request against the Meraki API using Postman the URLs follow a hierarchical structure, starting from the base URL and drilling down to specific resources or actions, making the API organized and easy to navigate.: <br><br> - <strong>{{baseURL}}</strong>: The base URL where all API requests begin.  <br> - <strong>/organizations</strong>: Retrieves a list of organizations.  <br> - <strong>/organizations/:organizationId</strong>: Accesses a specific organization using its unique ID.  <br> - <strong>/organizations/:organizationId/networks</strong>: Fetches information about networks within a specific organization.  <br> - <strong>/organizations/:organizationId/devices</strong>: Retrieves details about devices associated with a specific organization."
+        "explanation": "When using the GET method to perform a request against the Meraki API using Postman the URLs follow a hierarchical structure, starting from the base URL and drilling down to specific resources or actions, making the API organized and easy to navigate.: <br><br> - {{baseURL}}: The base URL where all API requests begin.  <br> - <strong>/organizations</strong>: Retrieves a list of organizations.  <br> - /organizations/:organizationId: Accesses a specific organization using its unique ID.  <br> - /organizations/:organizationId/networks: Fetches information about networks within a specific organization.  <br> - /organizations/:organizationId/devices: Retrieves details about devices associated with a specific organization."
     },
     {
         "question": "Which type of API authentication method is used by Cisco DNA Center?",
@@ -229,66 +229,66 @@
             "Open Authentication"
         ],
         "answer": "Token Authentication",
-        "explanation": "Cisco DNA Center uses token authentication, where we need to retrieve a token to obtain access to information. Using the Cisco DNAC Sandbox collection provides a preconfigured POST method that can be used to retrieve a token, which we can save in our Postman environment for interaction. An example of a Cisco DNA Center (DNAC) token might look like a long string of alphanumeric characters and symbols, similar to this: <br> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MTU4ODMwNjF9.m4zP1bC5Kchxq8VKR-5Dk1kVv1hJ4DVOHavvcgr_JfE <br>  To confirm Token Authentication, you can make an API request with the obtained token included in the Authorization header. For example, you can use a tool like curl or Postman to make a GET request to this endpoint: <br> <br> ``` <br> curl -X GET \"https://YOUR_DNAC_URL/dna/intent/api/v1/network-device\" -H \"Authorization: Bearer YOUR_TOKEN_HERE\" <br> ``` <br> <br> Replace `YOUR_DNAC_URL` with the URL of your Cisco DNA Center instance and `YOUR_TOKEN_HERE` with your actual token"
+        "explanation": "<strong> Cisco DNA Center </strong> uses <strong> token authentication </strong>, where we need to retrieve a token to obtain access to information. <br> Using the Cisco DNAC Sandbox collection provides a preconfigured POST method that can be used to retrieve a token, which we can save in our Postman environment for interaction. <br> An example of a Cisco DNA Center (DNAC) token might look like a long string of alphanumeric characters and symbols, similar to this: <br> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MTU4ODMwNjF9.m4zP1bC5Kchxq8VKR-5Dk1kVv1hJ4DVOHavvcgr_JfE <br><br>  To confirm Token Authentication, you can make an <strong> API request </strong> with the obtained token included in the Authorization header. For example, you can use a tool like curl or Postman <strong> to make a GET request <strong> to this endpoint: <br><br> <strong> curl -X GET https://YOUR_DNAC_URL/dna/intent/api/v1/network-device -H 'Authorization: Bearer YOUR_TOKEN_HERE' </strong> <br><br> Replace <strong> 'YOUR_DNAC_URL' </strong> with the <strong> URL of your Cisco DNA Center instance </strong> and <strong> 'YOUR_TOKEN_HERE' </strong> with your actual <strong> token </strong>"
     },
     {
         "question": "Which type of API authentication method is used by Cisco APIC?",
         "options": ["Open Authentication", "API Key Authentication", "Basic Authentication", "Token Authentication"],
         "answer": "Token Authentication",
-        "explanation": "Just as with Cisco DNA Center, Cisco APIC requires a token to interact through the API. This requires sending a POST method with the basic username and password, requesting a validation token from APIC. <br>Performing methods without this token will result in a 403 Forbidden HTTP response code."
+        "explanation": "Just as with Cisco DNA Center, <strong> Cisco APIC requires a token to interact through the API. </strong> This requires sending a POST method with the basic username and password, requesting a validation token from APIC. <br> Performing methods without this token will result in a 403 Forbidden HTTP response code."
     },
     {
         "question": "Which area in Postman allows you to create preconfigured areas to be used with specific devices, which can hold key:value pairs for variables like the base URL, the token, the username, and the password?",
         "options": ["Environments", "Flows", "Collections", "Requests"],
         "answer": "Environments",
-        "explanation": "A Postman environment is a set of variables that can be used for requests. An environment can store key: value pairs for specific devices, which can be referenced in our requests using variables, which saves us from entering the same information multiple times with our methods. <br>Common information stored in an environment include the device base URL, the token, the username, and the password. <br> Flows in Postman refer to the sequence of requests within a collection, not to store variables. <br> Collections are sets of saved requests, not specifically designed for storing variables. <br> Requests are individual API call configurations within a collection and do not provide the environment for storing variables."
+        "explanation": "A Postman environment is a set of variables that can be used for requests. An environment can store key: value pairs for specific devices, which can be referenced in our requests using variables, which saves us from entering the same information multiple times with our methods. <br> <strong> Common information stored in an environment </strong> include the <strong> device base URL, the token, the username, </strong> and <strong> the password </strong>. <br><br> The other options: <br> 'Flows' in Postman refer to the sequence of requests within a collection, not to store variables. <br> 'Collections' are sets of saved requests, not specifically designed for storing variables. <br> 'Requests' are individual API call configurations within a collection and do not provide the environment for storing variables."
     },
     {
         "question": "With Cisco Network Services Orchestrator, what are required to translate between XML format and our network configuration?",
         "options": ["YAML", "JSON", "NEDS", "LIB"],
         "answer": "NEDS",
-        "explanation": "Network Element Drivers (NEDS) are necessary to translate between XML data and a valid network configuration. Cisco NSO provides NEDS for various versions of the Cisco CLI since many devices use different commands.<br>Some of those include NEDS for Cisco ASA, Cisco IOS-XR, and Cisco IOS-NX. <br> A Network Element Driver (NED) in the context of Cisco Network Services Orchestrator (NSO) is designed to interface with specific network devices or platforms and translate between NSO's XML-based configuration model and the device's native configuration language. <br> A NED template for example, can be used to translate configuration data provided by NSO into the XML format expected by the Cisco IOS-XE device, ensuring that the device's configuration is synchronized with NSO's intended state."
+        "explanation": "<strong> Network Element Drivers (NEDS) are necessary to translate between XML data and a valid network configuration.</strong> Cisco NSO provides NEDS for various versions of the Cisco CLI since many devices use different commands. <br> Some of those include NEDS for Cisco ASA, Cisco IOS-XR, and Cisco IOS-NX. <br> A Network Element Driver (NED) in the context of Cisco Network Services Orchestrator (NSO) is designed to interface with specific network devices or platforms and translate between NSO's XML-based configuration model and the device's native configuration language. <br> A NED template for example, can be used to translate configuration data provided by NSO into the XML format expected by the Cisco IOS-XE device, ensuring that the device's configuration is synchronized with NSO's intended state."
     },
     {
         "question": "Which of the following is the correct syntax for a Python function?",
         "options": ["define function (arg)", "function function(arg)", "def function(arg)", "func function(arg)"],
         "answer": "def function(arg)",
-        "explanation": "In Python, functions are defined using the <strong>'def'</strong> keyword followed by the <strong>function name</strong> and a pair of <strong>parentheses'()'</strong> that may contain optional function parameters. The correct syntax for defining a Python function is as follows: <strong>'def function_name(parameters):'</strong> "
+        "explanation": "In Python, functions are defined using the <strong> 'def'</strong> keyword followed by the <strong> function name </strong> and a pair of <strong> parentheses'()' </strong> that may contain optional function parameters. <br> The correct syntax for defining a Python function is as follows: <strong>'def function_name(parameters):'</strong> "
     },
     {
         "question": "Which of the following is a valid Python function name?",
         "options": ["1function", "__init__", "True", "Funct1on"],
         "answer": "__init__",
-        "explanation": "In Python, valid function names must follow certain rules. They should start with a letter or an underscore, followed by letters, numbers, or underscores. <br>Option '1function' starts with a digit, which is not a valid starting character for function names. <br>Option 'True' is not recommended as it can conflict with a Python keyword. <br>Option 'Funct1on' is a valid function name but not the best practice due to the use of numbers. <br>Option <strong>'__init__'</strong> is a <strong>valid and commonly used function name</strong>, often associated with constructors in Python classes."
+        "explanation": "In Python, valid function names must follow certain rules. They should start with a letter or an underscore, followed by letters, numbers, or underscores. <br> Other options: '1function' starts with a digit, which is not a valid starting character for function names. <br> 'True' is not recommended as it can conflict with a Python keyword. <br> 'Funct1on' is a valid function name but not the best practice due to the use of numbers. <br> <strong>'__init__'</strong> is a <strong>valid and commonly used function name </strong>, often associated with constructors in Python classes."
     },
     {
         "question": "When three single quotation marks are used on the next line directly after defining a function, what does this indicate?",
         "options": ["Multi-line text", "A docstring", "A string value including double or single quotation marks", "None of the above"],
         "answer": "A docstring",
-        "explanation": "When three single quotation marks or double, are used directly after defining a function, it indicates a docstring. A docstring is a multi-line string that provides documentation or a description of the function's purpose, parameters, and behavior. <br>It is used to document code and provide information for developers."
+        "explanation": "When three single quotation marks or double, are used directly after defining a function, it indicates a docstring. <br> A docstring is a multi-line string that provides documentation or a description of the function's purpose, parameters, and behavior. <br> It is used to document code and provide information for developers."
     },
     {
         "question": "What is a method?",
         "options": ["A variable applied to a class", "Syntax notation", "A f<br>unction within a class or an object", "Something that is not used in a class"],
         "answer": "A function within a class or an object",
-        "explanation": "A method, is a function that is defined within a class or an object. Methods are used to define the behavior and operations associated with the class or object. They allow you to perform actions and manipulate data specific to that class or object."
+        "explanation": "A method, is a function that is defined within a class or an object. Methods are used to define the behavior and operations associated with the class or object. <br> They allow you to perform actions and manipulate data specific to that class or object."
     },
     {
         "question": "Which of the following describes inheritance?",
         "options": ["A hierarchy for functions in Python", "Class attributes and methods used as the starting point for another class", "A function only applied to methods being used in another class","None of the above"],
         "answer": "Class attributes and methods used as the starting point for another class",
-        "explanation": "Inheritance, is a fundamental concept in object-oriented programming where class attributes and methods are used as the starting point for creating a new class. <br>This allows the new class to inherit the properties and behaviors of the parent class, promoting code reusability and creating a hierarchy of classes."
+        "explanation": "Inheritance, is a fundamental concept in object-oriented programming where class attributes and methods are used as the starting point for creating a new class. <br> This allows the new class to inherit the properties and behaviors of the parent class, promoting code reusability and creating a hierarchy of classes."
     },
     {
         "question": "Which module provides access to the file system and directory structure?",
         "options": ["filesystem", "open", "devnetats","ncclient"],
         "answer": "open",
-        "explanation": "The 'open' module in Python provides access to the file system and directory structure. It allows you to <strong>open, read, write, and manipulate files and directories</strong>. <br>The other options do not provide direct access to the file system."
+        "explanation": "The <strong> 'open' </strong> module in Python provides access to the file system and directory structure. It allows you to <strong> open, read, write, and manipulate files and directories </strong>. <br> The other options do not provide direct access to the file system."
     },
     {
         "question": "Which module is a testing framework for Cisco infrastructure?",
         "options": ["pyATS", "pyang", "devnetats", "ncclient"],
         "answer": "pyATS",
-        "explanation": "The 'pyATS' (Python Automation and Test System) framework is a testing framework designed for Cisco infrastructure and network automation testing. It provides a comprehensive set of tools and libraries for testing Cisco devices and network configurations. <br>Other options do not relate to testing Cisco infrastructure."
+        "explanation": "The 'pyATS' (Python Automation and Test System) framework is a testing framework designed for Cisco infrastructure and network automation testing. <br> It provides a comprehensive set of tools and libraries for testing Cisco devices and network configurations. <br><br> Other options do not relate to testing Cisco infrastructure."
     }
 ]
