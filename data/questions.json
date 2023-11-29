@@ -290,5 +290,59 @@
         "options": ["pyATS", "pyang", "devnetats", "ncclient"],
         "answer": "pyATS",
         "explanation": "The 'pyATS' (Python Automation and Test System) framework is a testing framework designed for Cisco infrastructure and network automation testing. <br> It provides a comprehensive set of tools and libraries for testing Cisco devices and network configurations. <br><br> Other options do not relate to testing Cisco infrastructure."
+    },
+    {
+        "question": "Within a Cisco UCS-based network, what type of device is used to interconnect all UCS-capable servers into a single point of management?",
+        "options": ["UCS Fabric Extender", "UCS Series Servers", "UCS Fabric Interconnects", "UCS Manager"],
+        "answer": "UCS Fabric Interconnects",
+        "explanation": "In a Cisco UCS Manager environment, UCS Fabric Interconnects serve as the key devices for integrating UCS-capable servers into a unified fabric of connectivity dedicated to management. It is a best practice to deploy UCS Fabric Interconnects in pairs, ensuring failover capability and high availability. This design enhances the reliability and robustness of the overall network infrastructure."
+    },
+    {
+        "question": "Which component used within Cisco UCS Director represents the largest units of information?",
+        "options": ["Workflows", "Tasks", "Volumes", "Libraries"],
+        "answer": "Libraries",
+        "explanation": "In Cisco UCS Director, Libraries serve as the largest unit of information. They encompass collections of workflows or pre-defined tasks. Tasks, on the other hand, constitute the smallest unit, representing individual actions. Workflows are organized as collections of tasks, and multiple workflows can be contained within a library. This hierarchical structure provides a systematic approach to managing and organizing information within Cisco UCS Director. This version maintains accuracy while refining the structure and wording for improved clarity within a professional certification context."
+    },
+    {
+        "question": "Within Cisco Intersight, which area displays all the devices under our control that have been claimed?",
+        "options": ["Assets", "Profiles", "Targets", "Policies"],
+        "answer": "Targets",
+        "explanation": "In the Cisco Intersight management portal, selecting the Targets area from the admin menu allows us to view all claimed devices under our control. This section provides a comprehensive overview of devices that have been successfully claimed and are currently managed within Cisco Intersight."
+    },
+    {
+        "question": "Which method is necessary to create a new room in Cisco Webex through API interaction?",
+        "options": ["POST", "PUT", "GET", "UPDATE"],
+        "answer": "POST",
+        "explanation": "To create a new room using the Cisco Webex API, the required method is POST. Utilizing the POST method involves sending a request to https://webexapis.com/v1/rooms, and providing a title for the room in order to establish the new space. In contrast, the GET method, if used, would point to the same URL but is designed for retrieving information rather than creating new rooms."
+    },
+    {
+        "question": "Which API is utilized by Cisco collaboration endpoint software, including Cisco CE and Cisco RoomOS?",
+        "options": ["ceAPI", "cAPI", "osAPI", "xAPI"],
+        "answer": "xAPI",
+        "explanation": "The xAPI (xAPI) is the designated interface for Cisco collaboration endpoint software, such as Cisco CE (Collaboration Endpoint) and Cisco RoomOS. This API enables developers to programmatically execute commands and retrieve the status of devices running these software platforms. The xAPI facilitates bi-directional communication with third-party applications and control systems, providing a robust framework for integration and control."
+    },
+    {
+        "question": "Which type of API interface is employed for Cisco CUCM interaction?",
+        "options": ["Open API", "xAPI", "AXL API", "SDK API"],
+        "answer": "AXL API",
+        "explanation": "For Cisco Unified Communications Manager (CUCM) interaction, the Administrative XML Web Service (AXL) API is utilized. AXL is an XML-based interface that facilitates the insertion, retrieval, updating, and removal of data from the Unified Communication configuration database. Developers leverage AXL to perform actions such as creating, reading, updating, and deleting objects like gateways, users, devices, route patterns, and more within the Cisco CUCM environment."
+    },
+    {
+        "question": "Which Cisco collaboration solution offers an agent and supervisor desktop that can be accessed and manipulated through REST API interaction?",
+        "options": ["Finesse", "Cisco UCM", "Cisco Webex", "Cisco UCS"],
+        "answer": "Finesse",
+        "explanation": "Cisco Finesse is the Cisco collaboration solution that provides an agent and supervisor desktop. This desktop can be interacted with through REST API, allowing users to affect and customize their experience. Finesse integrates traditional contact center functions into a thin-client desktop, and its robust API facilitates the creation of custom applications."
+    },
+    {
+        "question": "Which key:value pair is used to identify the authentication token when interacting with the Firepower API?",
+        "options": ["X-auth-token:<authentication token value>", "X-auth-access-token:<authentication token value>", "X-auth-bearer-token:<authentication token value>", "X-auth-secure-token:<authentication token value>"],
+        "answer": "X-auth-access-token:<authentication token value>",
+        "explanation": "To identify the authentication token with the Firepower API, the correct key:value pair is X-auth-access-token: followed by the actual authentication token value. For example, X-auth-access-token:<actual token value>. It's crucial to use the accurate key:value pair as specified by the Firepower API documentation. Additionally, Firepower requires a separate key:value pair for the refresh token, as outlined in the API documentation."
+    },
+    {
+        "question": "Which cloud-based Cisco platform is used as a secure internet gateway for things like malware prevention and secure DNS routing?",
+        "options": ["AMP", "Umbrella", "ISE", "ThreatGrid"],
+        "answer": "Umbrella",
+        "explanation": "Cisco Umbrella acts as a secure internet gateway and provides DNS-layer security. This allows us to route endpoints over secure DNS destinations, prevent malware and ransomware, and more."
     }
 ]
