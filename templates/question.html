@@ -1,57 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
     <title>Question</title>
-    <style>
-        /* Add CSS styles to increase the size of options */
-        .option-label {
-            font-size: 22px; /* You can adjust the font size as needed */
-            margin: 5px; /* Add margin for spacing */
-            font-family: Arial, Helvetica, sans-serif; /* Set font Arial, and fall back to Helvetica and sans-serif if Arial is not available */
-        }
-        /* Add CSS styles to increase the size of the question text */
-        h1.question-number {
-            font-size: 24px; /* Adjust the font size as needed */
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        p.question-text {
-            font-size: 22px; /* Adjust the font size as needed */
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        /* Add margin to the submit button to lower it */
-        input[type="submit"] {
-            margin-top: 30px; /* Adjust the margin as needed */
-        }
-        /* CSS styles to increase the size of the button and make it stand out */
-        input[type="submit"] {
-            font-size: 20px;
-            background-color: #007BFF;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            font-family: Arial, Helvetica, sans-serif;
-            transition: color 0.3s; /* Add transition for a smooth color change when cursor is over button */
-        }
-        /* Add hover effect: Change text color to light gray on hover */
-        input[type="submit"]:hover {
-            color: #DDDDDD;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
-<body>
+<body> 
+    <style>
+        /* Refer to style.css */
+    </style>
+
+    <!-- Display the question number -->
     <h1 class="question-number">Question {{ current_question_index + 1 }}</h1>
-    <p class="question-text">{{ question.question|safe }}</p> <!--use 'safe' filter to ensure HTML tags are not escaped font size as needed. This is part of Flask Jinja-->
+    
+    <!-- Display the question text with safe filter to ensure HTML tags are not escaped -->
+    <p class="question-text">{{ question.question|safe }}</p>
+    
+    <!-- "Submit Answer" button inside the form -->
     <form action="{{ url_for('display_question', question_index=current_question_index + 1) }}" method="POST">
         {% for option in question.options %}
+        <!-- Display options with radio buttons -->
         <label class="option-label">
             <input type="radio" name="user_answer" value="{{ option }}" required>
             {{ option }}
         </label><br>
         {% endfor %}
-        <input type="submit" value="Submit Answer">
+        <!-- "submit" container-->
+        <div class="button-container center-text">
+            <!-- Submit button to submit the answer -->
+            <input type="submit" value="Submit Answer" class="submit-button">
+        </div>
     </form>
 </body>
 </html>

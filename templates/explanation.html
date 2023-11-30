@@ -1,58 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
     <title>Explanation</title>
-    <style>
-        /* CSS styles to increase the size of the header */
-        h1 {
-            font-size: 24px; /* Adjust the font size as needed */
-            font-family: Arial, Helvetica, sans-serif; /* Set font Arial, and fall back to Helvetica and sans-serif if Arial is not available */
-        }
-        /* CSS styles to increase the size of the explanation content */
-        p.explanation-text {
-            font-size: 22px; /* Adjust the font size as needed */
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        /* CSS styles for the correct and incorrect result messages */
-        p.correct-result {
-            font-size: 20px;
-            color: green; /* Green color for correct results */
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        p.incorrect-result {
-            font-size: 20px;
-            color: red; /* Red color for incorrect results */
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        /* CSS styles for the "Next Question" link */
-        a.next-question {
-            font-size: 18px;
-            background-color: #007BFF; /* Background color for the link */
-            color: #fff; /* Text color for the link */
-            padding: 10px 20px; /* Add padding for spacing */
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 10px; /* Add margin for spacing */
-            font-family: Arial, Helvetica, sans-serif;
-            transition: color 0.3s; /* Add transition for a smooth color change when cursor is over button */
-        }
-        /* Add hover effect: Change text color to light gray on hover */
-        a.next-question:hover {
-            color: #DDDDDD;
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <style>
+        /* Refer to style.css */
+    </style>
+
     {% if result == 'Correct' %}
     <p class="correct-result">{{ result }}</p>
     {% else %}
     <p class="incorrect-result">{{ result }}</p>
     {% endif %}
     <h1>Explanation</h1>
-    <p class="explanation-text">{{ explanation|safe }}</p> <!--use 'safe' filter to ensure HTML tags are not escaped font size as needed. This is part of Flask Jinja-->
+    <p class="explanation-text">{{ explanation|safe }}</p> <!--use 'safe' filter to ensure HTML tags are not escaped font size. This is part of Flask Jinja-->
 
-    <a href="{{ url_for('display_question') }}" class="next-question">Next Question</a>
+    <!-- "Next Question" container -->
+    <nav class="next-question button-container right-text">
+        <a href="{{ url_for('display_question') }}" class="next-question">Next Question</a> 
+    </nav>
 </body>
 </html>
