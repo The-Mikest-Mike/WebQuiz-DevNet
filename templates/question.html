@@ -1,38 +1,41 @@
+<!-- question.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Metadata for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title of the page -->
     <title>Question</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+    <!-- Link to your styles.css file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
-<body> 
-    <style>
-        /* Refer to style.css */
-    </style>
+<body class="start">
 
     <!-- Display the question number -->
     <h1 class="question-number">Question {{ current_question_index + 1 }}</h1>
     
     <!-- Display the question text with safe filter to ensure HTML tags are not escaped -->
-    <p class="question-text">{{ question.question|safe }}</p>
+    <p class="question-text">{{ question.question|safe }}</p><br><br>
     
     <!-- "Submit Answer" button inside the form -->
     <form action="{{ url_for('display_question', question_index=current_question_index + 1) }}" method="POST">
         {% for option in question.options %}
-        <!-- Display options with radio buttons -->
-        <label class="option-label">
-            <input type="radio" name="user_answer" value="{{ option }}" required>
-            {{ option }}
-        </label><br>
+
+            <!-- Display options with radio buttons -->
+            <label>
+                <div class="option-label">
+                    <input type="radio" name="user_answer" id="{{ option }}" value="{{ option }}" required>
+                    {{ option }}
+                </div>
+            </label><br>
         {% endfor %}
-        <!-- "submit" container-->
-        <div class="button-container center-text">
-            <!-- Submit button to submit the answer -->
-            <input type="submit" value="Submit Answer" class="submit-button">
-        </div>
+        
+        <!-- Navigation buttons container -->
+        <nav class="button-container center-text nav">
+            <input type="submit" class="button-style" value="Submit Answer">
+        </nav>
     </form>
 </body>
 </html>

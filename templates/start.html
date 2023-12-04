@@ -1,54 +1,32 @@
+<!-- start.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the page -->
     <title>Start</title>
-    <style>
-        /* Center the content */
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
 
-        /* CSS styles to increase the size of the header */
-        h1 {
-            font-size: 25px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        /* CSS styles to increase the size of the button and make it stand out */
-        input[type="submit"] {
-            font-size: 21px;
-            background-color: #007BFF;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            font-family: Arial, Helvetica, sans-serif;
-            transition: color 0.3s; /* Add transition for a smooth color change when cursor is over button */
-        }
-        /* Add hover effect: Change text color to light gray on hover */
-        input[type="submit"]:hover {
-            color: #DDDDDD;
-        }
-        /* CSS styles to increase the size of the text */
-        p {
-            font-size: 23px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center; /* Center-align the text */
-        }
-    </style>
+    <!-- Link to your styles.css file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <div class="welcome-text center-text">
     <h1>Welcome to the Exam</h1>
-    <p>Test your knowledge and prepare for success with our certification preparation mock exam. 
-        <br><br> Click the button below to start.</p>
-    <form action="/start" method="POST">
-        <input type="submit" value="Start Exam">
-    </form>
+        <p class="center-text">
+            Test your knowledge and prepare for success with our certification preparation mock exam 
+            <br><br> Click the button below to start
+        </p>
+    <div>
+    
+    <!-- Navigation buttons container -->
+    <nav class="button-container center-text">
+        <form action="/start" method="POST">
+            <input class="button-style" type="submit" value="Start Exam">
+        </form>
+    </nav>
 </body>
 </html>

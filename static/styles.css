@@ -1,97 +1,99 @@
 /* styles.css */
 
-/* Link Buttons CSS styles for "Submit Answer" */
-.submit-button {
-    text-decoration: none;
-    border: none;
-    color: white;
-    background-color: #007BFF;
-    padding: 10px 20px;
-    cursor: pointer;
+/* General Styles */
+.welcome-text {
     font-size: 23px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Add hover effects for Submit Answer button */
-.submit-button:hover {
-    color: #DDDDDD;
-    transform: scale(1.05);
-}
-
-/* Link Buttons CSS styles for "Next Question" */
-.next-question {
-    text-decoration: none;
-    border: none;
-    color: white;
-    background-color: #007BFF;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 23px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-right: 50px;
-}
-
-/* Add hover effects for Next Question button */
-.next-question:hover {
-    color: #DDDDDD;
-    transform: scale(1.05);
-}
-
-/* Container CSS styles for both buttons */
-.button-container {
     margin: 0;
-    box-sizing: border-box;
-    margin-top: 30vh;
-    background-color: transparent;
+    margin-top: 20vh;
 }
 
-/* CSS styles to increase the size of the question text */
-h1.question-number {
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* CSS styles to increase the size of the headers (Question, Explanation, Result) */
+/* Applied to all <h1> elements in templates */
 h1 {
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* CSS styles to increase the size of the explanation content */
-p.explanation-text {
-    font-size: 22px;
+/* Applied to all <p> elements in templates */
+p {
+    font-size: 23px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* CSS styles for the correct and incorrect result messages */
+/* Consolidated All Button Styles */
+.button-style{
+    text-decoration: none;
+    border: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hover effects for all buttons */
+.button-style:hover{
+    color: #DDDDDD;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Container CSS styles for buttons */
+.button-container {
+    margin: 0;
+    margin-top: 30vh;
+}
+
+/* Styles for navigation buttons */
+nav {
+    margin-top: 30vh;
+}
+
+.question-number{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10vh;
+    margin-top: 5vh
+}
+
+/* Styles for explanation content in explanation.html */
+.explanation-text {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10hv;
+    margin-left: 20hv;
+}
+
+/* Styles for correct and incorrect result messages */
 p.correct-result {
-    font-size: 20px;
+    font-size: 22px;
     color: green;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 p.incorrect-result {
-    font-size: 20px;
+    font-size: 22px;
     color: red;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* CSS styles for options text */
+/* Styles for options text */
 .option-label {
     font-size: 22px;
-    margin: 70px;
+    margin-left: 22vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* CSS styles to increase the size of question text */
-h1.question-number,
+/* Styles for question text */
 p.question-text {
     font-size: 22px;
-    margin: 50px;
+    margin-left: 20vh;
+    margin-top: 10vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* CSS styles for text alignment */
+/* Styles for text alignment */
 .center-text {
     text-align: center;
 }
@@ -99,3 +101,8 @@ p.question-text {
 .right-text {
     text-align: right;
 }
+
+.left-text {
+    text-align: left;
+}
+
