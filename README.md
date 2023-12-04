@@ -20,6 +20,7 @@ pip install Flask
 3. Open your web browser and navigate to http://localhost:5000/ to start the quiz.
 
 ## Features
+- User friendly interface
 - Multiple-choice questions with options.
 - Keeps track of user answers and calculates the score.
 - Instantly know by colors whether correct or incorrect.
