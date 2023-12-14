@@ -39,15 +39,37 @@ p {
     transition: 0.3s;
 }
 
-/* Container CSS styles for buttons */
-.button-container {
-    margin: 0;
-    margin-top: 30vh;
+body {
+    position: relative;
 }
 
-/* Styles for navigation buttons */
-nav {
-    margin-top: 30vh;
+/* Container CSS styles for buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixed-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; 
+    z-index: 1; /* To ensure the navigation stays on top of other content */
+}
+
+/* Styles for the "Submit Answer" button */
+.button-container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Styles for the "Next Question" button */
+.button-container-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .question-number{
@@ -61,8 +83,8 @@ nav {
 .explanation-text {
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10hv;
-    margin-left: 20hv;
+    margin-top: 10vh;
+    margin-left: 20vh;
 }
 
 /* Styles for correct and incorrect result messages */
