@@ -15,7 +15,7 @@ Structure of the folders:
 ## Usage
 1. Clone repository and make sure you have requirements.txt file installed by running:
    pip3 install -r requirements.txt
-2. run "app.py"
+2. Run "app.py"
 4. Open your web browser and navigate to http://localhost:5000/ to start the quiz.
 
 ## Features
