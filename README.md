@@ -4,7 +4,7 @@ This is a flask quiz app that allows users to answer multiple-choice questions.
 The app provides questions, answer options, and explanations for correct answers. 
 Users can navigate through the questions and get their score at the end.
 
-Structure of the folders:
+## Structure of Folders:
 
     app.py              # main Flask application file
     templates/          # folder for HTML templates
