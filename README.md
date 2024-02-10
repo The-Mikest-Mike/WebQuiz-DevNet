@@ -7,17 +7,16 @@ Users can navigate through the questions and get their score at the end.
 Structure of the folders:
     app.py         # main Flask application file
     templates/     # folder for HTML templates
-    static/        # folder for static files (CSS, JavaScript, images)
+    static/        # folder for static files (CSS styles, images)
     data/          # folder for data files
         questions.json   # data file containing questions
 
 
 ## Usage
-1. Clone repository (templates and app.py) and make sure you have Flask installed:
-pip install Flask
-
-2. clone repository and run "app.py"
-3. Open your web browser and navigate to http://localhost:5000/ to start the quiz.
+1. Clone repository and make sure you have requirements.txt file installed by running:
+   pip3 install -r requirements.txt
+2. run "app.py"
+4. Open your web browser and navigate to http://localhost:5000/ to start the quiz.
 
 ## Features
 - User friendly interface
