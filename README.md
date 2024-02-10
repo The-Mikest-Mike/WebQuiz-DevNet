@@ -5,11 +5,19 @@ The app provides questions, answer options, and explanations for correct answers
 Users can navigate through the questions and get their score at the end.
 
 Structure of the folders:
-    app.py         # main Flask application file
-    templates/     # folder for HTML templates
-    static/        # folder for static files (CSS styles, images)
-    data/          # folder for data files
-        questions.json   # data file containing questions
+
+    app.py              # main Flask application file
+    templates/          # folder for HTML templates
+        correct.html
+        explanation.html
+        incorrect.html
+        question.html
+        result.html
+        start.html
+    static/             # folder for static files (CSS styles, images)
+        styles.css      # all css styles
+    data/               # folder for data files
+        questions.json  # containing questions, options and explanations pool
 
 
 ## Usage
