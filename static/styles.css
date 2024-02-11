@@ -139,3 +139,12 @@ p.question-text {
     bottom: 0; /* Align at the bottom */
 }
 
+/* Styles for header */
+.header {
+    background-color: #66a3ff;
+    color: #fff; /* Text color for the header */
+    padding: 10px; /* Adjust padding as needed */
+    position: fixed; /* Fix the header at the top of the page */
+    width: 100%; /* Full width of the page */
+    top: 0; /* Align at the top */
+}
