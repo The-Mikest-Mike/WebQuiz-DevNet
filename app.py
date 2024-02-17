@@ -66,7 +66,6 @@ def start_exam():
     current_question_index = session.get('current_question_index', 0)
     
     if current_question_index < total_questions:
-        session['current_question_index'] = current_question_index + 1
         return redirect(url_for('display_question'))
     else:
         flash('Invalid access to question.html')
