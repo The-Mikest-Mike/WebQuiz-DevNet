@@ -1,4 +1,4 @@
-# Flask-Web-Quiz-App-DevNet-Demo-Exam
+# Flask-Web-Quiz-App-DevNet-Mock-Exam
 
 This is a flask quiz app that allows users to answer multiple-choice questions.
 The app provides questions, answer options, and explanations for correct answers. 
@@ -21,9 +21,9 @@ Users can navigate through the questions and get their score at the end.
 
 
 ## Usage
-1. Clone repository and install requirements.txt file with command: pip3 install -r requirements.txt
-2. Run app.py file with command: python3 app.py
-4. Open your web browser and navigate to http://localhost:5000/ to start the quiz.
+1. Clone repository and install requirements.txt file with command: `pip3 install -r requirements.txt`
+2. Run `app.py` file with command: `python3 app.py`
+4. Open your web browser and navigate to `http://localhost:5000/` to start the quiz.
 
 ## Features
 - User friendly interface
