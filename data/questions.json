@@ -207,7 +207,7 @@
         "question": "What is the common name for a set of tools, libraries, and documentation that allows us to interact with a REST API?",
         "options": ["Framework", "Program", "Script", "SDK"],
         "answer": "SDK",
-        "explanation": "A software development kit (SDK) is a set of tools, libraries, and documentation provided by the manufacturer of a hardware platform, operating system, or programming language. It provides the necessary components for interacting with a system. <br> Examples of Cisco SDK products include DevNet SDK, Meraki SDK, and Webex SDK."
+        "explanation": "A <strong> Software Development Kit (SDK) </strong> is a comprehensive set of tools, libraries, and documentation offered by the manufacturer of a hardware platform, operating system, or programming language. It serves as a cohesive package facilitating interaction with a system or service. <br> For example, Cisco offers various SDK products such as the <strong> DevNet SDK </strong>, <strong> Meraki SDK </strong>, and <strong> Webex SDK </strong>, each tailored to provide developers with the necessary resources for integration and development within their respective ecosystems."
     },
     {
         "question": "Which of the following is appropriate for obtaining a list of the organizations available through the GET method when using Postman to interact with the Cisco Meraki API?",
