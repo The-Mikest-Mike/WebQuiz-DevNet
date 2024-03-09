@@ -177,7 +177,7 @@
         "question": "Which API authentication mechanism is the least secure?",
         "options": ["OAUTH Authentication", "Basic Authentication", "Token Authentication", "API Key Authentication"],
         "answer": "Basic Authentication",
-        "explanation": "<strong>'Basic authentication'</strong> is the <strong> least secure </strong> method for <strong> API authentication </strong>, where credentials are passed in an unencrypted manner when using HTTP instead of HTTPS. <br>'Basic authentication' uses a simple 'username' and 'password' for authentication."
+        "explanation": "<strong> Basic authentication </strong> is the <strong> least secure </strong> method for <strong> API authentication </strong>. With basic authentication, credentials (typically a username and password) are transmitted in an unencrypted manner, especially vulnerable when used over HTTP instead of HTTPS."
     },
     {
         "question": "Which API authentication mechanism allows us to enter our username and password a single time to generate an encrypted value for accessing resources?",
