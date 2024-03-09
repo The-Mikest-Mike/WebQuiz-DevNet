@@ -194,7 +194,7 @@
     {
         "question": "Which subset of common HTTP methods are used by Remote Procedure Calls (RPCs)?",
         "options": ["POST and PUT", "PATCH and DELETE", "GET and POST", "PUT and GET"],
-        "answer": "C",
+        "answer": "GET and POST",
         "explanation": "As opposed to REST APIs which use GET, POST, PUT, PATCH, and DELETE HTTP methods, <strong>'Remote Procedure Calls (RPCs)</strong> use only the <strong> GET and POST methods </strong>. <br> For this reason, RPCs are action-oriented, where we are concerned with executing code on a remote device. Remote Procedure Calls (RPCs) are a way to invoke functions or procedures on a remote server, as if they were local. <br><br> In Python you can use <strong> 'xmlrpc.client' </strong> library to <strong> make RPC's over HTTP </strong>"
     },
     {
