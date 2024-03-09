@@ -10,7 +10,7 @@
    ```bash
    python3 app.py
    ```
-5. Open your web browser and start the quiz. Navigate to:
+5. Open your `web browser` and start the quiz. Navigate to:
    ```bash
    http://localhost:5000/
    ``` 
