@@ -29,7 +29,7 @@ Users can navigate through the questions and get their score at the end.
 - Multiple-choice questions with options.
 - Keeps track of user answers and calculates the score.
 - Instantly know by colors whether correct or incorrect.
-- Provides explanations for correct answers.
+- Provides explanations for answers.
 - Simple navigation between questions.
 
 
