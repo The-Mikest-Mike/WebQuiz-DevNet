@@ -1,7 +1,27 @@
-# Overview
+## Usage
+1. `Clone` repository and install `requirements.txt` file:
+   ```bash
+   git clone <repo-url>
+   ```
+   ```bash
+   pip3 install -r requirements.txt
+   ```
+3. Run `app.py` file:
+   ```bash
+   python3 app.py
+   ```
+5. Open your web browser and start the quiz. Navigate to:
+   ```bash
+   http://localhost:5000/
+   ``` 
 
-Flask quiz app that allows users to answer multiple-choice questions. Provides questions, answer options, and explanations for correct answers. 
-Users can navigate through the questions and get their score at the end.
+## Features
+- User friendly interface.
+- Multiple-choice questions with options.
+- Keeps track of user answers and calculates the score.
+- Instantly know by colors whether correct or incorrect.
+- Provides explanations for answers.
+- Simple navigation between questions.
 
 ## Structure of Folders:
 
@@ -17,19 +37,4 @@ Users can navigate through the questions and get their score at the end.
         styles.css      # all css styles
     data/               # folder for data files
         questions.json  # containing questions, options and explanations pool
-
-
-## Usage
-1. Clone repository and install requirements.txt file with command: `pip3 install -r requirements.txt`
-2. Run `app.py` file with command: `python3 app.py`
-4. Open your web browser and navigate to `http://localhost:5000/` to start the quiz.
-
-## Features
-- User friendly interface
-- Multiple-choice questions with options.
-- Keeps track of user answers and calculates the score.
-- Instantly know by colors whether correct or incorrect.
-- Provides explanations for answers.
-- Simple navigation between questions.
-
 
