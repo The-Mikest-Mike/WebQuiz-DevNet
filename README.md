@@ -1,16 +1,16 @@
 ## Usage
-1. `Clone` repository and install `requirements.txt` file:
+1. Clone repository and install requirements.txt file:
    ```bash
    git clone <repo-url>
    ```
    ```bash
    pip3 install -r requirements.txt
    ```
-3. Run `app.py` file:
+3. Run app.py file:
    ```bash
    python3 app.py
    ```
-5. Open your `web browser` and start the quiz. Navigate to:
+5. Open your web browser and start the quiz. Navigate to:
    ```bash
    http://localhost:5000/
    ``` 
