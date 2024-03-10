@@ -63,7 +63,7 @@
         "question": "Which Python structure is closely associated with objects?",
         "options": ["Modules", "Classes", "Functions", "Blocks"],
         "answer": "Classes",
-        "explanation": "In Python, classes are closely associated with objects, serving as templates for creating objects. Objects encapsulate both data (attributes) and functions (methods) that operate on that data."
+        "explanation": "In Python, classes are closely associated with objects, serving as templates for creating objects. <br> Objects encapsulate both data (attributes) and functions (methods) that operate on that data."
     },
     {
         "question": "Which Python structure allows us to import code from other external files into our main code?",
@@ -218,7 +218,7 @@
             "{{baseURL}}/organizations/:organizationId/devices"
         ],
         "answer": "{{baseURL}}/organizations",
-        "explanation": "When using the GET method to perform a request against the Meraki API using Postman the URLs follow a hierarchical structure, starting from the base URL and drilling down to specific resources or actions, making the API organized and easy to navigate.: <br><br> - {{baseURL}}: The base URL where all API requests begin.  <br> - <strong>/organizations</strong>: Retrieves a list of organizations.  <br> - /organizations/:organizationId: Accesses a specific organization using its unique ID.  <br> - /organizations/:organizationId/networks: Fetches information about networks within a specific organization.  <br> - /organizations/:organizationId/devices: Retrieves details about devices associated with a specific organization."
+        "explanation": "When using the GET method to perform a request against the Meraki API using Postman the URLs follow a hierarchical structure, starting from the base URL and drilling down to specific resources or actions, making the API organized and easy to navigate.: <br><br> - {{baseURL}}: The base URL where all API requests begin.  <br> - <strong>/organizations</strong>: Retrieves a list of organizations. <br> Below is what other options would retrieve:  <br> - /organizations/:organizationId: Accesses a specific organization using its unique ID.  <br> - /organizations/:organizationId/networks: Fetches information about networks within a specific organization.  <br> - /organizations/:organizationId/devices: Retrieves details about devices associated with a specific organization."
     },
     {
         "question": "Which type of API authentication method is used by Cisco DNA Center?",
