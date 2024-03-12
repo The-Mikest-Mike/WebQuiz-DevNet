@@ -36,9 +36,13 @@ p {
 .button-style:hover{
     color: #DDDDDD;
     transform: scale(1.05);
-    transition: 0.3s;
 }
 
+/* Transition when leaving all buttons after hovering */
+.button-style {
+    transition: transform 0.3s;
+}
+    
 body {
     position: relative;
 }
