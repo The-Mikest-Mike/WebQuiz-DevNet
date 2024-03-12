@@ -135,6 +135,11 @@ p.question-text {
     text-align: left;
 }
 
+/* Syles for margin adjustments */
+.margin-right{ 
+    margin-right: 12vh;
+}
+
 /* Styles for footer */
 .footer {
     background-color: #66a3ff;
