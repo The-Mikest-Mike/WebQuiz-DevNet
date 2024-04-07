@@ -344,5 +344,41 @@
         "options": ["AMP", "Umbrella", "ISE", "ThreatGrid"],
         "answer": "Umbrella",
         "explanation": "Cisco Umbrella acts as a secure internet gateway and provides DNS-layer security. This allows us to route endpoints over secure DNS destinations, prevent malware and ransomware, and more."
+    },
+    {
+        "question": "What does YAML stand for?",
+        "options": ["Yet Another Markup Language", "Ain't Markup Language", "The name of its creator", "None of the above"],
+        "answer": "Yet Another Markup Language",
+        "explanation": "YAML stands for 'YAML Ain't Markup Language.' It is a human-readable data serialization format that is commonly used for configuration files and data exchange, especially in applications where human readability is a priority."
+    },   
+    {
+        "question": "What is the syntax for error handling in Python?",
+        "options": ["try-except-else-finally", "raise ErrorMessage", "assertErrorValue", "All of the above"],
+        "answer": "try-except-else-finally",
+        "explanation": "The syntax for error handling in Python involves the try-except-else-finally blocks. <br> <br> 'try' is used to wrap the code that might raise an exception, <br> 'except' is used to handle specific exceptions, <br> 'else' is executed if no exceptions are raised, and <br> 'finally' is executed regardless of whether an exception occurred or not."
+    },
+    {
+        "question": "When does the finally block execute?",
+        "options": ["After the try block is successful", "After the except block", "At the end of every try block", "When an error code stops the else block"],
+        "answer": "At the end of every try block",
+        "explanation": "The finally block in Python executes at the end of every try block, regardless of whether an exception occurred or not. It is typically used to perform cleanup operations such as closing files or releasing resources."
+    },
+    {
+        "question": "Test-driven development requires that developers:",
+        "options": ["Create a unit test for every bit of code they write", "Know how to use DevOps tools for automated testing", "Create a simple test that fails and then write code that allows the test to succeed", "Completely unnecessary in an Agile development shop"],
+        "answer": "Create a simple test that fails and then write code that allows the test to succeed",
+        "explanation": "Test-driven development (TDD) requires developers to follow the 'Red-Green-Refactor' cycle. This means writing a failing test first, then writing the code to make the test pass, and finally refactoring the code while ensuring that the tests still pass. It emphasizes writing tests before writing the actual code, ensuring that the code meets the requirements set by the tests."
+    },
+    {
+        "question": "What is the difference between a <strong> unit test </strong> and an <strong> integration test </strong>? (Choose two)",
+        "options": ["An integration test is for validation of how different parts of the application work together", "An integration test verifies that the application operates as expected", "A unit test verifies API functionality", "A unit test is most specific in scope and tests small bits of code"],
+        "answer": ["An integration test is for validation of how different parts of the application work together", "A unit test is most specific in scope and tests small bits of code"],
+        "explanation": "Integration tests validate the interaction between different parts of the application, ensuring that they work together as expected. Unit tests focus on testing small, specific bits of code in isolation from the rest of the application, typically verifying individual functions or methods."
+    },
+    {
+        "question": "Which class is inherited as part of a unit test?",
+        "options": ["unittest.testcase", "unittest.TestCase", "unittest", "TestCase"],
+        "answer": "unittest.TestCase",
+        "explanation": "In Python, the class to be inherited as part of a unit test is 'unittest.TestCase'. This class provides various methods and assertions to facilitate writing and running unit tests using the unittest framework."
     }
 ]
