@@ -386,5 +386,11 @@
         "options": ["Pushing network configuration changes down to devices", "Increasing security", "Streaming telemetry", "Sending information to the cloud"],
         "answer": "Pushing network configuration changes down to devices",
         "explanation": "A southbound API typically refers to an interface used to communicate from a controller (such as a network controller or SDN controller) to the devices it manages. <br><br> One common use case of a southbound API is pushing network configuration changes down to devices."
+    },
+    {
+        "question": "True or False: RESTful API authentication can use API keys or custom tokens.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "explanation": "RESTful API authentication can indeed utilize API keys or custom tokens. <br> API keys are typically used for authenticating third-party applications or services, while custom tokens, such as JWT (JSON Web Tokens), are often used for user authentication."
     }   
 ]
