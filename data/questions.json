@@ -398,5 +398,11 @@
         "options": ["Software Operations and Procedures", "Software Operations Authentication Protocol", "Simple Object Access Protocol", "Simple Operations Automation Platform", "Support Object Abstract Protocol"],
         "answer": "Simple Object Access Protocol",
         "explanation": "SOAP stands for Simple Object Access Protocol. <br> It is a protocol for exchanging structured information in the implementation of web services in computer networks. <br><br> SOAP provides a standardized messaging framework that allows programs running on different operating systems to communicate with each other."
+    },
+    {
+        "question": "Remote-procedure calls (RPCs) behave similarly to which of the following?",
+        "options": ["Synchronous API", "Asynchronous API"],
+        "answer": "Synchronous API",
+        "explanation": "In RPC, a client makes a request to a remote server, and waits until it receives a response from the server before continuing its execution. This synchronous behavior contrasts with asynchronous APIs, where the client can continue without waiting for a response. For example: A client-server communication where a client program invokes a procedure on a remote server as if it were a local. <br><br> A client Python program needs to perform some calculations, but it lacks computational power. It wants to offload these calculations to a more powerful server.<br><br> On the server side, there is a function called 'calculate_square' that takes a number as input and returns its square. The client wants to invoke this function remotely. Here's how it works: <br><br> 1. The client program makes an RPC request to the server, passing the number whose square needs to be calculated.<br> 2. The server receives the RPC request and executes the 'calculate_square' function with the provided input.<br> 3. The server then sends back the result (the square of the input number) to the client.<br> 4. The client receives the result and continues its execution based on the returned value."
     }   
 ]
