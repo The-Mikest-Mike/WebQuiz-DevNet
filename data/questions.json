@@ -392,5 +392,11 @@
         "options": ["True", "False"],
         "answer": "True",
         "explanation": "RESTful API authentication can indeed utilize API keys or custom tokens. <br> API keys are typically used for authenticating third-party applications or services, while custom tokens, such as JWT (JSON Web Tokens), are often used for user authentication."
+    },
+    {
+        "question": "What does SOAP stand for?",
+        "options": ["Software Operations and Procedures", "Software Operations Authentication Protocol", "Simple Object Access Protocol", "Simple Operations Automation Platform", "Support Object Abstract Protocol"],
+        "answer": "Simple Object Access Protocol",
+        "explanation": "SOAP stands for Simple Object Access Protocol. <br> It is a protocol for exchanging structured information in the implementation of web services in computer networks. <br><br> SOAP provides a standardized messaging framework that allows programs running on different operating systems to communicate with each other."
     }   
 ]
