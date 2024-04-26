@@ -380,5 +380,11 @@
         "options": ["unittest.testcase", "unittest.TestCase", "unittest", "TestCase"],
         "answer": "unittest.TestCase",
         "explanation": "In Python, the class to be inherited as part of a unit test is 'unittest.TestCase'. This class provides various methods and assertions to facilitate writing and running unit tests using the unittest framework."
-    }
+    },
+    {
+        "question": "Which of the following is a sample use case of a southbound API?",
+        "options": ["Pushing network configuration changes down to devices", "Increasing security", "Streaming telemetry", "Sending information to the cloud"],
+        "answer": "Pushing network configuration changes down to devices",
+        "explanation": "A southbound API typically refers to an interface used to communicate from a controller (such as a network controller or SDN controller) to the devices it manages. <br><br> One common use case of a southbound API is pushing network configuration changes down to devices."
+    }   
 ]
