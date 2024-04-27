@@ -404,5 +404,41 @@
         "options": ["Synchronous API", "Asynchronous API"],
         "answer": "Synchronous API",
         "explanation": "In RPC, a client makes a request to a remote server, and waits until it receives a response from the server before continuing its execution. This synchronous behavior contrasts with asynchronous APIs, where the client can continue without waiting for a response. For example: A client-server communication where a client program invokes a procedure on a remote server as if it were a local. <br><br> A client Python program needs to perform some calculations, but it lacks computational power. It wants to offload these calculations to a more powerful server.<br><br> On the server side, there is a function called 'calculate_square' that takes a number as input and returns its square. The client wants to invoke this function remotely. Here's how it works: <br><br> 1. The client program makes an RPC request to the server, passing the number whose square needs to be calculated.<br> 2. The server receives the RPC request and executes the 'calculate_square' function with the provided input.<br> 3. The server then sends back the result (the square of the input number) to the client.<br> 4. The client receives the result and continues its execution based on the returned value."
+    },
+    {
+        "question": "Which of the following describes the method of including an API key directly in the URL or query parameters?",
+        "options": ["Request Header API key", "String-based API key", "Cookie API key", "Token-based API key"],
+        "answer": "String-based API key",
+        "explanation": "String-based API keys are included directly in the URL or query parameters of the request, making them visible in the request URL. For Example, it might look something like this: <br><br>https://api.example.com/resource?<strong>key=your_api_key</strong>"
+    },
+    {
+        "question": "Which of the following methods is NOT commonly used for passing API keys in HTTP requests?",
+        "options": ["Request Header API key", "String-based API key", "Cookie API key", "Query Parameter API key"],
+        "answer": "Query Parameter API key",
+        "explanation": "While API keys can be passed as query parameters in URLs, it's not as common as using request headers, strings in the URL, or cookies. Passing API keys as query parameters can lead to security concerns due to visibility in URLs."
+    },
+    {
+        "question": "In the given example, which type of API key is being used?<br><br>GET /resource HTTP/1.1<br>Host: api.example.com<br>X-API-Key: your_api_key",
+        "options": ["String-based API key", "Request Header API key", "Cookie API key", "Token-based API key"],
+        "answer": "Request Header API key",
+        "explanation": "In the provided example, the API key is included as a value in the <strong>X-API-Key</strong> header of the HTTP request. This method is characteristic of a Request Header API key."
+    },
+    {
+        "question": "What is the purpose of custom tokens in authentication and authorization systems?",
+        "options": ["To provide a standardized method for user authentication", "To generate random strings for session management", "To securely authenticate users and authorize access to resources", "To encrypt sensitive user data during transmission"],
+        "answer": "To securely authenticate users and authorize access to resources",
+        "explanation": "'Custom Tokens' refer to a method of authentication or authorization where unique, custom-generated tokens are used to authenticate users or authorize access to certain resources. Popular implementations of custom tokens include JSON Web Tokens (JWT) and opaque tokens. Here's how custom tokens typically work:<br><br><strong>Generation:</strong> User authenticates/logs in and the server generates a unique token for that user (typically a long random string of characters).<br><strong>Storage:</strong> The token is associated with the user's session/account on the server and stored in a database, cache, or session storage.<br><strong>Issuance:</strong> The token is issued to the client (e.g., a web browser or mobile app) and returned in the authentication response.<br><strong>Subsequent Requests:</strong> The client includes the token in subsequent requests to the server, typically as an 'Authorization' header.<br><strong>Validation:</strong> When the server receives a request with a token, it validates the token to ensure it's legitimate (checking the token's signature, expiration date, and/or consulting a database or cache).<br><strong>Authorization:</strong> The server grants access to the requested resource/operation if the token is valid.<br><br>"
+    },
+    {
+        "question": "What is SOAP primarily used for?",
+        "options": ["Accessing web services", "Managing databases", "Creating web pages", "Storing data"],
+        "answer": "Accessing web services",
+        "explanation": "SOAP is a protocol used primarily for facilitating communication between different applications over the internet, particularly for accessing web services. It provides a standard way for applications to exchange structured information regardless of the platforms and programming languages they are built on, such as Java, .NET, and PHP."
+    },
+    {
+        "question": "Which technology does SOAP use to communicate between web services and clients?",
+        "options": ["JSON", "XML", "HTML", "YAML"],
+        "answer": "XML",
+        "explanation": "SOAP uses XML as its messaging format for communication between web services and clients. XML provides a standardized way to structure data, making it suitable for exchanging information between systems that may be built on different technologies."
     }   
 ]
