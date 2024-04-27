@@ -347,9 +347,9 @@
     },
     {
         "question": "What does YAML stand for?",
-        "options": ["Yet Another Markup Language", "Ain't Markup Language", "The name of its creator", "None of the above"],
-        "answer": "Yet Another Markup Language",
-        "explanation": "YAML stands for 'YAML Ain't Markup Language.' It is a human-readable data serialization format that is commonly used for configuration files and data exchange, especially in applications where human readability is a priority."
+        "options": ["Yet Another Markup Language", "YAML Ain't Markup Language", "The name of its creator", "None of the above"],
+        "answer": "YAML Ain't Markup Language",
+        "explanation": "YAML stands for 'YAML Ain't Markup Language.' According to the official YAML site <strong>https://yaml.org</strong> It is a human-readable data serialization format that is commonly used for configuration files and data exchange, especially in applications where human readability is a priority."
     },   
     {
         "question": "What is the syntax for error handling in Python?",
