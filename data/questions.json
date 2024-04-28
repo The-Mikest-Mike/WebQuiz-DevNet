@@ -440,5 +440,117 @@
         "options": ["JSON", "XML", "HTML", "YAML"],
         "answer": "XML",
         "explanation": "SOAP uses XML as its messaging format for communication between web services and clients. XML provides a standardized way to structure data, making it suitable for exchanging information between systems that may be built on different technologies."
-    }   
+    },
+    {
+        "question": "Which of the following is not an HTTP method?",
+        "options": ["GET", "HEAD", "TRIGGER", "PATCH"],
+        "answer": "TRIGGER",
+        "explanation": "Among the provided options, 'TRIGGER' is not an HTTP method. The HTTP methods <strong>GET</strong>, <strong>HEAD</strong>, and <strong>PATCH</strong> are all standard HTTP methods used for specific operations: <br><br> - <strong>GET</strong>: Retrieves data from the server <br> - <strong>HEAD</strong>: Retrieves headers from the server without the body of the response <br> - <strong>PATCH</strong>: Partially updates a resource on the server."
+    },
+    {
+        "question": "Which response code indicates that a resource has moved?",
+        "options": ["201", "301", "401", "501"],
+        "answer": "301",
+        "explanation": "The HTTP response code <strong>301</strong> indicates that a resource has permanently moved to a new location.<br>This status code is often used for URL redirection, informing the client that the requested resource has been moved to a different URL."
+    },
+    {
+        "question": "What does the HTTP response code 201 indicate?",
+        "options": ["Resource Created", "Resource Moved Permanently", "Unauthorized", "Internal Server Error"],
+        "answer": "Resource Created",
+        "explanation": "The HTTP response code <strong>201</strong> indicates that a new resource has been successfully created on the server.<br>It is commonly used in RESTful APIs to indicate that a POST request has been processed successfully and a new resource has been created."
+    },
+    {
+        "question": "What does the HTTP response code 501 signify?",
+        "options": ["Resource Created", "Not Found", "Not Implemented", "Service Unavailable"],
+        "answer": "Not Implemented",
+        "explanation": "The HTTP response code <strong>501</strong> indicates that the server does not support the functionality required to fulfill the request. It means that the server lacks the ability to perform the requested operation, often because it has not been implemented or is not supported."
+    },
+    {
+        "question": "Which of the following, model the interactions between various objects in a single use case?",
+        "options": ["REST APIs", "Sequence diagrams", "Excel sheets", "Venn diagrams"],
+        "answer": "Sequence diagrams",
+        "explanation": "Sequence diagrams model the interactions between various objects in a single use case. They illustrate the sequence of messages exchanged between objects or components in a system to accomplish a particular task or scenario.<br>Sequence diagrams are commonly used in software engineering and systems analysis to visualize the flow of interactions during runtime."
+    },
+    {
+        "question": "Which REST API architectural constraint allows you to download code and execute it?",
+        "options": ["Client/server", "Statelessness", "Code on demand", "Layered systems"],
+        "answer": "Code on demand",
+        "explanation": "The REST API architectural constraint that allows you to download code and execute it is <strong>Code on demand</strong>. This constraint enables servers to temporarily extend or customize the functionality of a client by transferring executable code, such as scripts or applets, for the client to execute.<br><br>While the other options are also architectural constraints of REST APIs, they do not directly involve downloading code for execution:<br><br>- <strong>Client/server:</strong> Separates the concerns of the client and the server.<br>- <strong>Statelessness:</strong> Requires that each request from a client to the server must contain all the information necessary to understand the request, in which the server completes every client request independently of all the previous ones. Clients can request resources in any order, and every request is isolated from other requests.<br>- <strong>Layered systems:</strong> Allows for the use of intermediaries, such as proxies or gateways, to improve scalability."
+    },
+    {
+        "question": "Rate limiting is an essential REST API design method for developers. Rate-limiting techniques are used to ________.",
+        "options": ["increase security", "have business impact", "enhance efficiency end to end", "do all above"],
+        "answer": "do all above",
+        "explanation": "Rate limiting is an essential REST API design method that serves multiple purposes:<br><br>- <strong>Increase security:</strong> Can help mitigate certain types of attacks, such as denial-of-service (DoS) attacks, by limiting the number of requests an attacker can make within a specific timeframe.<br>- <strong>Have business impact:</strong> Allows businesses to control access to their APIs and services, ensuring fair usage and preventing abuse. It can also be used to enforce subscription tiers or pricing plans based on usage limits.<br>- <strong>Enhance efficiency end to end:</strong> By preventing abuse and ensuring fair usage, it can enhance the overall efficiency of the system. It helps in maintaining system stability, optimizing resource utilization, and providing a better experience for legitimate users."
+    },
+    {
+        "question": "To add HTTP headers to a Python request, you can simply pass them in as which of the following?",
+        "options": ["list", "dict", "tuple", "set"],
+        "answer": "dict",
+        "explanation": "To add HTTP headers to a Python request, you can simply pass them in as a <strong>dictionary (dict)</strong>. In Python, the requests library allows you to include headers in your HTTP requests by passing a dictionary where the keys are the header names and the values are the header values. This dictionary-based approach makes it straightforward to include custom headers in your requests. For example:<br><br><code>import requests<br><br>headers = {<br>    'User-Agent': 'MyCustomUserAgent',<br>    'Authorization': 'Bearer my_access_token'<br>}<br><br>response = requests.get('https://api.example.com', headers=headers)<br>print(response.status_code)</code>"
+    },
+
+{
+    "question": "Payment Systems, User Management, and Social Media Handler. All those are examples of which type of APIs?",
+    "options": ["Service API", "Informational API", "Hardware API"],
+    "answer": "Service API",
+    "explanation": "Payment Systems, User Management, and Social Media Handler are all examples of <strong>Service APIs</strong>. Service APIs provide access to various functionalities and services offered by a system or platform, allowing developers to integrate and interact with these services programmatically."
+},
+{
+    "question": "What does the 'http://' part of a URL represent?",
+    "options": ["The protocol used for communication", "The domain name of the website", "The specific resource being requested", "The port number for the server"],
+    "answer": "The protocol used for communication",
+    "explanation": "The 'http://' part of a URL indicates the protocol used for communication, which is typically HTTP (Hypertext Transfer Protocol) for accessing web pages over the internet. Other protocols such as HTTPS (HTTP Secure) or FTP (File Transfer Protocol) may also be used."
+},
+{
+    "question": "What does the 'query string' in a URL typically contain?",
+    "options": ["The protocol used for communication", "Parameters for the requested resource", "The domain name of the website", "The path to the specific resource"],
+    "answer": "Parameters for the requested resource",
+    "explanation": "The 'query string' in a URL refers to the portion of the URL that follows the question mark (?) and consists of key-value pairs separated by ampersands (&). These parameters provide additional details to the server to influence the response. For example, consider the URL:<br><br>https://example.com/search?<strong>q=apple&category=fruits</strong><br><br>In this URL, the query string ?q=apple&category=fruits contains two parameters: q=apple (indicating a search for 'apple') and category=fruits (specifying the category as 'fruits'). These parameters help narrow down the search results returned by the server. While the term 'query string' specifically refers to this formatted part of the URL, it is often used interchangeably with the broader concept of 'parameters' in URLs."
+},
+{
+    "question": "In the context of RESTful applications, how are CRUD operations typically mapped to HTTP methods?",
+    "options": [
+        "Create: HTTP GET, Read: HTTP POST, Update: HTTP PUT, Delete: HTTP DELETE",
+        "Create: HTTP POST, Read: HTTP GET, Update: HTTP DELETE, Delete: HTTP PUT",
+        "Create: HTTP PUT, Read: HTTP GET, Update: HTTP POST, Delete: HTTP DELETE",
+        "Create: HTTP POST, Read: HTTP GET, Update: HTTP PUT or PATCH, Delete: HTTP DELETE"
+    ],
+    "answer": "Create: HTTP POST, Read: HTTP GET, Update: HTTP PUT or PATCH, Delete: HTTP DELETE",
+    "explanation": "In RESTful applications, CRUD operations are typically mapped to corresponding HTTP methods. CRUD operations are not HTTP methods themselves, but in RESTful applications, HTTP methods are often used to perform CRUD operations on resources.<br><br>For CRUD update operations there are:<br>- <strong>PUT:</strong> A complete update method that replaces an existing record with a new one.<br>- <strong>PATCH:</strong> A partial update method that changes the values of one or more fields on a record"
+},
+{
+    "question": "Which of the following is not one of the six constraints of the REST architectural style?",
+    "options": ["Uniform Interface", "Code on demand", "Cache", "RPC"],
+    "answer": "RPC",
+    "explanation": "The six constraints of the REST architectural style are Client/Server, Stateless, Cache, Uniform Interface, Layered System, and Code on Demand. RPC (Remote Procedure Call) is not one of these constraints. RPC is a different communication paradigm often used in distributed systems, but it is not a fundamental constraint of the REST architectural style."
+},
+{
+    "question": "Which HTTP request method is typically treated as cacheable by browsers by default?",
+    "options": ["POST", "PUT", "GET", "DELETE"],
+    "answer": "GET",
+    "explanation": "GET requests are typically treated as cacheable by browsers by default. This means that browsers may cache the response to a GET request to avoid repeatedly fetching the same resource."
+},
+{
+    "question": "How can a POST request be made cacheable?",
+    "options": [
+        "By including an Authorization header in the response",
+        "By setting the \"Cache-Control: max-age\" header in the request",
+        "By adding an \"Expires\" header or a \"Cache-Control\" header in the response",
+        "By using a different HTTP request method"
+    ],
+    "answer": "By adding an \"Expires\" header or a \"Cache-Control\" header in the response",
+    "explanation": "POST requests are not cacheable by default, but they can be made cacheable by including either an \"Expires\" header or a \"Cache-Control\" header in the response. These headers provide instructions to browsers and other caching mechanisms on how long the response should be considered fresh and cacheable."
+},
+{
+    "question": "Which statement accurately describes a difference between a GET request and a POST request in HTTP?",
+    "options": [
+        "GET requests are used for submitting data to a server, while POST requests are used for retrieving data from a server.",
+        "GET requests include request parameters in the URL, while POST requests include request parameters in the body.",
+        "GET requests are generally faster and more efficient than POST requests due to their simpler structure.",
+        "GET requests are more secure than POST requests because they do not expose request parameters in the request body."
+    ],
+    "answer": "GET requests include request parameters in the URL, while POST requests include request parameters in the body.",
+    "explanation": "GET requests retrieve data from a server, and the parameters are appended to the URL in the query string. In contrast, POST requests submit data to a server, and the parameters are included in the request body. <br><br>For example, to <strong>search for users by name</strong>, the URL might look like this:<br><br><code><strong>GET</strong> /api/users?name=John HTTP/1.1<br>Host: example.com</code><br><br>For example, to <strong>create a new user</strong>, the data is sent in the request body as JSON:<br><br><code><strong>POST</strong> /api/users HTTP/1.1<br>Host: example.com<br>Content-Type: application/json<br>{<br>\"name\": \"John\",<br>\"age\": 30<br>}</code>"
+}   
 ]
