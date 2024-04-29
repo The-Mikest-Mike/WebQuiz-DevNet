@@ -558,5 +558,49 @@
     "options": ["Offset-based pagination", "Keyset-based pagination"],
     "answer": "Keyset-based pagination",
     "explanation": "<strong>Keyset-based pagination</strong>, also referred to as <strong>continuation token</strong> or <strong>cursor pagination</strong>, is a method used for fetching large datasets from a database in a controlled manner.<br>Unlike offset-based pagination, where records are retrieved based on their position in the dataset, <strong>keyset-based pagination</strong> relies on unique identifiers or keys to fetch subsequent pages of data.<br><br>This approach is particularly useful for datasets that frequently change, as it ensures consistent results without relying on fixed offsets.<br><br>Additionally, keyset-based pagination is more efficient for large datasets, as it avoids the need to scan through potentially millions of records to find the next page."
-}   
+},
+{
+    "question": "When specifying the timestamp parameter with the Cisco DNA Center APIs, what format should the time be in?",
+    "options": [
+        "UNIX time",
+        "OS/2",
+        "Open VMS",
+        "SYSTEMTIME"
+    ],
+    "answer": "UNIX time",
+    "explanation": "When specifying the timestamp parameter with the Cisco DNA Center APIs, the time should be in UNIX time format. UNIX time, also known as POSIX time or epoch time, represents the number of seconds that have elapsed since the UNIX epoch (00:00:00 UTC on January 1, 1970).<br>This format is commonly used in APIs and software systems for representing time as a simple integer value, making it easy to work with and convert across different platforms and programming languages."
+},
+{
+    "question": "What is the output of the multivendor SDK for Cisco DNA Center platform?",
+    "options": [
+        "Device driver",
+        "Device package",
+        "Software driver",
+        "Software package"
+    ],
+    "answer": "Device package",
+    "explanation": "The output of the multivendor SDK for Cisco DNA Center platform is a \"Device package\".<br><br>A device package contains information and configurations specific to network devices, allowing developers to interact with and manage various network elements through the Cisco DNA Center platform.<br><br>These device packages enable seamless integration and interoperability with a wide range of network devices, providing a unified interface for network management and automation tasks."
+},
+{
+    "question": "Which component of the Cisco SD-WAN fabric exposes a public REST API interface?",
+    "options": [
+        "vSmart",
+        "vBond",
+        "vManage",
+        "vEdge"
+    ],
+    "answer": "vManage",
+    "explanation": "The component of the Cisco SD-WAN fabric that exposes a public REST API interface is \"vManage\". It provides a centralized management and orchestration platform for the SD-WAN solution, offering RESTful APIs that allow administrators and developers to programmatically interact with the SD-WAN fabric.<br><br>These APIs enable automation, configuration, monitoring, and troubleshooting of SD-WAN deployments, empowering organizations to integrate SD-WAN functionality into their existing workflows and systems."
+},
+{
+    "question": "When initially authenticating to the Cisco SD-WAN REST API, how are the username and password encoded?",
+    "options": [
+        "application/postscript",
+        "application/xml",
+        "application/json",
+        "application/x-www-form-urlencoded"
+    ],
+    "answer": "application/x-www-form-urlencoded",
+    "explanation": "When initially authenticating to the Cisco SD-WAN REST API, the username and password are encoded using the \"application/x-www-form-urlencoded\" format. This encoding format is commonly used for submitting form data over HTTP requests.<br><br>For example:<br><br>If the username is \"user\" and the password is \"password123\", they would be encoded as \"username=user&password=password123\".<br><br>This allows the credentials to be sent securely as part of the request body when authenticating to the SD-WAN REST API."
+}
 ]
