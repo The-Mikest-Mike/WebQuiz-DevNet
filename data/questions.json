@@ -552,5 +552,11 @@
     ],
     "answer": "GET requests include request parameters in the URL, while POST requests include request parameters in the body.",
     "explanation": "GET requests retrieve data from a server, and the parameters are appended to the URL in the query string. In contrast, POST requests submit data to a server, and the parameters are included in the request body. <br><br>For example, to <strong>search for users by name</strong>, the URL might look like this:<br><br><code><strong>GET</strong> /api/users?name=John HTTP/1.1<br>Host: example.com</code><br><br>For example, to <strong>create a new user</strong>, the data is sent in the request body as JSON:<br><br><code><strong>POST</strong> /api/users HTTP/1.1<br>Host: example.com<br>Content-Type: application/json<br>{<br>\"name\": \"John\",<br>\"age\": 30<br>}</code>"
+},
+{ 
+    "question": "Which pagination approach is also known as a continuation token or cursor pagination?",
+    "options": ["Offset-based pagination", "Keyset-based pagination"],
+    "answer": "Keyset-based pagination",
+    "explanation": "<strong>Keyset-based pagination</strong>, also referred to as <strong>continuation token</strong> or <strong>cursor pagination</strong>, is a method used for fetching large datasets from a database in a controlled manner.<br>Unlike offset-based pagination, where records are retrieved based on their position in the dataset, <strong>keyset-based pagination</strong> relies on unique identifiers or keys to fetch subsequent pages of data.<br><br>This approach is particularly useful for datasets that frequently change, as it ensures consistent results without relying on fixed offsets.<br><br>Additionally, keyset-based pagination is more efficient for large datasets, as it avoids the need to scan through potentially millions of records to find the next page."
 }   
 ]
