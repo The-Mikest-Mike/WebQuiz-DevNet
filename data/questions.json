@@ -602,5 +602,47 @@
     ],
     "answer": "application/x-www-form-urlencoded",
     "explanation": "When initially authenticating to the Cisco SD-WAN REST API, the username and password are encoded using the \"application/x-www-form-urlencoded\" format. This encoding format is commonly used for submitting form data over HTTP requests.<br><br>For example:<br><br>If the username is \"user\" and the password is \"password123\", they would be encoded as \"username=user&password=password123\".<br><br>This allows the credentials to be sent securely as part of the request body when authenticating to the SD-WAN REST API."
+},
+{
+    "question": "On what family of switches does Cisco ACI run?",
+    "options": [
+    "Cisco Catalyst 9000",
+    "Cisco Nexus 9000",
+    "Cisco Nexus 7000",
+    "Cisco Catalyst 6800"
+    ],
+    "answer": "Cisco Nexus 9000",
+    "explanation": "Cisco ACI (Application Centric Infrastructure) runs on the Cisco Nexus 9000 family of switches. Cisco ACI is a software-defined networking solution that provides centralized automation and policy-driven application profiles to simplify network provisioning and management. It is specifically designed to work with Cisco Nexus 9000 switches to deliver scalable and programmable network infrastructure for modern data centers.<br><br>Other options are not accurate because:<br>- Cisco Catalyst 9000 switches, while part of Cisco's portfolio, are not typically associated with Cisco ACI. They are more commonly used for enterprise access and aggregation layers.<br>- Cisco Nexus 7000 switches, though part of the Nexus family, do not support ACI. They are older models primarily used for data center core and aggregation layers.<br>- Cisco Catalyst 6800 switches are also not compatible with ACI. They are modular switches designed for campus core and distribution layers in enterprise networks."
+},
+{
+    "question": "True or false: An ACI bridge domain can be associated with multiple VRF instances.",
+    "options": [
+    "true",
+    "false"
+    ],
+    "answer": "true",
+    "explanation": "The correct endpoint for authentication using the Cisco ACI REST API is: https://APIC_IP_or_Hostname/api/aaaLogin.json. This endpoint is specifically designed for logging in and obtaining a session token, which is required for subsequent API calls. The aaaLogin.json endpoint is part of the authentication, authorization, and accounting (AAA) framework in ACI, providing a secure mechanism for user authentication before accessing other API functionalities.<br><br>The ACI REST API uses token-based authentication, where users authenticate by providing their credentials (username and password) to the aaaLogin.json endpoint. Upon successful authentication, the ACI fabric issues a session token, which the user must include in subsequent API requests to authenticate and authorize those requests."
+},
+{
+    "question": "What Cisco ACI REST API endpoint is used for authentication?",
+    "options": [
+    "https://APIC_IP_or_Hostname/api/aaaLogin.json",
+    "https://APIC_IP_or_Hostname/api/login",
+    "https://APIC_IP_or_Hostname/api/v1/aaaLogin",
+    "https://APIC_IP_or_Hostname/api/vi/login.json"
+    ],
+    "answer": "https://APIC_IP_or_Hostname/api/aaaLogin.json",
+    "explanation": "The correct endpoint for authentication using the Cisco ACI REST API is: https://APIC_IP_or_Hostname/api/aaaLogin.json. This endpoint is specifically designed for logging in and obtaining a session token, which is required for subsequent API calls. The aaaLogin.json endpoint is part of the authentication, authorization, and accounting (AAA) framework in ACI, providing a secure mechanism for user authentication before accessing other API functionalities.<br><br>The ACI REST API uses token-based authentication, where users authenticate by providing their credentials (username and password) to the aaaLogin.json endpoint. Upon successful authentication, the ACI fabric issues a session token, which the user must include in subsequent API requests to authenticate and authorize those requests."
+},
+{
+    "question": "In Cisco UCS Manager, what is the logical construct that contains the complete configuration of a physical server?",
+    "options": [
+    "Server profile",
+    "Service profile",
+    "Template profile",
+    "None of the above"
+    ],
+    "answer": "Service profile",
+    "explanation": "In Cisco UCS Manager, the logical construct that contains the complete configuration of a physical server is called a 'Service profile.' A service profile abstracts the server's hardware configuration, including identity, connectivity, firmware policies, and other settings. It allows for easy provisioning, mobility, and management of server resources within the Cisco UCS (Unified Computing System) infrastructure. Service profiles provide a way to define server configurations independent of the underlying hardware, enabling rapid deployment and flexibility in managing server resources."
 }
 ]
