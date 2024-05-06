@@ -92,7 +92,14 @@ def display_question():
     current_question_index = session.get('current_question_index', 0)
     if current_question_index < total_questions:
         current_question_data = questions_pool[current_question_index]
-        current_question = Question(current_question_data['question'], current_question_data['options'], current_question_data['answer'], current_question_data['explanation'])
+        # If the question doesn't specify whether it's single or multiple choice (absent of "multiple_choice" key) 
+        # in the "current_question data dictionary, returns the default value 'False', indicating a single choice question
+        if current_question_data.get('multiple_choice', False): 
+            # Data considered when Question is multiple choice
+            current_question = Question(current_question_data['question'], current_question_data['options'], current_question_data['answer'], current_question_data['explanation'], multiple_choice=True)
+        else:
+            # Data considered when Question is single choice
+            current_question = Question(current_question_data['question'], current_question_data['options'], current_question_data['answer'], current_question_data['explanation'])
 
         if request.method == 'POST':
             user_answer = request.form.get('user_answer')  # Get the user's answer from the form
