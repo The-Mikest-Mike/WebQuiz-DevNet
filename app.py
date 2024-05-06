@@ -31,8 +31,6 @@ class Question:
 
 # initialize Flask application.
 app = Flask(__name__)
-# set secret key while in production for session management)
-app.secret_key = 'your_secret_key_here'
 
 # read quiz questions from 'questions.json' file in 'data' folder (which is a list of dictionaries),
 # store it in the 'questions_pool' variable, and get the count of questions
