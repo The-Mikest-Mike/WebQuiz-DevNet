@@ -113,11 +113,11 @@
         "answer": "Push",
         "explanation": "The 'git push' operation uploads local file changes to a central remote repository, like GitHub, facilitating collaborative development by enabling multiple developers to access and work on the same codebase stored remotely."
       },
-      {
+    {
         "question": "Which Git version control operation allows us a safe way to separate our development area from a main local repository containing known working code?",
         "options": ["Clone", "Add/Remove", "Diff", "Branch"],
         "answer": "Branch",
-        "explanation": "Branches are a feature which allow us to separate our development area from a main local repository, providing a safe way to work on new features or updates without affecting the stable codebase. To view a list of all local branches, you can use the command 'git branch --list' or 'git branch'. To create a new branch for development, you can use 'git branch <branch_name>'. For a detailed view of branches, including commit messages and commit hashes of the latest commits, you can use 'git branch -v' or 'git branch --verbose'"
+        "explanation": "Branches are a feature which allow us to separate our development area from a main local repository, providing a safe way to work on new features or updates without affecting the stable codebase.Some useful commands are:<br><br>- <strong>git branch</strong> or <strong>git branch --list</strong>: View a list of all local branches.<br>- <strong>git branch \"branch_name\"</strong>: Create a new branch.<br>- <strong>git branch -v</strong> or <strong>git branch --verbose</strong>: For a detailed view of branches, including commit messages and commit hashes of the latest commits"
     },
     {
         "question": "Which Git version control operation allows us to join the contents of a branch development area with a main repository locally?",
