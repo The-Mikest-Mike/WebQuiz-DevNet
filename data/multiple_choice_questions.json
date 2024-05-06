@@ -1,0 +1,12 @@
+[
+    {"question": "What is the difference between a unit test and an integration test?",
+    "options": [
+        "An integration test is for validation of how different parts of the application work together",
+        "An integration test verifies that the application operates as expected",
+        "A unit test verifies API functionality",
+        "A unit test is most specific in scope and tests small bits of code"
+    ],
+    "answer": ["A unit test verifies API functionality", "An integration test is for validation of how different parts of the application work together"],
+    "explanation": "Explanation text here"
+    }
+]

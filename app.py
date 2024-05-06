@@ -35,10 +35,20 @@ app = Flask(__name__)
 # Set secret key while in production for session management (Develop line purpose only)
 app.secret_key = 'your_secret_key_here'
 
-# Read quiz questions from 'questions.json' file in 'data' folder (which is a list of dictionaries),
-# store it in the 'questions_pool' variable, and get the count of questions
-with open('data/questions.json', 'r') as json_file:
-    questions_pool = json.load(json_file)
+# Variables to store both lists of questions for further merge
+single_choice_questions_pool = []
+multiple_choice_questions_pool = []
+
+# Read quiz questions from both json source files in 'data' folder (which are a list of dictionaries)
+
+with open('data/single_choice_questions.json', 'r') as json_file:
+    single_choice_questions_pool = json.load(json_file)
+
+with open('data/multiple_choice_questions.json', 'r') as json_file:
+    multiple_choice_questions_pool = json.load(json_file)
+
+ # Variable to store the merge of both lists of question pools and get the count of questions
+questions_pool = single_choice_questions_pool + multiple_choice_questions_pool
 total_questions = len(questions_pool)
 print(f'The total number of questions is: {total_questions}') # Debug purpose only
 
@@ -72,7 +82,7 @@ def start_exam():
         flash('Invalid access to question.html')
         return redirect(url_for('index'))
   
-# Route for displaying quiz questions and explanations
+# Route for displaying quiz questions and explanations. It handle both single an multiple choice questions
 @app.route('/question', methods=['GET', 'POST'], endpoint='display_question')
 def display_question():
     '''
