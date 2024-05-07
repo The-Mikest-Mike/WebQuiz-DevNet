@@ -644,5 +644,28 @@
     ],
     "answer": "Service profile",
     "explanation": "In Cisco UCS Manager, the logical construct that contains the complete configuration of a physical server is called a 'Service profile.' A service profile abstracts the server's hardware configuration, including identity, connectivity, firmware policies, and other settings. It allows for easy provisioning, mobility, and management of server resources within the Cisco UCS (Unified Computing System) infrastructure. Service profiles provide a way to define server configurations independent of the underlying hardware, enabling rapid deployment and flexibility in managing server resources."
+},
+{
+        
+    "question": "What does a load balancer distribute in a network environment?",
+    "options": [
+    "Different TCP connections to the routers",
+    "Incoming traffic across multiple servers",
+    "Traffic in the network by leveraging the switch architecture",
+    "Outgoing connections to the network"
+    ],
+    "answer": "Incoming traffic across multiple servers",
+    "explanation": "A load balancer distributes incoming network traffic across multiple servers in a network environment. This helps to ensure high availability and reliability by spreading the workload across multiple servers, preventing any single server from becoming overwhelmed with requests.<br><br>Load balancers can employ various algorithms to distribute traffic effectively, such as round-robin, least connections, or weighted distribution based on server capacity."
+},
+{
+    "question": "Using Python, what is the result of the following command?<br><code>filtered_items = filter(lambda x: x.get('type') == 'fruit', data)<br>result = next(filtered_items, None)<br>print(result)</code><br><br>data = [    {\n        \"type\": \"fruit\",\n        \"items\": [\n            {\n                \"color\": \"green\",\n                \"items\": [\"kiwi\", \"grape\"]\n            },\n            {\n                \"color\": \"red\",\n                \"items\": [\"strawberry\", \"apple\"]\n            }\n        ]\n    },\n    {\n        \"type\": \"vegs\",\n        \"items\": [\n            {\n                \"color\": \"green\",\n                \"items\": [\"lettuce\"]\n            },\n            {\n                \"color\": \"red\"\n            }\n        ]\n    }\n]",
+    "options": [
+        "['kiwi', 'grape']",
+        "{'color': 'green', 'items': ['kiwi', 'grape']}",
+        "kiwi",
+        "grape"
+    ],
+    "answer": "{'color': 'green', 'items': ['kiwi', 'grape']}",
+    "explanation": "The provided command filters a list of dictionaries to find items whose 'type' is 'fruit'. The lambda function inside the filter checks each element x from the list of dictionaries and retrieves the value associated with the key 'type'. It then checks if that value is equal to 'fruit'.<br><br>The expected output matches the structure of one of the items whose type is indeed 'fruit'."
 }
 ]
