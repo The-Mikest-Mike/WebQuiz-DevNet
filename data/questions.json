@@ -678,5 +678,38 @@
     ],
     "answer": "204",
     "explanation": "The status code 204 indicates that the server has successfully fulfilled the request and that there is no additional content to send in the response payload body.<br>This is commonly used for DELETE and PUT requests where the server successfully processed the request but does not need to return any content.<br><br> A 204 status code is used when the server has processed the request successfully, but there is no content to return to the client"
+},
+{
+    "question": "A company is looking for a cloud deployment which will only use the on-premise infrastructure, is user self-service, and is easy to scale. Which cloud solution should be selected for these requirements?",
+    "options": [
+        "multi",
+        "private",
+        "hybrid",
+        "public"
+    ],
+    "answer": "private",
+    "explanation": "A private cloud deployment allows organizations to provision and manage resources within their own infrastructure, providing the benefits of cloud computing while retaining full control and privacy over their data and infrastructure. Users can access self-service portals to provision and manage resources, making it user self-service. Additionally, a private cloud environment can be designed to be easily scalable, allowing organizations to dynamically allocate resources as needed.<br><br>While hybrid and public cloud solutions offer scalability and self-service capabilities, they involve the use of external cloud resources, which may not align with the requirement to solely use on-premise infrastructure. A multi-cloud deployment involves using multiple cloud providers, which may introduce complexity and may not be necessary given the specified requirements. Therefore, a private cloud deployment is the most suitable option for these requirements."
+},
+{
+    "question": "Users cannot access a webserver and after the traffic is captured, the capture tool shows an ICMP packet that reports 'time exceeded in-transit'. What is the cause of this webserver access issue?",
+    "options": [
+        "A router along the path has the wrong time.",
+        "A router along the path is misrouting the packets in a wrong direction.",
+        "The server is too loaded and the connection could not be handled in time.",
+        "The server is too far away and the packets require too much time to reach it."
+    ],
+    "answer": "A router along the path is misrouting the packets in a wrong direction.",
+    "explanation": "The ICMP packet 'time exceeded in-transit' indicates that a router along the path of the packet's journey encountered a time-to-live (TTL) or hop limit exceeded error. This typically occurs when the TTL value of the packet reaches 0 before it reaches its destination, causing the router to discard the packet and send an ICMP message back to the source.<br>The most common cause of this issue is a router along the path misrouting the packets in the wrong direction or sending them to a dead-end, causing them to expire before reaching the destination."
+},
+{
+    "question": "Which OWASP threat does the message 'This is not a secure web page' demonstrate in a web page with an HTTP link?",
+    "options": [
+        "broken access control",
+        "cross-site scripting",
+        "SQL injection",
+        "man-in-the-middle"
+    ],
+    "answer": "man-in-the-middle",
+    "explanation": "In a man-in-the-middle attack, an attacker intercepts communication between two parties and can eavesdrop on or modify the data transmitted between them. Without HTTPS, the communication between the user's browser and the web server is not encrypted, making it vulnerable to interception and tampering by malicious actors, which is indicative of a man-in-the-middle threat.<br><br>Broken Access Control: This refers to the failure in enforcing proper access controls, such as authorization checks, leading to unauthorized access to resources. The message 'This is not a secure web page' does not directly indicate a failure in access control mechanisms. Instead, it suggests a lack of secure communication, which is a different type of vulnerability.<br>Cross-Site Scripting (XSS): XSS occurs when attackers inject malicious scripts into web pages viewed by other users. While XSS can lead to security issues, such as stealing cookies or session tokens, it does not directly relate to the absence of secure communication indicated by the message 'This is not a secure web page'. XSS vulnerabilities are about injecting and executing client-side scripts within the context of a web page, not about the absence of secure communication protocols like HTTPS."
 }
 ]
