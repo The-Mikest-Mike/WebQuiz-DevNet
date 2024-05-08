@@ -667,5 +667,16 @@
     ],
     "answer": "{'color': 'green', 'items': ['kiwi', 'grape']}",
     "explanation": "The provided command filters a list of dictionaries to find items whose 'type' is 'fruit'. The lambda function inside the filter checks each element x from the list of dictionaries and retrieves the value associated with the key 'type'. It then checks if that value is equal to 'fruit'.<br><br>The expected output matches the structure of one of the items whose type is indeed 'fruit'."
+},
+{  
+    "question": "Which HTTP response code should be returned when the request is completed but there is no content to send for the request?",
+    "options": [
+    "100",
+    "204",
+    "302",
+    "402"
+    ],
+    "answer": "204",
+    "explanation": "The status code 204 indicates that the server has successfully fulfilled the request and that there is no additional content to send in the response payload body.<br>This is commonly used for DELETE and PUT requests where the server successfully processed the request but does not need to return any content.<br><br> A 204 status code is used when the server has processed the request successfully, but there is no content to return to the client"
 }
 ]
