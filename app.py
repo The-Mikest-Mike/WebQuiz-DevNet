@@ -24,11 +24,25 @@ class Question:
         Check if the provided answer is correct and return boolean with attribute:
             user_answer (str): the user's answer
         '''
-        if user_answer == self.answer:
-            return 'Correct'
-        else:
-            return 'Incorrect'
-
+        # Convert user_answer to a list if it's not already one
+        if not isinstance(user_answer, list):
+            user_answer = [user_answer]
+       
+        # Checks if 'self.answer' is a list, which indicate a multiple-choise question
+        if isinstance(self.answer, list):
+            # For multiple-choice questions, sorts both the user's selected options and correct answer
+            if isinstance(user_answer, list):
+                user_answer.sort()
+                self.answer.sort()
+            # Then compare the sorted lists. If the answers match returns correct
+            if user_answer == self.answer:
+                return 'Correct'
+        elif isinstance(self.answer, str):
+            # For single-choice questions, directly compare user's answers with correct answer
+            if user_answer and user_answer[0] == self.answer:
+                return 'Correct'
+        
+    
 # Initialize Flask application.
 app = Flask(__name__)
 
@@ -40,7 +54,6 @@ single_choice_questions_pool = []
 multiple_choice_questions_pool = []
 
 # Read quiz questions from both json source files in 'data' folder (which are a list of dictionaries)
-
 with open('data/single_choice_questions.json', 'r') as json_file:
     single_choice_questions_pool = json.load(json_file)
 
@@ -102,15 +115,25 @@ def display_question():
             current_question = Question(current_question_data['question'], current_question_data['options'], current_question_data['answer'], current_question_data['explanation'])
 
         if request.method == 'POST':
-            user_answer = request.form.get('user_answer')  # Get the user's answer from the form
+            user_selected_options = request.form.getlist('user_answer') # Get user's selection from the form
+           
+            # Check if at least one option is selected
+            if not user_selected_options:
+                flash('Please select at least one option_1', 'error')
+                return render_template('question.html', question=current_question, current_question_index=current_question_index, error=True)
+            
             explanation = current_question_data['explanation']  # Get the explanation from the JSON data
 
+            #if current_question_data.get('multiple_choice', False) and not user_selected_options:
+            #    flash('Please select at least one option')
+            #    return redirect(url_for('display_question'))
+            
             # Check whether user answer is correct using check_answer method
-            result = current_question.check_answer(user_answer)
+            result = current_question.check_answer(user_selected_options) # Return either "Correct" or "Incorrect" based on the user's answer
         
-            # Store the user's answer and result in a list in the session
+            # Store the user's selected options and result in a list in the session
             user_answers = session.get('user_answers', [])
-            user_answers.append({'user_answer': user_answer, 'result': result})
+            user_answers.append({'user_answer': user_selected_options, 'result': result})
             session['user_answers'] = user_answers
 
             # Update the question index to move to the next question
@@ -118,10 +141,10 @@ def display_question():
 
             return render_template('explanation.html', explanation=explanation, result=result)
         else:
-            return render_template('question.html', question=current_question, current_question_index=current_question_index)
-    else:
-        flash('Invalid access to question.html')
-        return redirect(url_for('result'))
+            return render_template('question.html', question=current_question, current_question_index=current_question_index, error=None)
+    #else:
+    #    flash('Invalid access to question.html')
+    #    return redirect(url_for('result'))
 
 # Route for displaying the result of the quiz
 @app.route('/result', endpoint='result')
