@@ -17,7 +17,7 @@
 
 ## Features
 - User friendly interface.
-- Multiple-choice questions with options.
+- Single and Multiple-choice questions with options.
 - Keeps track of user answers and calculates the score.
 - Instantly know by colors whether correct or incorrect.
 - Provides explanations for answers.
@@ -26,6 +26,8 @@
 ## Structure of Folders:
 
     app.py              # main Flask application file
+    README.md
+    requirements.txt
     templates/          # folder for HTML templates
         correct.html
         explanation.html
@@ -36,5 +38,6 @@
     static/             # folder for static files (CSS styles, images)
         styles.css      # all css styles
     data/               # folder for data files
-        questions.json  # containing questions, options and explanations pool
+        multiple_choice_questions.json  # single choice questions pool
+        single_choice_questions.json # multiple choice questions pool
 
