@@ -8,321 +8,560 @@
             "Key:value pairs"
         ],
         "answer": ["Concerned with carrying data"],
-        "explanation": "XML is a format that includes predefined tags for structuring and representing data. It is primarily used for carrying and structuring data, including but not limited to data interchange and storage. <br> <br> While XML is not limited to displaying data, it can be used for this purpose as well but HTML is better suited for that purpose. <br> <br> Unlike JSON and YAML, XML does not use key:value pairs as its primary syntax."
+        "explanation": "XML is a format that includes predefined tags for structuring and representing data. It is primarily used for carrying and structuring data, including but not limited to data interchange and storage.<br><br>While XML is not limited to displaying data, it can be used for this purpose as well but HTML is better suited for that purpose.<br><br>Unlike JSON and YAML, XML does not use key:value pairs as its primary syntax."
     },
     {
         "question": "Which data format is used by Cisco Modeling Labs (CML) for importing and exporting lab files?",
-        "options": ["XML", "IOSXE", "JSON", "YAML"],
+        "options": [
+            "XML",
+            "IOSXE",
+            "JSON",
+            "YAML"
+        ],
         "answer": ["YAML"],
-        "explanation": "While YAML does share similarities with JSON in terms of using key-value pairs and having a hierarchical structure, <strong> CML primarily uses YAML, for lab file import and export.</strong> YAML is a human-readable data serialization format and is commonly used for defining network topologies and configurations in CML. <br><br>Other option 'IOS-XE' (Internetwork Operating System - Extended Edition) is an operating system used in Cisco's networking hardware, particularly in routers and switches."
+        "explanation": "While YAML does share similarities with JSON in terms of using key-value pairs and having a hierarchical structure,<strong>CML primarily uses YAML, for lab file import and export.</strong> YAML is a human-readable data serialization format and is commonly used for defining network topologies and configurations in CML.<br><br>Other option 'IOS-XE' (Internetwork Operating System - Extended Edition) is an operating system used in Cisco's networking hardware, particularly in routers and switches."
     },
     {
         "question": "Which built-in Python library can be used to parse XML data?",
-        "options": ["ElementTree", "XMLTree", "Tree.getroot", "print(root)"],
+        "options": [
+            "ElementTree",
+            "XMLTree",
+            "Tree.getroot",
+            "print(root)"
+        ],
         "answer": ["ElementTree"],
-        "explanation": "Parsing means we are converting a certain set of data into another format. When parsing XML using Python, the built-in <strong>'ElementTree' library has functionality for reading and manipulating XML data.</strong> <br> <br> There is no built-in library or module called 'XMLTree'. <br> <br> 'Tree.getroot' is not a standalone library or module; it appears to be a fragment of code that is used in combination with ElementTree but is not a complete solution on its own. <br> <br> 'print(root)' is not a valid statement; is used for displaying output."
+        "explanation": "Parsing means we are converting a certain set of data into another format. When parsing XML using Python, the built-in <strong>'ElementTree' library has functionality for reading and manipulating XML data.</strong><br><br>There is no built-in library or module called 'XMLTree'.<br><br>'Tree.getroot' is not a standalone library or module; it appears to be a fragment of code that is used in combination with ElementTree but is not a complete solution on its own.<br><br>'print(root)' is not a valid statement; it is used for displaying output."
     },
     {
-        "question": "Reference the following abbreviated snippet from a JSON file: <strong> {“device”:{“hostname”:”R1”,”interface”:[{“GigabitEthernet”. . . </strong> What will be the returned output when parsing through the data using the built-in JSON library in Python, ending with the following print statement: <strong> print(data['device']['hostname'])</strong>?",
-        "options": ["hostname", "device", "interface", "R1"],
+        "question": "Reference the following abbreviated snippet from a JSON file: <strong>{“device”:{“hostname”:”R1”,”interface”:[{“GigabitEthernet”. . .</strong> What will be the returned output when parsing through the data using the built-in JSON library in Python, ending with the following print statement: <strong>print(data['device']['hostname'])</strong>?",
+        "options": [
+            "hostname",
+            "device",
+            "interface",
+            "R1"
+        ],
         "answer": ["R1"],
         "explanation": "In the print statement, the 'hostname' key is associated with the value 'R1'. Therefore, the output of the print statement will be 'R1'."
     },
     {
-        "question": "Which of the following print statements can be used to return the value 'R1' when parsing through the YAML data in Python? <br><br> <strong>yaml snippet:</strong> <br><pre>OFFICE: <br>  device: <br>    hostname: R1 <br>  interface: <br>    GigabitEthernet: <br>      ...</pre>",
-        "options": ["print(data['OFFICE'])", "print(data['OFFICE']['device']['hostname'])", "print(data['hostname'])", "print(data['device']['hostname'])"],
+        "question": "Which of the following print statements can be used to return the value 'R1' when parsing through the YAML data in Python?<br><br><strong>yaml snippet:</strong><br><pre>OFFICE:<br>  device:<br>    hostname: R1<br>  interface:<br>    GigabitEthernet:<br>      ...</pre>",
+        "options": [
+            "print(data['OFFICE'])",
+            "print(data['OFFICE']['device']['hostname'])",
+            "print(data['hostname'])",
+            "print(data['device']['hostname'])"
+        ],
         "answer": ["print(data['OFFICE']['device']['hostname'])"],
-        "explanation": "To access the value 'R1' in the YAML data structure, you need to follow the hierarchy. <br> <br> The correct print statement is 'print(data['OFFICE']['device']['hostname'])', <br> <br> which accesses the 'hostname' key nested within the 'device' key, which is in turn nested within the 'OFFICE' key."
+        "explanation": "To access the value 'R1' in the YAML data structure, you need to follow the hierarchy.<br><br>The correct print statement is 'print(data['OFFICE']['device']['hostname'])',<br><br>which accesses the 'hostname' key nested within the 'device' key, which is in turn nested within the 'OFFICE' key."
     },
     {
         "question": "What is the initial phase used when implementing the Test-Driven Development methodology?",
-        "options": ["Coding", "Planning", "Testing", "Debugging"],
+        "options": [
+            "Coding",
+            "Planning",
+            "Testing",
+            "Debugging"
+        ],
         "answer": ["Testing"],
         "explanation": "Test-Driven Development (TDD) begins with a testing phase, where developers write tests before writing code. This approach leads to shorter development cycles, better code quality, and the creation of reusable unit tests."
     },
     {
         "question": "What is the term for our general plan at the beginning of development when using the Agile Method?",
-        "options": ["Sprint", "Product Backlog", "Cycle", "Scrum"],
+        "options": [
+            "Sprint",
+            "Product Backlog",
+            "Cycle",
+            "Scrum"
+        ],
         "answer": ["Product Backlog"],
         "explanation": "The Agile Method starts with a plan that is open to changes informed by feedback and review, creating a more general idea that we develop as we go along. <br> <br> This starting point is referred to as our <strong> Product Backlog, which includes details about all the features that need to be included in the product and what needs to be accomplished.</strong> However, it is important to note that in Agile, the broader, high-level plan or vision is often referred to as the 'Product Vision' or 'Project Vision,' which outlines the overall goals and direction of the project. <br> <br> The other options represent different aspects or phases within Agile but do not directly correspond to the initial plan."
     },
     {
         "question": "What is the final step in the Lean Method before the cycle repeats?",
-        "options": ["Seek perfection", "Create flow", "Map value stream", "Establish pull"],
+        "options": [
+            "Seek perfection",
+            "Create flow",
+            "Map value stream",
+            "Establish pull"
+        ],
         "answer": ["Seek perfection"],
         "explanation": "In the Lean Methodology, the final step before the cycle repeats is known as 'Seek Perfection.' This step underscores the continuous pursuit of improvements and efficiency to deliver the highest possible value to the customer. It acknowledges that while perfection may never be fully achieved, the Lean Method embraces a cyclical model that encourages ongoing enhancement. The aim is to create a culture of continuous improvement where teams consistently seek ways to optimize processes and eliminate waste, ensuring that the organization remains agile and responsive to changing customer needs and market conditions."
     },
     {
         "question": "Which of the following is a characteristic of the Waterfall Method?",
-        "options": ["Customer feedback is timely and constant", "Value is created throughout the process", "Much more inexpensive than other methods", "Everything is planned at the beginning of a project"],
+        "options": [
+            "Customer feedback is timely and constant",
+            "Value is created throughout the process",
+            "Much more inexpensive than other methods",
+            "Everything is planned at the beginning of a project"
+        ],
         "answer": ["Everything is planned at the beginning of a project"],
         "explanation": "One of the key characteristics of the Waterfall Method is that 'Everything is planned at the beginning of a project.' In the Waterfall approach, the entire project, including all requirements and phases, is meticulously planned upfront. While this approach may seem structured, it has limitations, particularly in modern software development. The challenge lies in its limited adaptability; once the plan is set, it becomes harder to pivot or make changes when needed. Additionally, no value is created until the end of the process, meaning that stakeholders do not see tangible results until the project is completed. Furthermore, the lack of timely feedback can pose a challenge for ensuring quality and meeting evolving customer needs. In contrast to more iterative and Agile methodologies, where adaptability, continuous value delivery, and feedback are emphasized."
     },
     {
         "question": "Which Python structure allows us to run the same piece of code multiple times in a program to repurpose the code?",
-        "options": ["Classes", "Modules", "Functions", "Blocks"],
+        "options": [
+            "Classes",
+            "Modules",
+            "Functions",
+            "Blocks"
+        ],
         "answer": ["Functions"],
         "explanation": "In Python, 'Functions' are a fundamental programming construct that allows us to define a block of code that can be reused multiple times within a program. By encapsulating a piece of code within a function, we create a named and reusable unit of code. <br><br> This practice significantly improves code organization and maintenance, as it eliminates the need to write the same code repeatedly at different parts of the program. When we encounter a situation where the same task or operation needs to be performed multiple times, we can simply call the function, passing the necessary arguments, rather than duplicating the code."
     },
     {
         "question": "Which Python structure is closely associated with objects?",
-        "options": ["Modules", "Classes", "Functions", "Blocks"],
+        "options": [
+            "Modules",
+            "Classes",
+            "Functions",
+            "Blocks"
+        ],
         "answer": ["Classes"],
         "explanation": "In Python, classes are closely associated with objects, serving as templates for creating objects. <br> Objects encapsulate both data (attributes) and functions (methods) that operate on that data."
     },
     {
         "question": "Which Python structure allows us to import code from other external files into our main code?",
-        "options": ["Blocks", "Functions", "Modules", "Classes"],
+        "options": [
+            "Blocks",
+            "Functions",
+            "Modules",
+            "Classes"
+        ],
         "answer": ["Modules"],
         "explanation": "Modules are another way we can save time when coding and decrease the overall size of our main code. By using an import statement, we can insert custom created modules or built-in Python modules into our code from an external file. This also helps modularize and organize code"
     },
     {
         "question": "Which design method leverages the Separation of Concerns (SoC) principle for designing modular code?",
-        "options": ["Model-View-Controller (MVC)", "Observer", "Version Control", "Git"],
+        "options": [
+            "Model-View-Controller (MVC)",
+            "Observer",
+            "Version Control",
+            "Git"
+        ],
         "answer": ["Model-View-Controller (MVC)"],
         "explanation": "Model-View-Controller (MVC) leverages the Separation of Concerns (SoC) principle. SoC is a design principle for breaking our code into smaller, separate modular pieces. By doing this, we have more opportunity for upgrading software by changing the smaller components, rather than changing the larger overall code."
     },
     {
         "question": "Which design pattern is commonly used to implement distributed event handling systems, where an object maintains a list of its dependents and notifies them of state changes?",
-        "options": ["Model-View-Controller (MVC)", "Singleton", "Factory Method", "Observer"],
+        "options": [
+            "Model-View-Controller (MVC)",
+            "Singleton",
+            "Factory Method",
+            "Observer"
+        ],
         "answer": ["Observer"],
         "explanation": "The Observer pattern is used to implement distributed event handling systems. In this pattern, a subject (the object of interest) maintains a list of its dependents (observers) and notifies them of any state changes. This pattern is commonly used for scenarios where multiple objects need to be updated when the state of a subject changes."
     },
     {
         "question": "Which principle means we are tracking all the changes made to a file or a set of files in a historical perspective?",
-        "options": ["Observer", "Version Control", "Model-View-Controller (MVC)", "Logging"],
+        "options": [
+            "Observer",
+            "Version Control",
+            "Model-View-Controller (MVC)",
+            "Logging"
+        ],
         "answer": ["Version Control"],
         "explanation": "Version control, often implemented using systems like Git, is a fundamental practice in software development. It involves systematically tracking changes made to code files, creating a historical record of modifications. This practice offers several benefits, including the ability to track changes, revert to previous code states, facilitate collaboration among developers, manage code branches for feature development, ensure backup and recovery of code, and more. By maintaining a comprehensive history of code changes, version control systems enhance code stability, support teamwork, and provide a safety net for software projects."
     },
     {
         "question": "Which Git version control operation allows us to create a copy of a repository on our local file system?",
-        "options": ["Commit", "Clone", "Push", "Merge"],
+        "options": [
+            "Commit",
+            "Clone",
+            "Push",
+            "Merge"
+        ],
         "answer": ["Clone"],
         "explanation": "The Git 'clone' operation enables us to duplicate an entire repository onto our local computer. This process, executed with the 'git clone' command followed by the repository's URL, creates an independent copy of the project locally, allowing us to work on it without altering the original version. It is akin to borrowing a library book, where you get your own copy to read at home."
     },
     {
         "question": "Which Git version control operation allows us to track the status of a file including any changes made?",
-        "options": ["Add/Remove", "Diff", "Branch", "Clone"],
+        "options": [
+            "Add/Remove",
+            "Diff",
+            "Branch",
+            "Clone"
+        ],
         "answer": ["Add/Remove"],
         "explanation": "The Git 'add/remove' operation allows us to track file changes. Using 'git add,' we specify which files to monitor for changes within our Git repository. This operation is crucial for keeping an eye on file status and alterations."
     },
     {
         "question": "Which Git version control operation moves a file from our index (or staging area) to our local repository?",
-        "options": ["Merge", "Push", "Commit", "Diff"],
+        "options": [
+            "Merge",
+            "Push",
+            "Commit",
+            "Diff"
+        ],
         "answer": ["Commit"],
         "explanation": "The commit operation moves a file from our staging area and commits the file changes to our local repository. This is how we sync our staging area to the local repository. In Git, there are three stages: Working Directory, Staging Area, and Local Repository. Changes start in the Working Directory, move to the Staging Area when ready for a commit, and finally get committed to the Local Repository. The 'git status' command will show any changes that are ready to be committed, and the 'git commit' command is how we finalize the file commit."
     },
     {
         "question": "Which Git version control operation will add all tracked files from our local file system to a central remote repository such as GitHub?",
-        "options": ["Commit", "Push", "Clone", "Diff"],
+        "options": [
+            "Commit",
+            "Push",
+            "Clone",
+            "Diff"
+        ],
         "answer": ["Push"],
         "explanation": "The 'git push' operation uploads local file changes to a central remote repository, like GitHub, facilitating collaborative development by enabling multiple developers to access and work on the same codebase stored remotely."
     },
     {
         "question": "Which Git version control operation allows us a safe way to separate our development area from a main local repository containing known working code?",
-        "options": ["Clone", "Add/Remove", "Diff", "Branch"],
+        "options": [
+            "Clone",
+            "Add/Remove",
+            "Diff",
+            "Branch"
+        ],
         "answer": ["Branch"],
         "explanation": "Branches are a feature which allow us to separate our development area from a main local repository, providing a safe way to work on new features or updates without affecting the stable codebase.Some useful commands are:<br><br>- <strong>git branch</strong> or <strong>git branch --list</strong>: View a list of all local branches.<br>- <strong>git branch \"branch_name\"</strong>: Create a new branch.<br>- <strong>git branch -v</strong> or <strong>git branch --verbose</strong>: For a detailed view of branches, including commit messages and commit hashes of the latest commits"
     },
     {
         "question": "Which Git version control operation allows us to join the contents of a branch development area with a main repository locally?",
-        "options": ["Diff", "Push/Pull", "Merge", "Add/Remove"],
+        "options": [
+            "Diff",
+            "Push/Pull",
+            "Merge",
+            "Add/Remove"
+        ],
         "answer": ["Merge"],
         "explanation": "The merge operation allows us to join multiple branches together into a main coding repository. When working in the main repository, the 'git merge' command, followed by the name of the branch we want to add into this repository, will show any conflicts and attempt to merge the files. It is important to note that for the merge to be successful, the changes in the branches being merged should have been committed using the 'git commit' command. Git considers only committed changes for merging, so ensure that changes are committed before performing a merge operation."
     },
     {
         "question": "Which Git version control operation is used as a file comparison tool?",
-        "options": ["Merge", "Branch", "Clone", "Diff"],
+        "options": [
+            "Merge",
+            "Branch",
+            "Clone",
+            "Diff"
+        ],
         "answer": ["Diff"],
         "explanation": "The 'diff' operation serves as a file comparison tool, allowing developers to visualize the differences in a set of files or development branches. This tool is particularly valuable when merging branches or when multiple developers are collaborating on the same files. <br> It provides a detailed, line-by-line breakdown of changes, enabling developers to review and understand modifications made to the codebase. Additionally, it aids in the identification and resolution of conflicts during code collaboration and merging processes."
     },
     {
         "question": "Which method of authentication for REST API is typically limited only to operations where the READ function is required?",
-        "options": ["Basic Authentication", "OAuth Authentication", "Open Authentication", "API Key Authentication"],
+        "options": [
+            "Basic Authentication",
+            "OAuth Authentication",
+            "Open Authentication",
+            "API Key Authentication"
+        ],
         "answer": ["API Key Authentication"],
-        "explanation": "<strong> 'API Key Authentication' uses pre-shared keys for client-server authentication. It is typically limited to READ operations to minimize security risks if the key is intercepted. </strong> <br><br> The other options 'Basic Authentication' and 'OAuth Authentication' offer broader access control, including both READ and WRITE operations. <br>The other option 'Open Authentication' is not a recognized authentication method in this context."
+        "explanation": "<strong>'API Key Authentication' uses pre-shared keys for client-server authentication. It is typically limited to READ operations to minimize security risks if the key is intercepted.</strong><br><br>The other options 'Basic Authentication' and 'OAuth Authentication' offer broader access control, including both READ and WRITE operations.<br>The other option 'Open Authentication' is not a recognized authentication method in this context."
     },
     {
         "question": "What type of HTTP messages are used by Webhooks?",
-        "options": ["HTTP UPDATE", "HTTP READ", "HTTP POST", "HTTP DELETE"],
+        "options": [
+            "HTTP UPDATE",
+            "HTTP READ",
+            "HTTP POST",
+            "HTTP DELETE"
+        ],
         "answer": ["HTTP POST"],
-        "explanation": "<strong> Webhooks </strong> are <strong> HTTP POST </strong> messages triggered by specific events in an automated manner, designed for receiving real-time notification messages about events on a system. <br> HTTP UPDATE, READ, and DELETE are not appropriate options because Webhooks are specifically tailored for event-driven notifications, not for making updates (UPDATE), reading existing data (READ), or deleting resources (DELETE)."
+        "explanation": "<strong>Webhooks</strong> are <strong>HTTP POST</strong> messages triggered by specific events in an automated manner, designed for receiving real-time notification messages about events on a system.<br>HTTP UPDATE, READ, and DELETE are not appropriate options because Webhooks are specifically tailored for event-driven notifications, not for making updates (UPDATE), reading existing data (READ), or deleting resources (DELETE)."
     },
     {
         "question": "Which area in Postman allows you to create preconfigured areas to be used with specific devices, which can hold key:value pairs for variables like the base URL, the token, the username, and the password?",
-        "options": ["Environments", "Flows", "Collections", "Requests"],
+        "options": [
+            "Environments",
+            "Flows",
+            "Collections",
+            "Requests"
+        ],
         "answer": ["Environments"],
-        "explanation": "A Postman environment is a set of variables that can be used for requests. <br> An environment can store key:value pairs for specific devices, which can be referenced in our requests using variables, which saves us from entering the same information multiple times with our methods. <br> <strong> Common information stored in an environment </strong> include the <strong> device base URL, the token, the username, </strong> and <strong> the password </strong>. <br><br> The other options: <br> 'Flows' in Postman refer to the sequence of requests within a collection, not to store variables. <br> 'Collections' are sets of saved requests, not specifically designed for storing variables. <br> 'Requests' are individual API call configurations within a collection and do not provide the environment for storing variables."
+        "explanation": "A Postman environment is a set of variables that can be used for requests.<br>An environment can store key:value pairs for specific devices, which can be referenced in our requests using variables, which saves us from entering the same information multiple times with our methods.<br><strong>Common information stored in an environment</strong> include the <strong>device base URL, the token, the username,</strong> and <strong>the password</strong>.<br><br>The other options:<br>'Flows' in Postman refer to the sequence of requests within a collection, not to store variables.<br>'Collections' are sets of saved requests, not specifically designed for storing variables.<br>'Requests' are individual API call configurations within a collection and do not provide the environment for storing variables."
     },
     {
         "question": "With Cisco Network Services Orchestrator, what are required to translate between XML format and our network configuration?",
-        "options": ["YAML", "JSON", "NEDS", "LIB"],
+        "options": [
+            "YAML",
+            "JSON",
+            "NEDS",
+            "LIB"
+        ],
         "answer": ["NEDS"],
-        "explanation": "<strong> Network Element Drivers (NEDS) are necessary to translate between XML data and a valid network configuration.</strong> Cisco NSO provides NEDS for various versions of the Cisco CLI since many devices use different commands. <br> Some of those include NEDS for Cisco ASA, Cisco IOS-XR, and Cisco IOS-NX. <br> A Network Element Driver (NED) in the context of Cisco Network Services Orchestrator (NSO) is designed to interface with specific network devices or platforms and translate between NSO's XML-based configuration model and the device's native configuration language. <br> A NED template for example, can be used to translate configuration data provided by NSO into the XML format expected by the Cisco IOS-XE device, ensuring that the device's configuration is synchronized with NSO's intended state."
+        "explanation": "<strong>Network Element Drivers (NEDS) are necessary to translate between XML data and a valid network configuration.</strong> Cisco NSO provides NEDS for various versions of the Cisco CLI since many devices use different commands.<br>Some of those include NEDS for Cisco ASA, Cisco IOS-XR, and Cisco IOS-NX.<br>A Network Element Driver (NED) in the context of Cisco Network Services Orchestrator (NSO) is designed to interface with specific network devices or platforms and translate between NSO's XML-based configuration model and the device's native configuration language.<br>A NED template for example, can be used to translate configuration data provided by NSO into the XML format expected by the Cisco IOS-XE device, ensuring that the device's configuration is synchronized with NSO's intended state."
     },
     {
         "question": "Which of the following is the correct syntax for a Python function?",
-        "options": ["define function (arg)", "function function(arg)", "def function(arg)", "func function(arg)"],
+        "options": [
+            "define function (arg)",
+            "function function(arg)",
+            "def function(arg)",
+            "func function(arg)"
+        ],
         "answer": ["def function(arg)"],
-        "explanation": "In Python, functions are defined using the <strong> 'def'</strong> keyword followed by the <strong> function name </strong> and a pair of <strong> parentheses'()' </strong> that may contain optional function parameters. <br> The correct syntax for defining a Python function is as follows: <strong>'def function_name(parameters):'</strong> "
+        "explanation": "In Python, functions are defined using the <strong>'def'</strong> keyword followed by the <strong>function name</strong> and a pair of <strong>parentheses'()'</strong> that may contain optional function parameters.<br>The correct syntax for defining a Python function is as follows: <strong>'def function_name(parameters):'</strong>"
     },
     {
         "question": "Which of the following is a valid Python function name?",
-        "options": ["1function", "__init__", "True", "Funct1on"],
+        "options": [
+            "1function",
+            "__init__",
+            "True",
+            "Funct1on"
+        ],
         "answer": ["__init__"],
-        "explanation": "In Python, valid function names must follow certain rules. They should start with a letter or an underscore, followed by letters, numbers, or underscores. <br> Other options: '1function' starts with a digit, which is not a valid starting character for function names. <br> 'True' is not recommended as it can conflict with a Python keyword. <br> 'Funct1on' is a valid function name but not the best practice due to the use of numbers. <br> <strong>'__init__'</strong> is a <strong>valid and commonly used function name </strong>, often associated with constructors in Python classes."
+        "explanation": "In Python, valid function names must follow certain rules. They should start with a letter or an underscore, followed by letters, numbers, or underscores.<br>Other options: '1function' starts with a digit, which is not a valid starting character for function names.<br>'True' is not recommended as it can conflict with a Python keyword.<br>'Funct1on' is a valid function name but not the best practice due to the use of numbers.<br><strong>'__init__'</strong> is a <strong>valid and commonly used function name</strong>, often associated with constructors in Python classes."
     },
     {
         "question": "When three single quotation marks are used on the next line directly after defining a function, what does this indicate?",
-        "options": ["Multi-line text", "A docstring", "A string value including double or single quotation marks", "None of the above"],
+        "options": [
+            "Multi-line text",
+            "A docstring",
+            "A string value including double or single quotation marks",
+            "None of the above"
+        ],
         "answer": ["A docstring"],
-        "explanation": "When three single quotation marks or double, are used directly after defining a function, it indicates a docstring. <br> A docstring is a multi-line string that provides documentation or a description of the function's purpose, parameters, and behavior. <br> It is used to document code and provide information for developers."
+        "explanation": "When three single quotation marks or double, are used directly after defining a function, it indicates a docstring.<br>A docstring is a multi-line string that provides documentation or a description of the function's purpose, parameters, and behavior.<br>It is used to document code and provide information for developers."
     },
     {
         "question": "What is a method?",
-        "options": ["A variable applied to a class", "Syntax notation", "A function within a class or an object", "Something that is not used in a class"],
+        "options": [
+            "A variable applied to a class",
+            "Syntax notation",
+            "A function within a class or an object",
+            "Something that is not used in a class"
+        ],
         "answer": ["A function within a class or an object"],
-        "explanation": "A method, is a function that is defined within a class or an object. Methods are used to define the behavior and operations associated with the class or object. <br> They allow you to perform actions and manipulate data specific to that class or object."
+        "explanation": "A method, is a function that is defined within a class or an object. Methods are used to define the behavior and operations associated with the class or object.<br>They allow you to perform actions and manipulate data specific to that class or object."
     },
     {
         "question": "Which of the following describes inheritance?",
-        "options": ["A hierarchy for functions in Python", "Class attributes and methods used as the starting point for another class", "A function only applied to methods being used in another class","None of the above"],
+        "options": [
+            "A hierarchy for functions in Python",
+            "Class attributes and methods used as the starting point for another class",
+            "A function only applied to methods being used in another class",
+            "None of the above"
+        ],
         "answer": ["Class attributes and methods used as the starting point for another class"],
-        "explanation": "Inheritance, is a fundamental concept in object-oriented programming where class attributes and methods are used as the starting point for creating a new class. <br> This allows the new class to inherit the properties and behaviors of the parent class, promoting code reusability and creating a hierarchy of classes."
+        "explanation": "Inheritance, is a fundamental concept in object-oriented programming where class attributes and methods are used as the starting point for creating a new class.<br>This allows the new class to inherit the properties and behaviors of the parent class, promoting code reusability and creating a hierarchy of classes."
     },
     {
         "question": "Which module provides access to the file system and directory structure?",
-        "options": ["filesystem", "open", "devnetats","ncclient"],
+        "options": [
+            "filesystem",
+            "open",
+            "devnetats",
+            "ncclient"
+        ],
         "answer": ["open"],
-        "explanation": "The <strong> 'open' </strong> module in Python provides access to the file system and directory structure. It allows you to <strong> open, read, write, and manipulate files and directories </strong>. <br> The other options do not provide direct access to the file system."
+        "explanation": "The <strong>'open'</strong> module in Python provides access to the file system and directory structure. It allows you to <strong>open, read, write, and manipulate files and directories</strong>.<br>The other options do not provide direct access to the file system."
     },
     {
         "question": "Which module is a testing framework for Cisco infrastructure?",
-        "options": ["pyATS", "pyang", "devnetats", "ncclient"],
+        "options": [
+            "pyATS",
+            "pyang",
+            "devnetats",
+            "ncclient"
+        ],
         "answer": ["pyATS"],
-        "explanation": "The 'pyATS' (Python Automation and Test System) framework is a testing framework designed for Cisco infrastructure and network automation testing. <br> It provides a comprehensive set of tools and libraries for testing Cisco devices and network configurations. <br><br> Other options do not relate to testing Cisco infrastructure."
+        "explanation": "The 'pyATS' (Python Automation and Test System) framework is a testing framework designed for Cisco infrastructure and network automation testing.<br>It provides a comprehensive set of tools and libraries for testing Cisco devices and network configurations.<br>Other options do not relate to testing Cisco infrastructure."
     },
     {
         "question": "Within a Cisco UCS-based network, what type of device is used to interconnect all UCS-capable servers into a single point of management?",
-        "options": ["UCS Fabric Extender", "UCS Series Servers", "UCS Fabric Interconnects", "UCS Manager"],
+        "options": [
+            "UCS Fabric Extender",
+            "UCS Series Servers",
+            "UCS Fabric Interconnects",
+            "UCS Manager"
+        ],
         "answer": ["UCS Fabric Interconnects"],
         "explanation": "In a Cisco UCS Manager environment, UCS Fabric Interconnects serve as the key devices for integrating UCS-capable servers into a unified fabric of connectivity dedicated to management. It is a best practice to deploy UCS Fabric Interconnects in pairs, ensuring failover capability and high availability. This design enhances the reliability and robustness of the overall network infrastructure."
     },
     {
         "question": "Which component used within Cisco UCS Director represents the largest units of information?",
-        "options": ["Workflows", "Tasks", "Volumes", "Libraries"],
+        "options": [
+            "Workflows",
+            "Tasks",
+            "Volumes",
+            "Libraries"
+        ],
         "answer": ["Libraries"],
-        "explanation": "In Cisco UCS Director, Libraries serve as the largest unit of information. They encompass collections of workflows or pre-defined tasks. Tasks, on the other hand, constitute the smallest unit, representing individual actions. Workflows are organized as collections of tasks, and multiple workflows can be contained within a library. This hierarchical structure provides a systematic approach to managing and organizing information within Cisco UCS Director. This version maintains accuracy while refining the structure and wording for improved clarity within a professional certification context."
+        "explanation": "In Cisco UCS Director, Libraries serve as the largest unit of information. They encompass collections of workflows or pre-defined tasks.<br>Tasks, on the other hand, constitute the smallest unit, representing individual actions.<br>Workflows are organized as collections of tasks, and multiple workflows can be contained within a library. This hierarchical structure provides a systematic approach to managing and organizing information within Cisco UCS Director. This version maintains accuracy while refining the structure and wording for improved clarity within a professional certification context."
     },
     {
         "question": "Within Cisco Intersight, which area displays all the devices under our control that have been claimed?",
-        "options": ["Assets", "Profiles", "Targets", "Policies"],
+        "options": [
+            "Assets",
+            "Profiles",
+            "Targets",
+            "Policies"
+        ],
         "answer": ["Targets"],
         "explanation": "In the Cisco Intersight management portal, selecting the Targets area from the admin menu allows us to view all claimed devices under our control. This section provides a comprehensive overview of devices that have been successfully claimed and are currently managed within Cisco Intersight."
     },
     {
         "question": "Which method is necessary to create a new room in Cisco Webex through API interaction?",
-        "options": ["POST", "PUT", "GET", "UPDATE"],
+        "options": [
+            "POST",
+            "PUT",
+            "GET",
+            "UPDATE"
+        ],
         "answer": ["POST"],
         "explanation": "To create a new room using the Cisco Webex API, the required method is POST. Utilizing the POST method involves sending a request to https://webexapis.com/v1/rooms, and providing a title for the room in order to establish the new space. In contrast, the GET method, if used, would point to the same URL but is designed for retrieving information rather than creating new rooms."
     },
     {
         "question": "Which API is utilized by Cisco collaboration endpoint software, including Cisco CE and Cisco RoomOS?",
-        "options": ["ceAPI", "cAPI", "osAPI", "xAPI"],
+        "options": [
+            "ceAPI",
+            "cAPI",
+            "osAPI",
+            "xAPI"],
         "answer": ["xAPI"],
         "explanation": "The xAPI (xAPI) is the designated interface for Cisco collaboration endpoint software, such as Cisco CE (Collaboration Endpoint) and Cisco RoomOS. This API enables developers to programmatically execute commands and retrieve the status of devices running these software platforms. The xAPI facilitates bi-directional communication with third-party applications and control systems, providing a robust framework for integration and control."
     },
     {
         "question": "Which type of API interface is employed for Cisco CUCM interaction?",
-        "options": ["Open API", "xAPI", "AXL API", "SDK API"],
+        "options": [
+            "Open API",
+            "xAPI",
+            "AXL API",
+            "SDK API"
+        ],
         "answer": ["AXL API"],
         "explanation": "For Cisco Unified Communications Manager (CUCM) interaction, the Administrative XML Web Service (AXL) API is utilized. AXL is an XML-based interface that facilitates the insertion, retrieval, updating, and removal of data from the Unified Communication configuration database. Developers leverage AXL to perform actions such as creating, reading, updating, and deleting objects like gateways, users, devices, route patterns, and more within the Cisco CUCM environment."
     },
     {
         "question": "Which Cisco collaboration solution offers an agent and supervisor desktop that can be accessed and manipulated through REST API interaction?",
-        "options": ["Finesse", "Cisco UCM", "Cisco Webex", "Cisco UCS"],
+        "options": [
+            "Finesse",
+            "Cisco UCM",
+            "Cisco Webex",
+            "Cisco UCS"
+        ],
         "answer": ["Finesse"],
         "explanation": "Cisco Finesse is the Cisco collaboration solution that provides an agent and supervisor desktop. This desktop can be interacted with through REST API, allowing users to affect and customize their experience. Finesse integrates traditional contact center functions into a thin-client desktop, and its robust API facilitates the creation of custom applications."
     },
     {
         "question": "Which key:value pair is used to identify the authentication token when interacting with the Firepower API?",
-        "options": ["X-auth-token:<authentication token value>", "X-auth-access-token:<authentication token value>", "X-auth-bearer-token:<authentication token value>", "X-auth-secure-token:<authentication token value>"],
+        "options": [
+            "X-auth-token:<authentication token value>",
+            "X-auth-access-token:<authentication token value>",
+            "X-auth-bearer-token:<authentication token value>",
+            "X-auth-secure-token:<authentication token value>"
+        ],
         "answer": ["X-auth-access-token:<authentication token value>"],
         "explanation": "To identify the authentication token with the Firepower API, the correct key:value pair is X-auth-access-token: followed by the actual authentication token value. For example, X-auth-access-token:<actual token value>. It's crucial to use the accurate key:value pair as specified by the Firepower API documentation. Additionally, Firepower requires a separate key:value pair for the refresh token, as outlined in the API documentation."
     },
     {
         "question": "Which cloud-based Cisco platform is used as a secure internet gateway for things like malware prevention and secure DNS routing?",
-        "options": ["AMP", "Umbrella", "ISE", "ThreatGrid"],
+        "options": [
+            "AMP",
+            "Umbrella",
+            "ISE",
+            "ThreatGrid"
+        ],
         "answer": ["Umbrella"],
         "explanation": "Cisco Umbrella acts as a secure internet gateway and provides DNS-layer security. This allows us to route endpoints over secure DNS destinations, prevent malware and ransomware, and more."
     },
     {
         "question": "What does YAML stand for?",
-        "options": ["Yet Another Markup Language", "YAML Ain't Markup Language", "The name of its creator", "None of the above"],
+        "options": [
+            "Yet Another Markup Language",
+            "YAML Ain't Markup Language",
+            "The name of its creator",
+            "None of the above"
+        ],
         "answer": ["YAML Ain't Markup Language"],
         "explanation": "YAML stands for 'YAML Ain't Markup Language.' According to the official YAML site <strong>https://yaml.org</strong> It is a human-readable data serialization format that is commonly used for configuration files and data exchange, especially in applications where human readability is a priority."
     },   
     {
         "question": "What is the syntax for error handling in Python?",
-        "options": ["try-except-else-finally", "raise ErrorMessage", "assertErrorValue", "All of the above"],
+        "options": [
+            "try-except-else-finally",
+            "raise ErrorMessage",
+            "assertErrorValue",
+            "All of the above"
+        ],
         "answer": ["try-except-else-finally"],
         "explanation": "The syntax for error handling in Python involves the try-except-else-finally blocks. <br> <br> 'try' is used to wrap the code that might raise an exception, <br> 'except' is used to handle specific exceptions, <br> 'else' is executed if no exceptions are raised, and <br> 'finally' is executed regardless of whether an exception occurred or not."
     },
     {
         "question": "When does the finally block execute?",
-        "options": ["After the try block is successful", "After the except block", "At the end of every try block", "When an error code stops the else block"],
+        "options": [
+            "After the try block is successful",
+            "After the except block",
+            "At the end of every try block",
+            "When an error code stops the else block"
+        ],
         "answer": ["At the end of every try block"],
         "explanation": "The finally block in Python executes at the end of every try block, regardless of whether an exception occurred or not. It is typically used to perform cleanup operations such as closing files or releasing resources."
     },
     {
         "question": "Test-driven development requires that developers:",
-        "options": ["Create a unit test for every bit of code they write", "Know how to use DevOps tools for automated testing", "Create a simple test that fails and then write code that allows the test to succeed", "Completely unnecessary in an Agile development shop"],
+        "options": [
+            "Create a unit test for every bit of code they write",
+            "Know how to use DevOps tools for automated testing",
+            "Create a simple test that fails and then write code that allows the test to succeed",
+            "Completely unnecessary in an Agile development shop"
+        ],
         "answer": ["Create a simple test that fails and then write code that allows the test to succeed"],
         "explanation": "Test-driven development (TDD) requires developers to follow the 'Red-Green-Refactor' cycle. This means writing a failing test first, then writing the code to make the test pass, and finally refactoring the code while ensuring that the tests still pass. It emphasizes writing tests before writing the actual code, ensuring that the code meets the requirements set by the tests."
     },
     {
-        "question": "What is the difference between a <strong> unit test </strong> and an <strong> integration test </strong>? (Choose two)",
-        "options": ["An integration test is for validation of how different parts of the application work together", "An integration test verifies that the application operates as expected", "A unit test verifies API functionality", "A unit test is most specific in scope and tests small bits of code"],
+        "question": "What is the difference between a <strong> unit test </strong> and an <strong>integration test</strong>? (Choose two)",
+        "options": [
+            "An integration test is for validation of how different parts of the application work together",
+            "An integration test verifies that the application operates as expected",
+            "A unit test verifies API functionality",
+            "A unit test is most specific in scope and tests small bits of code"
+        ],
         "answer": ["An integration test is for validation of how different parts of the application work together", "A unit test is most specific in scope and tests small bits of code"],
         "explanation": "Integration tests validate the interaction between different parts of the application, ensuring that they work together as expected. Unit tests focus on testing small, specific bits of code in isolation from the rest of the application, typically verifying individual functions or methods."
     },
     {
         "question": "Which class is inherited as part of a unit test?",
-        "options": ["unittest.testcase", "unittest.TestCase", "unittest", "TestCase"],
+        "options": [
+            "unittest.testcase",
+            "unittest.TestCase",
+            "unittest",
+            "TestCase"
+        ],
         "answer": ["unittest.TestCase"],
         "explanation": "In Python, the class to be inherited as part of a unit test is 'unittest.TestCase'. This class provides various methods and assertions to facilitate writing and running unit tests using the unittest framework."
     },
     {
         "question": "Which of the following is a sample use case of a southbound API?",
-        "options": ["Pushing network configuration changes down to devices", "Increasing security", "Streaming telemetry", "Sending information to the cloud"],
+        "options": [
+            "Pushing network configuration changes down to devices",
+            "Increasing security",
+            "Streaming telemetry",
+            "Sending information to the cloud"
+        ],
         "answer": ["Pushing network configuration changes down to devices"],
         "explanation": "A southbound API typically refers to an interface used to communicate from a controller (such as a network controller or SDN controller) to the devices it manages. <br><br> One common use case of a southbound API is pushing network configuration changes down to devices."
     },
     {
         "question": "True or False: RESTful API authentication can use API keys or custom tokens.",
         "options": [
-            "True", 
+            "True",
             "False"
         ],
         "answer": ["True"],
-        "explanation": "RESTful API authentication can indeed utilize API keys or custom tokens. <br> API keys are typically used for authenticating third-party applications or services, while custom tokens, such as JWT (JSON Web Tokens), are often used for user authentication."
+        "explanation": "RESTful API authentication can indeed utilize API keys or custom tokens.<br>API keys are typically used for authenticating third-party applications or services, while custom tokens, such as JWT (JSON Web Tokens), are often used for user authentication."
     },
     {
         "question": "What does SOAP stand for?",
         "options": [
             "Software Operations and Procedures",
             "Software Operations Authentication Protocol",
-            "Simple Object Access Protocol", 
-            "Simple Operations Automation Platform", 
+            "Simple Object Access Protocol",
+            "Simple Operations Automation Platform",
             "Support Object Abstract Protocol"
         ],
         "answer": ["Simple Object Access Protocol"],
-        "explanation": "SOAP stands for Simple Object Access Protocol. <br> It is a protocol for exchanging structured information in the implementation of web services in computer networks. <br><br> SOAP provides a standardized messaging framework that allows programs running on different operating systems to communicate with each other."
+        "explanation": "SOAP stands for Simple Object Access Protocol.<br>It is a protocol for exchanging structured information in the implementation of web services in computer networks. <br><br> SOAP provides a standardized messaging framework that allows programs running on different operating systems to communicate with each other."
     },
     {
         "question": "Remote-procedure calls (RPCs) behave similarly to which of the following?",
         "options": [
-            "Synchronous API", 
+            "Synchronous API",
             "Asynchronous API"
         ],
         "answer": ["Synchronous API"],
@@ -331,8 +570,8 @@
     {
         "question": "Which of the following describes the method of including an API key directly in the URL or query parameters?",
         "options": [
-            "Request Header API key", 
-            "String-based API key", 
+            "Request Header API key",
+            "String-based API key",
             "Cookie API key",
             "Token-based API key"
         ],
@@ -342,9 +581,9 @@
     {
         "question": "Which of the following methods is NOT commonly used for passing API keys in HTTP requests?",
         "options": [
-            "Request Header API key", 
-            "String-based API key", 
-            "Cookie API key", 
+            "Request Header API key",
+            "String-based API key",
+            "Cookie API key",
             "Query Parameter API key"
         ],
         "answer": ["Query Parameter API key"],
@@ -353,9 +592,9 @@
     {
         "question": "In the given example, which type of API key is being used?<br><br>GET /resource HTTP/1.1<br>Host: api.example.com<br>X-API-Key: your_api_key",
         "options": [
-            "String-based API key", 
-            "Request Header API key", 
-            "Cookie API key", 
+            "String-based API key",
+            "Request Header API key",
+            "Cookie API key",
             "Token-based API key"
         ],
         "answer": ["Request Header API key"],
@@ -363,88 +602,152 @@
     },
     {
         "question": "What is the purpose of custom tokens in authentication and authorization systems?",
-        "options": ["To provide a standardized method for user authentication", "To generate random strings for session management", "To securely authenticate users and authorize access to resources", "To encrypt sensitive user data during transmission"],
+        "options": [
+            "To provide a standardized method for user authentication",
+            "To generate random strings for session management",
+            "To securely authenticate users and authorize access to resources",
+            "To encrypt sensitive user data during transmission"
+        ],
         "answer": ["To securely authenticate users and authorize access to resources"],
         "explanation": "'Custom Tokens' refer to a method of authentication or authorization where unique, custom-generated tokens are used to authenticate users or authorize access to certain resources. Popular implementations of custom tokens include JSON Web Tokens (JWT) and opaque tokens. Here's how custom tokens typically work:<br><br><strong>Generation:</strong> User authenticates/logs in and the server generates a unique token for that user (typically a long random string of characters).<br><strong>Storage:</strong> The token is associated with the user's session/account on the server and stored in a database, cache, or session storage.<br><strong>Issuance:</strong> The token is issued to the client (e.g., a web browser or mobile app) and returned in the authentication response.<br><strong>Subsequent Requests:</strong> The client includes the token in subsequent requests to the server, typically as an 'Authorization' header.<br><strong>Validation:</strong> When the server receives a request with a token, it validates the token to ensure it's legitimate (checking the token's signature, expiration date, and/or consulting a database or cache).<br><strong>Authorization:</strong> The server grants access to the requested resource/operation if the token is valid.<br><br>"
     },
     {
         "question": "What is SOAP primarily used for?",
-        "options": ["Accessing web services", "Managing databases", "Creating web pages", "Storing data"],
+        "options": [
+            "Accessing web services",
+            "Managing databases",
+            "Creating web pages",
+            "Storing data"
+        ],
         "answer": ["Accessing web services"],
         "explanation": "SOAP is a protocol used primarily for facilitating communication between different applications over the internet, particularly for accessing web services. It provides a standard way for applications to exchange structured information regardless of the platforms and programming languages they are built on, such as Java, .NET, and PHP."
     },
     {
         "question": "Which technology does SOAP use to communicate between web services and clients?",
-        "options": ["JSON", "XML", "HTML", "YAML"],
+        "options": [
+            "JSON",
+            "XML",
+            "HTML",
+            "YAML"
+        ],
         "answer": ["XML"],
         "explanation": "SOAP uses XML as its messaging format for communication between web services and clients. XML provides a standardized way to structure data, making it suitable for exchanging information between systems that may be built on different technologies."
     },
     {
         "question": "Which of the following is not an HTTP method?",
-        "options": ["GET", "HEAD", "TRIGGER", "PATCH"],
+        "options": [
+            "GET",
+            "HEAD",
+            "TRIGGER",
+            "PATCH"
+        ],
         "answer": ["TRIGGER"],
         "explanation": "Among the provided options, 'TRIGGER' is not an HTTP method. The HTTP methods <strong>GET</strong>, <strong>HEAD</strong>, and <strong>PATCH</strong> are all standard HTTP methods used for specific operations: <br><br> - <strong>GET</strong>: Retrieves data from the server <br> - <strong>HEAD</strong>: Retrieves headers from the server without the body of the response <br> - <strong>PATCH</strong>: Partially updates a resource on the server."
     },
     {
         "question": "Which response code indicates that a resource has moved?",
-        "options": ["201", "301", "401", "501"],
+        "options": [
+            "201",
+            "301",
+            "401",
+            "501"
+        ],
         "answer": ["301"],
         "explanation": "The HTTP response code <strong>301</strong> indicates that a resource has permanently moved to a new location.<br>This status code is often used for URL redirection, informing the client that the requested resource has been moved to a different URL."
     },
     {
         "question": "What does the HTTP response code 201 indicate?",
-        "options": ["Resource Created", "Resource Moved Permanently", "Unauthorized", "Internal Server Error"],
+        "options": [
+            "Resource Created",
+            "Resource Moved Permanently",
+            "Unauthorized",
+            "Internal Server Error"
+        ],
         "answer": ["Resource Created"],
         "explanation": "The HTTP response code <strong>201</strong> indicates that a new resource has been successfully created on the server.<br>It is commonly used in RESTful APIs to indicate that a POST request has been processed successfully and a new resource has been created."
     },
     {
         "question": "What does the HTTP response code 501 signify?",
-        "options": ["Resource Created", "Not Found", "Not Implemented", "Service Unavailable"],
+        "options": [
+            "Resource Created",
+            "Not Found",
+            "Not Implemented",
+            "Service Unavailable"
+        ],
         "answer": ["Not Implemented"],
         "explanation": "The HTTP response code <strong>501</strong> indicates that the server does not support the functionality required to fulfill the request. It means that the server lacks the ability to perform the requested operation, often because it has not been implemented or is not supported."
     },
     {
         "question": "Which of the following, model the interactions between various objects in a single use case?",
-        "options": ["REST APIs", "Sequence diagrams", "Excel sheets", "Venn diagrams"],
+        "options": [
+            "REST APIs",
+            "Sequence diagrams",
+            "Excel sheets",
+            "Venn diagrams"
+        ],
         "answer": ["Sequence diagrams"],
         "explanation": "Sequence diagrams model the interactions between various objects in a single use case. They illustrate the sequence of messages exchanged between objects or components in a system to accomplish a particular task or scenario.<br>Sequence diagrams are commonly used in software engineering and systems analysis to visualize the flow of interactions during runtime."
     },
     {
         "question": "Which REST API architectural constraint allows you to download code and execute it?",
-        "options": ["Client/server", "Statelessness", "Code on demand", "Layered systems"],
+        "options": [
+            "Client/server",
+            "Statelessness",
+            "Code on demand",
+            "Layered systems"
+        ],
         "answer": ["Code on demand"],
         "explanation": "The REST API architectural constraint that allows you to download code and execute it is <strong>Code on demand</strong>. This constraint enables servers to temporarily extend or customize the functionality of a client by transferring executable code, such as scripts or applets, for the client to execute.<br><br>While the other options are also architectural constraints of REST APIs, they do not directly involve downloading code for execution:<br><br>- <strong>Client/server:</strong> Separates the concerns of the client and the server.<br>- <strong>Statelessness:</strong> Requires that each request from a client to the server must contain all the information necessary to understand the request, in which the server completes every client request independently of all the previous ones. Clients can request resources in any order, and every request is isolated from other requests.<br>- <strong>Layered systems:</strong> Allows for the use of intermediaries, such as proxies or gateways, to improve scalability."
     },
     {
         "question": "Rate limiting is an essential REST API design method for developers. Rate-limiting techniques are used to ________.",
-        "options": ["increase security", "have business impact", "enhance efficiency end to end", "do all above"],
+        "options": [
+            "increase security",
+            "have business impact",
+            "enhance efficiency end to end",
+            "do all above"
+        ],
         "answer": ["do all above"],
         "explanation": "Rate limiting is an essential REST API design method that serves multiple purposes:<br><br>- <strong>Increase security:</strong> Can help mitigate certain types of attacks, such as denial-of-service (DoS) attacks, by limiting the number of requests an attacker can make within a specific timeframe.<br>- <strong>Have business impact:</strong> Allows businesses to control access to their APIs and services, ensuring fair usage and preventing abuse. It can also be used to enforce subscription tiers or pricing plans based on usage limits.<br>- <strong>Enhance efficiency end to end:</strong> By preventing abuse and ensuring fair usage, it can enhance the overall efficiency of the system. It helps in maintaining system stability, optimizing resource utilization, and providing a better experience for legitimate users."
     },
     {
         "question": "To add HTTP headers to a Python request, you can simply pass them in as which of the following?",
-        "options": ["list", "dict", "tuple", "set"],
+        "options": [
+            "list",
+            "dict",
+            "tuple",
+            "set"
+        ],
         "answer": ["dict"],
         "explanation": "To add HTTP headers to a Python request, you can simply pass them in as a <strong>dictionary (dict)</strong>. In Python, the requests library allows you to include headers in your HTTP requests by passing a dictionary where the keys are the header names and the values are the header values. This dictionary-based approach makes it straightforward to include custom headers in your requests. For example:<br><br><code>import requests<br><br>headers = {<br>    'User-Agent': 'MyCustomUserAgent',<br>    'Authorization': 'Bearer my_access_token'<br>}<br><br>response = requests.get('https://api.example.com', headers=headers)<br>print(response.status_code)</code>"
     },
     {
         "question": "Payment Systems, User Management, and Social Media Handler. All those are examples of which type of APIs?",
-        "options": ["Service API", "Informational API", "Hardware API"],
+        "options": [
+            "Service API",
+            "Informational API",
+            "Hardware API"
+        ],
         "answer": ["Service API"],
         "explanation": "Payment Systems, User Management, and Social Media Handler are all examples of <strong>Service APIs</strong>. Service APIs provide access to various functionalities and services offered by a system or platform, allowing developers to integrate and interact with these services programmatically."
     },
     {
         "question": "What does the 'http://' part of a URL represent?",
-        "options": ["The protocol used for communication", "The domain name of the website", "The specific resource being requested", "The port number for the server"],
+        "options": [
+            "The protocol used for communication",
+            "The domain name of the website",
+            "The specific resource being requested",
+            "The port number for the server"
+        ],
         "answer": ["The protocol used for communication"],
         "explanation": "The 'http://' part of a URL indicates the protocol used for communication, which is typically HTTP (Hypertext Transfer Protocol) for accessing web pages over the internet. Other protocols such as HTTPS (HTTP Secure) or FTP (File Transfer Protocol) may also be used."
     },
     {
         "question": "What does the 'query string' in a URL typically contain?",
         "options": [
-        "The protocol used for communication", 
-        "Parameters for the requested resource", 
-        "The domain name of the website", 
+        "The protocol used for communication",
+        "Parameters for the requested resource",
+        "The domain name of the website",
         "The path to the specific resource"
         ],
         "answer": ["Parameters for the requested resource"],
@@ -464,8 +767,8 @@
     {
         "question": "Which of the following is not one of the six constraints of the REST architectural style?",
         "options": [
-            "Uniform Interface", 
-            "Code on demand", 
+            "Uniform Interface",
+            "Code on demand",
             "Cache",
             "RPC"
         ],
@@ -475,9 +778,9 @@
     {
         "question": "Which HTTP request method is typically treated as cacheable by browsers by default?",
         "options": [
-            "POST", 
-            "PUT", 
-            "GET", 
+            "POST",
+            "PUT",
+            "GET",
             "DELETE"
         ],
         "answer": ["GET"],
@@ -508,7 +811,7 @@
     {
         "question": "Which pagination approach is also known as a continuation token or cursor pagination?",
         "options": [
-            "Offset-based pagination", 
+            "Offset-based pagination",
             "Keyset-based pagination"
         ],
         "answer": ["Keyset-based pagination"],
