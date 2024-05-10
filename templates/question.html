@@ -1,5 +1,3 @@
-<!-- question.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,14 +21,27 @@
     <!-- Display the question text with safe filter to ensure HTML tags are not escaped -->
     <p class="question-text">{{ question.question|safe }}</p><br><br>
     
+    <!-- Display flashed messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-message animation">
+                {% for category, message in messages %}
+                    <div class="flash-message {{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+    
     <!-- "Submit Answer" button inside the form -->
-    <form action="{{ url_for('display_question', question_index=current_question_index + 1) }}" method="POST">
+    <form id="questionForm" action="{{ url_for('display_question', question_index=current_question_index + 1) }}" method="POST">
         {% for option in question.options %}
 
-            <!-- Display options with radio buttons -->
+            <!-- Display options with checkboxes -->
             <label>
                 <div class="option-label">
-                    <input type="radio" name="user_answer" id="{{ option }}" value="{{ option }}" required>
+                    <input type="checkbox" name="user_answer" value="{{ option }}" >
                     {{ option }}
                 </div>
             </label><br>
@@ -42,6 +53,7 @@
         </nav>
     </form>
     
+
      <!-- Footer section -->
      <footer class="footer">
     </footer>
