@@ -84,6 +84,13 @@ body {
     margin-top: 5vh
 }
 
+.explanation-title{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10vh;
+    margin-top: 5vh;
+}
+
 /* Styles for explanation content in explanation.html */
 .explanation-text {
     font-size: 22px;
@@ -158,4 +165,57 @@ p.question-text {
     position: fixed; /* Fix the header at the top of the page */
     width: 100%; /* Full width of the page */
     top: 0; /* Align at the top */
+}
+
+/* Flash message styles */
+.flash-message {
+    position: fixed;
+    top: 18px;
+    left: 0;
+    right: 0;
+    margin: auto; /* Center horizontally */
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.flash-message.animation{
+    transform: translateX(-50%);
+    z-index: 1000; /* Ensure flash messages are above other content */
+    animation: fadeOut 8s forwards; /* Fade out animation */
+    opacity: 5; /* Initial opacity */
+}
+
+.flash-message.error {
+    background-color: #f44336; /* Red color for error messages */
+    color: white;
+}
+
+.flash-message.success {
+    background-color: #4CAF50; /* Green color for success messages */
+    color: white;
+}
+
+.flash-message.info {
+    background-color: #2196F3; /* Blue color for informational messages */
+    color: white;
+}
+
+.flash-message.warning {
+    background-color: #ff9800; /* Orange color for warning messages */
+    color: white;
+}
+
+/* Key frames for fade out animation */
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }

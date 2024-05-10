@@ -10,5 +10,116 @@
         "answer": ["A unit test verifies API functionality", "An integration test is for validation of how different parts of the application work together"],
         "explanation": "Explanation text here",
         "multiple_choice": true
+    },
+    {
+        "question": "What are some benefits of using asynchronous APIs? (Choose two)",
+        "options": [
+            "Not having to wait on a response to process data",
+            "Reduced processing time", "Increased processing time",
+            "Data function reuse"
+        ],
+        "answer": ["Not having to wait on a response to process data", "Reduced processing time"],
+        "explanation": "Using asynchronous APIs allows not having to wait for a response to process data, as the application can continue with other tasks while waiting for the response. Additionally, asynchronous APIs can reduce processing time by enabling concurrent execution of tasks, thereby improving overall system performance.",
+        "multiple_choice": true
+    },
+    {
+        "question": "What are the HTTP functions used for API communication? (Choose three)",
+        "options": [
+            "GET",
+            "SOURCE",
+            "PURGE",
+            "PATCH",
+            "PUT"
+        ],
+        "answer": ["GET", "PATCH", "PUT"],
+        "explanation": "The HTTP functions commonly used for API communication are PUT, GET and PATCH. <br> These methods are used to... <br><br> - Create or replace resources (PUT) <br> - Retrieve data (GET) <br> - Update existing resources (PATCH) <br><br> on the server",
+        "multiple_choice": true
+    },
+    {
+        "question": "What are the main components of SOAP messages? (Choose all that apply)",
+        "options": [
+            "Envelope",
+            "Header",
+            "Destination",
+            "Body",
+            "Fault",
+            "Authentication",
+            "Source"
+        ],
+        "answer": ["Envelope", "Header", "Body", "Fault"],
+        "explanation": "The main components of SOAP messages include: <br><br> <strong> Envelope</strong>, which defines the start and end of the SOAP message. <br> <strong> Header</strong>, which contains optional attributes and information about the message. <br> <strong> Body</strong>, which contains the actual data being transmitted. <br> <strong> Fault</strong>, which provides information about errors that occur during the processing of the message.",
+        "multiple_choice": true
+    },
+    {
+        "question": "SOAP can include fault messages. Which ones are mandatory fields? (Choose all that apply)",
+        "options": [
+            "faultCode",
+            "faultString",
+            "faultActor", 
+            "detail"
+        ],
+        "answer": ["faultCode", "faultString"],
+        "explanation": "In SOAP, fault messages are used to communicate error information. Among the fields used in fault messages, the mandatory ones are 'faultCode' and 'faultString'. These fields are required to provide essential information about the error that occurred. <br>However, 'faultActor' and 'detail' are optional fields that may provide additional context about the fault but are not mandatory.",
+        "multiple_choice": true
+    },
+    {
+        "question": "In HTTP, in order to make a successful GET request to the server, the client needs to include at least which of the following? (Choose two)",
+        "options": [
+            "URL",
+            "Method",
+            "Headers",
+            "Body"
+        ],
+        "answer": ["URL", "Method"],
+        "explanation": "In HTTP, to make a successful GET request to the server, the client needs to include at least the following:<br><br>1. URL: The Uniform Resource Locator (URL) specifies the location of the resource to be retrieved.<br>2. Method: The HTTP method, in this case, GET, indicates the type of request being made by the client.<br><br>Other common HTTP methods include POST, PUT, DELETE, etc. While HTTP headers and body are optional for a GET request, the URL and method are mandatory components.",
+        "multiple_choice": true
+    },
+    {
+        "question": "Webhooks are like which of the following (Choose Two)",
+        "options": [
+            "Remote Procedure Calls",
+            "Callback functions",
+            "State-altering functions",
+            "Event-triggered notifications"
+        ],
+        "answer": ["Callback functions", "Event-triggered notifications"],
+        "explanation": "Webhooks are similar to the following:<br>1. <strong>Callback functions:</strong> Like callback functions, webhooks enable servers to notify or trigger actions in client applications based on specific events or conditions. <br>2. <strong>Event-triggered notifications:</strong> Webhooks are commonly used to deliver event-triggered notifications from one application to another. When a certain event occurs in the source application, a webhook sends a POST request to the destination application with relevant information.",
+        "multiple_choice": true
+    },
+    {
+        "question": "What are some of the features of a good SDK? (Choose three)",
+        "options": [
+            "Is easy to use",
+            "Is well documented",
+            "Integrates well with other SDKs",
+            "Impacts hardware resources"
+        ],
+        "answer": ["Is easy to use", "Is well documented", "Integrates well with other SDKs"],
+        "explanation": "A good SDK should be easy to use, allowing developers to quickly understand and implement its features. It should also be well documented, providing clear and comprehensive guidance on its usage and functionalities. Additionally, a good SDK should integrate well with other SDKs and development tools, facilitating seamless interoperability and enhancing the developer experience. However, a good SDK should not negatively impact hardware resources, as it should be designed to operate efficiently without causing excessive resource consumption.",
+        "multiple_choice": true
+    },
+    {
+        "question": "What APIs does the Cisco Meraki platform provide to developers? (Choose tree)",
+        "options": [
+            "Captive Portal API",
+            "Scanning API",
+            "Dashboard API",
+            "Infrastructure API"
+        ],
+        "answer": ["Captive Portal API", "Scanning API", "Dashboard API"],
+        "explanation": "From a programmability perspective, the Cisco Meraki cloud platform provides developers with several APIs. Tree of these APIs are the <strong>Captive Portal API</strong>, which allows developers to extend the built-in Meraki splash page functionality by providing complete control of the content and authentication process that a user interacts with when connecting to a Meraki wireless network. It allows administrators to customize the portal, including the oclients experience connecting to the network, how the web page looks and feels and authentication and billing process.<br><br><strong>Scanning API</strong> take advantage of mMeraki smart devices with wireless and BLE functionality to provide location, analystics and report on user behavior<br><br><strong>Dashboard api</strong>, provides endpoints and resources for configuration, management and monitoring automation of Meraki cloud platform, common use cases are Provisioning neworganizations, administrators, networks, devices and more. , Configuring networks at scale, Onboarding and decommissioningg of clients, Build custom dashboards and applications.",
+        "multiple_choice": true
+    },
+    {
+        "question": "What are the advantages of using an SDK? (Choose two)",
+        "options": [
+            "Quicker integration",
+            "Faster development",
+            "Advanced customization",
+            "Error handling"
+        ],
+        "answer": ["Quicker integration", "Faster development"],
+        "explanation": "Using an SDK offers several advantages, including quicker integration and faster development. SDKs typically provide pre-built components, libraries, and APIs that streamline the development process and enable developers to incorporate complex functionalities into their applications with minimal effort. This accelerates the integration of various features and services, reducing development time and effort. Additionally, SDKs often come with comprehensive documentation and support, further enhancing development speed and efficiency.",
+        "multiple_choice": true
     }
 ]

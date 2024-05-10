@@ -21,6 +21,19 @@
     <!-- Display the question text with safe filter to ensure HTML tags are not escaped -->
     <p class="question-text">{{ question.question|safe }}</p><br><br>
     
+    <!-- Display flashed messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-message animation">
+                {% for category, message in messages %}
+                    <div class="flash-message {{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+    
     <!-- "Submit Answer" button inside the form -->
     <form id="questionForm" action="{{ url_for('display_question', question_index=current_question_index + 1) }}" method="POST">
         {% for option in question.options %}
@@ -28,7 +41,7 @@
             <!-- Display options with checkboxes -->
             <label>
                 <div class="option-label">
-                    <input type="checkbox" name="user_answer" value="{{ option }}">
+                    <input type="checkbox" name="user_answer" value="{{ option }}" >
                     {{ option }}
                 </div>
             </label><br>
@@ -40,30 +53,9 @@
         </nav>
     </form>
     
-    <!-- Display flash message if error exists -->
-    {% if error %}
-        <div class="flash-message">{{ error }}</div>
-    {% endif %}
 
      <!-- Footer section -->
      <footer class="footer">
     </footer>
-
-    <!-- JavaScript for client-side validation -->
-    <script>
-        document.getElementById('questionForm').addEventListener('submit', function(event) {
-            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-            var isChecked = false;
-            checkboxes.forEach(function(checkbox) {
-                if (checkbox.checked) {
-                    isChecked = true;
-                }
-            });
-            if (!isChecked) {
-                alert('Please select at least one option');
-                event.preventDefault();
-            }
-        });
-    </script>
 </body>
 </html>

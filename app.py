@@ -5,44 +5,47 @@ import json
 
 class Question:
     '''Represents a quiz question'''
-    def __init__(self, question, options, answer, explanation):
+    def __init__(self, question, options, answer, explanation, multiple_choice=False):
         '''
         Initialize a Question object with attributes:
             question (str): the question text
             options (list): a list of answer options
             answer (str): the correct answer
             explanation (str): An explanation of the correct answer
+            multiple_choice (bool): Indicates whether the question is multiple-choice (default is False)
         '''
         self.question = question
         self.options = options
         self.answer = answer
         self.explanation = explanation
         self.user_answer = None  # This value will depend on the user's interaction
+        self.multiple_choice = multiple_choice
+
+        
 
     def check_answer(self, user_answer):
         '''
-        Check if the provided answer is correct and return boolean with attribute:
-            user_answer (str): the user's answer
-        '''
-        # Convert user_answer to a list if it's not already one
-        if not isinstance(user_answer, list):
-            user_answer = [user_answer]
-       
-        # Checks if 'self.answer' is a list, which indicate a multiple-choise question
-        if isinstance(self.answer, list):
-            # For multiple-choice questions, sorts both the user's selected options and correct answer
-            if isinstance(user_answer, list):
-                user_answer.sort()
-                self.answer.sort()
-            # Then compare the sorted lists. If the answers match returns correct
-            if user_answer == self.answer:
+        Check whether the choosen option is correct, comparing it with the answer and return boolean:
+        '''       
+        # Check whether 'user_answer' is a 'list' data type. if so, both the user's selected option(s) and correct answer are sorted
+        if isinstance(user_answer, list):
+            user_answer.sort()
+            self.answer.sort()
+            # If no options is selected (the user_answer list is empty) flash message
+            if not user_answer:
+                print("No option was selected") # Debug Line Only
+                flash('No option was selected')
+                return False
+            # Compare user's answer with correct answer
+            if user_answer and user_answer == self.answer:
+                print("Correct_answer") # Debug Line Only
                 return 'Correct'
-        elif isinstance(self.answer, str):
-            # For single-choice questions, directly compare user's answers with correct answer
-            if user_answer and user_answer[0] == self.answer:
-                return 'Correct'
-        
-    
+            else:
+                print("Incorrect_answer") # Debug Line Only
+                return 'Incorrect'
+        else:
+            flash('Invalid data type. A list is expected')                
+ 
 # Initialize Flask application.
 app = Flask(__name__)
 
@@ -105,9 +108,10 @@ def display_question():
     current_question_index = session.get('current_question_index', 0)
     if current_question_index < total_questions:
         current_question_data = questions_pool[current_question_index]
-        # If the question doesn't specify whether it's single or multiple choice (absent of "multiple_choice" key) 
-        # in the "current_question data dictionary, returns the default value 'False', indicating a single choice question
+        # If the question is absent of "multiple_choice" key) in "current_question data dictionary, 
+        # return the default value 'False', indicating a single choice question
         if current_question_data.get('multiple_choice', False): 
+            print('Displayed: multiple_choice_question') # Debug Line Only
             # Data considered when Question is multiple choice
             current_question = Question(current_question_data['question'], current_question_data['options'], current_question_data['answer'], current_question_data['explanation'], multiple_choice=True)
         else:
@@ -116,17 +120,21 @@ def display_question():
 
         if request.method == 'POST':
             user_selected_options = request.form.getlist('user_answer') # Get user's selection from the form
-           
+            explanation = current_question_data['explanation']  # Get the explanation from the JSON data
+
             # Check if at least one option is selected
+            if current_question_data.get('multiple_choice', False) and not user_selected_options:
+                flash('Please select at least one option')
+                return redirect(url_for('display_question'))
+           
             if not user_selected_options:
-                flash('Please select at least one option_1', 'error')
+                print("No option was selected")
+                flash('No option was selected', 'error') # Display a red message following CSS styles
                 return render_template('question.html', question=current_question, current_question_index=current_question_index, error=True)
             
             explanation = current_question_data['explanation']  # Get the explanation from the JSON data
 
-            #if current_question_data.get('multiple_choice', False) and not user_selected_options:
-            #    flash('Please select at least one option')
-            #    return redirect(url_for('display_question'))
+            
             
             # Check whether user answer is correct using check_answer method
             result = current_question.check_answer(user_selected_options) # Return either "Correct" or "Incorrect" based on the user's answer
