@@ -45,6 +45,8 @@ p {
     
 body {
     position: relative;
+    margin:0; /* Reset for the body to get rid of default margin applied by the browser */
+    padding:0; /* Reset for the body to get rid of default margin applied by the browser */
 }
 
 /* Container CSS styles for buttons */
@@ -88,7 +90,7 @@ body {
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 10vh;
-    margin-top: 5vh;
+    margin-top: -4vh;
 }
 
 /* Styles for explanation content in explanation.html */
@@ -169,24 +171,19 @@ p.question-text {
 
 /* Flash message styles */
 .flash-message {
-    position: fixed;
-    top: 18px;
-    left: 0;
-    right: 0;
-    margin: auto; /* Center horizontally */
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px 20px;
     border-radius: 10px;
-    margin-bottom: 10px;
     width: 300px;
-    text-align: center;
+    position: fixed;  /* Remain visible regardless of scrolling */
+    top: 20px; /* Adjust distance from top */
+    left: 50%;
+    transform: translateX(-50%); /* Horizontally center flash message element (X axis)*/
 }
 
 .flash-message.animation{
-    transform: translateX(-50%);
-    z-index: 1000; /* Ensure flash messages are above other content */
-    animation: fadeOut 8s forwards; /* Fade out animation */
+    animation: fadeOut 5s forwards; /* Fade out animation */
     opacity: 5; /* Initial opacity */
 }
 
@@ -210,7 +207,7 @@ p.question-text {
     color: white;
 }
 
-/* Key frames for fade out animation */
+/* Key frames for fade out transition */
 @keyframes fadeOut {
     from{
         opacity: 1;
