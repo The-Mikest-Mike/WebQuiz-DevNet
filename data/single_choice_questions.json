@@ -217,7 +217,7 @@
             "Branch"
         ],
         "answer": ["Branch"],
-        "explanation": "Branches are a feature which allow us to separate our development area from a main local repository, providing a safe way to work on new features or updates without affecting the stable codebase.Some useful commands are:<br><br>- <strong>git branch</strong> or <strong>git branch --list</strong>: View a list of all local branches.<br>- <strong>git branch \"branch_name\"</strong>: Create a new branch.<br>- <strong>git branch -v</strong> or <strong>git branch --verbose</strong>: For a detailed view of branches, including commit messages and commit hashes of the latest commits"
+        "explanation": "Branches are a feature which allow us to separate our development area from a main local repository, providing a safe way to work on new features or updates without affecting the stable codebase.Some useful commands are:<br><br>- <strong>git branch -v</strong> or <strong>git branch --verbose</strong>: Detailed view of branches, including commit messages and commit hashes of the latest commits.<br>- <strong>git branch</strong> or <strong>git branch --list</strong>: View a list of all local branches.<br>- <strong>git branch <code>&lt;branch_name&gt;</code></strong>: Create a new branch.<br>- <strong>git checkout <code>&ltbranch_name&gt</code></strong>: Switch to a branch when you already have a branch on your local machine."
     },
     {
         "question": "Which Git version control operation allows us to join the contents of a branch development area with a main repository locally?",
@@ -261,7 +261,7 @@
             "HTTP DELETE"
         ],
         "answer": ["HTTP POST"],
-        "explanation": "<strong>Webhooks</strong> are <strong>HTTP POST</strong> messages triggered by specific events in an automated manner, designed for receiving real-time notification messages about events on a system.<br>HTTP UPDATE, READ, and DELETE are not appropriate options because Webhooks are specifically tailored for event-driven notifications, not for making updates (UPDATE), reading existing data (READ), or deleting resources (DELETE)."
+        "explanation": "<strong>Webhooks</strong> are <strong>HTTP POST</strong> messages triggered by specific events in an automated manner, designed for receiving real-time notification messages about events on a system.<br><br>HTTP UPDATE, READ, and DELETE are not appropriate options because Webhooks are specifically tailored for event-driven notifications, not for making updates (UPDATE), reading existing data (READ), or deleting resources (DELETE)."
     },
     {
         "question": "Which area in Postman allows you to create preconfigured areas to be used with specific devices, which can hold key:value pairs for variables like the base URL, the token, the username, and the password?",
@@ -283,7 +283,7 @@
             "LIB"
         ],
         "answer": ["NEDS"],
-        "explanation": "<strong>Network Element Drivers (NEDS) are necessary to translate between XML data and a valid network configuration.</strong> Cisco NSO provides NEDS for various versions of the Cisco CLI since many devices use different commands.<br>Some of those include NEDS for Cisco ASA, Cisco IOS-XR, and Cisco IOS-NX.<br>A Network Element Driver (NED) in the context of Cisco Network Services Orchestrator (NSO) is designed to interface with specific network devices or platforms and translate between NSO's XML-based configuration model and the device's native configuration language.<br>A NED template for example, can be used to translate configuration data provided by NSO into the XML format expected by the Cisco IOS-XE device, ensuring that the device's configuration is synchronized with NSO's intended state."
+        "explanation": "<strong>Network Element Drivers (NEDS) are necessary to translate between XML data and a valid network configuration.</strong> Cisco NSO provides NEDS for various versions of the Cisco CLI since many devices use different commands. Some of those include NEDS for Cisco ASA, Cisco IOS-XR, and Cisco IOS-NX.<br><br>A Network Element Driver (NED) in the context of Cisco Network Services Orchestrator (NSO) is designed to interface with specific network devices or platforms and translate between NSO's XML-based configuration model and the device's native configuration language.<br><br>A NED template for example, can be used to translate configuration data provided by NSO into the XML format expected by the Cisco IOS-XE device, ensuring that the device's configuration is synchronized with NSO's intended state."
     },
     {
         "question": "Which of the following is the correct syntax for a Python function?",
@@ -1066,7 +1066,7 @@
             "{{baseURL}}/organizations/:organizationId/devices"
         ],
         "answer": ["{{baseURL}}/organizations"],
-        "explanation": "When using the GET method to perform a request against the Meraki API using Postman the URLs follow a hierarchical structure, starting from the base URL and drilling down to specific resources or actions, making the API organized and easy to navigate.: <br><br> - {{baseURL}}: The base URL where all API requests begin.  <br> - <strong>/organizations</strong>: Retrieves a list of organizations. <br> Below is what other options would retrieve:  <br> - /organizations/:organizationId: Accesses a specific organization using its unique ID.  <br> - /organizations/:organizationId/networks: Fetches information about networks within a specific organization.  <br> - /organizations/:organizationId/devices: Retrieves details about devices associated with a specific organization."
+        "explanation": "When using the GET method to perform a request against the Meraki API using Postman the URLs follow a hierarchical structure, starting from the base URL and drilling down to specific resources or actions, making the API organized and easy to navigate.: <br><br> - {{baseURL}}: &nbsp The base URL where all API requests begin.  <br>- /organizations: &nbsp Retrieves a list of organizations. <br><br>Below is what other options would retrieve:  <br><br>- /organizations/:organizationId/devices: &nbsp Retrieves details about devices associated with a specific organization<br>- /organizations/:organizationId/networks: &nbsp Fetches information about networks within a specific organization.<br>- /organizations/:organizationId: &nbsp Accesses a specific organization using its unique ID."
     },
     {
         "question": "Which type of API authentication method is used by Cisco DNA Center?",
