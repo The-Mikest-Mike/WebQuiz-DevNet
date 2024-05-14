@@ -25,19 +25,27 @@
 
 ## Structure of Folders:
 
-    app.py              # main Flask application file
-    README.md
-    requirements.txt
-    templates/          # folder for HTML templates
-        correct.html
-        explanation.html
-        incorrect.html
-        question.html
-        result.html
-        start.html
-    static/             # folder for static files (CSS styles, images)
-        styles.css      # all css styles
-    data/               # folder for data files
-        multiple_choice_questions.json  # single choice questions pool
-        single_choice_questions.json # multiple choice questions pool
+WebQuiz-DevNet/<br>
+│<br>
+├── app.py                                             # Main Flask application file<br>
+├── README.md                                          # Project documentation<br>
+├── requirements.txt                                   # Required Python packages<br>
+│<br>
+├── templates/                                         # HTML templates folder<br>
+│&emsp;&emsp;&emsp;├── correct.html                    # Correct answer feedback<br>
+│&emsp;&emsp;&emsp;├── explanation.html                # Question explanation<br>
+│&emsp;&emsp;&emsp;├── incorrect.html                  # Incorrect answer feedback<br>
+│&emsp;&emsp;&emsp;├── question.html                   # Display questions<br>
+│&emsp;&emsp;&emsp;├── result.html                     # Display quiz results<br>
+│&emsp;&emsp;&emsp;└── start.html                       # Start the quiz<br>
+│<br>
+├── static/                                            # Static files folder (CSS, images)<br>
+│&emsp;&emsp;&emsp;└── styles.css                      # CSS styles for the application<br>
+│<br>
+└── data/                                              # Data files folder<br>
+&emsp;&emsp;&emsp;├── multiple_choice_questions.json   # Pool of multiple-choice questions<br>
+&emsp;&emsp;&emsp;└── single_choice_questions.json     # Pool of single-choice questions<br>
+
+
+
 
