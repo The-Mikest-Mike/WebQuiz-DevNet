@@ -178,13 +178,13 @@
     {
         "question": "Which Git version control operation allows us to track the status of a file including any changes made?",
         "options": [
-            "Add/Remove",
+            "Add",
             "Diff",
             "Branch",
             "Clone"
         ],
-        "answer": ["Add/Remove"],
-        "explanation": "The Git 'add/remove' operation allows us to track file changes. Using 'git add,' we specify which files to monitor for changes within our Git repository. This operation is crucial for keeping an eye on file status and alterations."
+        "answer": ["Add"],
+        "explanation": "The Git 'add' operation allows us to track file changes. Using <strong>'git add'</strong>, we specify which files to monitor for changes within our Git repository. This operation is crucial for keeping an eye on file status and alterations."
     },
     {
         "question": "Which Git version control operation moves a file from our index (or staging area) to our local repository?",
@@ -890,7 +890,7 @@
             "https://APIC_IP_or_Hostname/api/vi/login.json"
         ],
         "answer": ["https://APIC_IP_or_Hostname/api/aaaLogin.json"],
-        "explanation": "The correct endpoint for authentication using the Cisco ACI REST API is: https://APIC_IP_or_Hostname/api/aaaLogin.json. This endpoint is specifically designed for logging in and obtaining a session token, which is required for subsequent API calls. The aaaLogin.json endpoint is part of the authentication, authorization, and accounting (AAA) framework in ACI, providing a secure mechanism for user authentication before accessing other API functionalities.<br><br>The ACI REST API uses token-based authentication, where users authenticate by providing their credentials (username and password) to the aaaLogin.json endpoint. Upon successful authentication, the ACI fabric issues a session token, which the user must include in subsequent API requests to authenticate and authorize those requests."
+        "explanation": "The endpoint for authentication using the Cisco ACI REST API is: https://APIC_IP_or_Hostname/api/aaaLogin.json. This endpoint is specifically designed for logging in and obtaining a session token, which is required for subsequent API calls. The aaaLogin.json endpoint is part of the authentication, authorization, and accounting (AAA) framework in ACI, providing a secure mechanism for user authentication before accessing other API functionalities.<br><br>The ACI REST API uses token-based authentication, where users authenticate by providing their credentials (username and password) to the aaaLogin.json endpoint. Upon successful authentication, the ACI fabric issues a session token, which the user must include in subsequent API requests to authenticate and authorize those requests."
     },
     {
         "question": "In Cisco UCS Manager, what is the logical construct that contains the complete configuration of a physical server?",
