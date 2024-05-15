@@ -31,7 +31,7 @@ WebQuiz-DevNet/
 ├── README.md                                          # Project documentation
 ├── requirements.txt                                   # Required Python packages
 │
-├── templates/                                         # <folder>(html): templates
+├── templates/                                         # Folder for HTML templates
 │      ├── correct.html                                # Correct answer feedback
 │      ├── explanation.html                            # Question explanation
 │      ├── incorrect.html                              # Incorrect answer feedback
@@ -39,13 +39,14 @@ WebQuiz-DevNet/
 │      ├── result.html                                 # Display quiz results
 │      └── start.html                                  # Start the quiz
 │
-├── static/                                            # <folder>(static): CSS, images files
+├── static/                                            # Folder for static files (CSS, images)
 │      └── styles.css                                  # CSS styles for the application
 │
-└── data/                                              # <folder>(data): json question files
+└── data/                                              # Folder for data files (JSON questions)
        ├── multiple_choice_questions.json              # Pool of multiple-choice questions
        └── single_choice_questions.json                # Pool of single-choice questions
 ```
+
 
 
 
