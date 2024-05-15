@@ -23,7 +23,7 @@
 - Provides explanations for answers.
 - Simple navigation between questions.
 
-## Structure of Folders:
+## Project Directory Structure:
 ```
 WebQuiz-DevNet/
 │
