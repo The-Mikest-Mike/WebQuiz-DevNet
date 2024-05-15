@@ -9,5 +9,1118 @@
         ],
         "answer": ["Concerned with carrying data"],
         "explanation": "XML is a format that includes predefined tags for structuring and representing data. It is primarily used for carrying and structuring data, including but not limited to data interchange and storage.<br><br>While XML is not limited to displaying data, it can be used for this purpose as well but HTML is better suited for that purpose.<br><br>Unlike JSON and YAML, XML does not use key:value pairs as its primary syntax."
-    }       
+    },
+    {
+        "question": "Which data format is used by Cisco Modeling Labs (CML) for importing and exporting lab files?",
+        "options": [
+            "XML",
+            "IOSXE",
+            "JSON",
+            "YAML"
+        ],
+        "answer": ["YAML"],
+        "explanation": "While YAML does share similarities with JSON in terms of using key-value pairs and having a hierarchical structure,<strong>CML primarily uses YAML, for lab file import and export.</strong> YAML is a human-readable data serialization format and is commonly used for defining network topologies and configurations in CML.<br><br>Other option 'IOS-XE' (Internetwork Operating System - Extended Edition) is an operating system used in Cisco's networking hardware, particularly in routers and switches."
+    },
+    {
+        "question": "Which built-in Python library can be used to parse XML data?",
+        "options": [
+            "ElementTree",
+            "XMLTree",
+            "Tree.getroot",
+            "print(root)"
+        ],
+        "answer": ["ElementTree"],
+        "explanation": "Parsing means we are converting a certain set of data into another format. When parsing XML using Python, the built-in <strong>'ElementTree' library has functionality for reading and manipulating XML data.</strong><br><br>There is no built-in library or module called 'XMLTree'.<br><br>'Tree.getroot' is not a standalone library or module; it appears to be a fragment of code that is used in combination with ElementTree but is not a complete solution on its own.<br><br>'print(root)' is not a valid statement; it is used for displaying output."
+    },
+    {
+        "question": "Reference the following abbreviated snippet from a JSON file: <strong>{“device”:{“hostname”:”R1”,”interface”:[{“GigabitEthernet”. . .</strong> What will be the returned output when parsing through the data using the built-in JSON library in Python, ending with the following print statement: <strong>print(data['device']['hostname'])</strong>?",
+        "options": [
+            "hostname",
+            "device",
+            "interface",
+            "R1"
+        ],
+        "answer": ["R1"],
+        "explanation": "In the print statement, the 'hostname' key is associated with the value 'R1'. Therefore, the output of the print statement will be 'R1'."
+    },
+    {
+        "question": "Which of the following print statements can be used to return the value 'R1' when parsing through the YAML data in Python?<br><br><strong>yaml snippet:</strong><br><pre>OFFICE:<br>  device:<br>    hostname: R1<br>  interface:<br>    GigabitEthernet:<br>      ...</pre>",
+        "options": [
+            "print(data['OFFICE'])",
+            "print(data['OFFICE']['device']['hostname'])",
+            "print(data['hostname'])",
+            "print(data['device']['hostname'])"
+        ],
+        "answer": ["print(data['OFFICE']['device']['hostname'])"],
+        "explanation": "To access the value 'R1' in the YAML data structure, you need to follow the hierarchy.<br><br>The correct print statement is 'print(data['OFFICE']['device']['hostname'])',<br><br>which accesses the 'hostname' key nested within the 'device' key, which is in turn nested within the 'OFFICE' key."
+    },
+    {
+        "question": "What is the initial phase used when implementing the Test-Driven Development methodology?",
+        "options": [
+            "Coding",
+            "Planning",
+            "Testing",
+            "Debugging"
+        ],
+        "answer": ["Testing"],
+        "explanation": "Test-Driven Development (TDD) begins with a testing phase, where developers write tests before writing code. This approach leads to shorter development cycles, better code quality, and the creation of reusable unit tests."
+    },
+    {
+        "question": "What is the term for our general plan at the beginning of development when using the Agile Method?",
+        "options": [
+            "Sprint",
+            "Product Backlog",
+            "Cycle",
+            "Scrum"
+        ],
+        "answer": ["Product Backlog"],
+        "explanation": "The Agile Method starts with a plan that is open to changes informed by feedback and review, creating a more general idea that we develop as we go along. <br> <br> This starting point is referred to as our <strong> Product Backlog, which includes details about all the features that need to be included in the product and what needs to be accomplished.</strong> However, it is important to note that in Agile, the broader, high-level plan or vision is often referred to as the 'Product Vision' or 'Project Vision,' which outlines the overall goals and direction of the project. <br> <br> The other options represent different aspects or phases within Agile but do not directly correspond to the initial plan."
+    },
+    {
+        "question": "What is the final step in the Lean Method before the cycle repeats?",
+        "options": [
+            "Seek perfection",
+            "Create flow",
+            "Map value stream",
+            "Establish pull"
+        ],
+        "answer": ["Seek perfection"],
+        "explanation": "In the Lean Methodology, the final step before the cycle repeats is known as 'Seek Perfection.' This step underscores the continuous pursuit of improvements and efficiency to deliver the highest possible value to the customer. It acknowledges that while perfection may never be fully achieved, the Lean Method embraces a cyclical model that encourages ongoing enhancement. The aim is to create a culture of continuous improvement where teams consistently seek ways to optimize processes and eliminate waste, ensuring that the organization remains agile and responsive to changing customer needs and market conditions."
+    },
+    {
+        "question": "Which of the following is a characteristic of the Waterfall Method?",
+        "options": [
+            "Customer feedback is timely and constant",
+            "Value is created throughout the process",
+            "Much more inexpensive than other methods",
+            "Everything is planned at the beginning of a project"
+        ],
+        "answer": ["Everything is planned at the beginning of a project"],
+        "explanation": "One of the key characteristics of the Waterfall Method is that 'Everything is planned at the beginning of a project.' In the Waterfall approach, the entire project, including all requirements and phases, is meticulously planned upfront. While this approach may seem structured, it has limitations, particularly in modern software development. The challenge lies in its limited adaptability; once the plan is set, it becomes harder to pivot or make changes when needed. Additionally, no value is created until the end of the process, meaning that stakeholders do not see tangible results until the project is completed. Furthermore, the lack of timely feedback can pose a challenge for ensuring quality and meeting evolving customer needs. In contrast to more iterative and Agile methodologies, where adaptability, continuous value delivery, and feedback are emphasized."
+    },
+    {
+        "question": "Which Python structure allows us to run the same piece of code multiple times in a program to repurpose the code?",
+        "options": [
+            "Classes",
+            "Modules",
+            "Functions",
+            "Blocks"
+        ],
+        "answer": ["Functions"],
+        "explanation": "In Python, 'Functions' are a fundamental programming construct that allows us to define a block of code that can be reused multiple times within a program. By encapsulating a piece of code within a function, we create a named and reusable unit of code. <br><br> This practice significantly improves code organization and maintenance, as it eliminates the need to write the same code repeatedly at different parts of the program. When we encounter a situation where the same task or operation needs to be performed multiple times, we can simply call the function, passing the necessary arguments, rather than duplicating the code."
+    },
+    {
+        "question": "Which Python structure is closely associated with objects?",
+        "options": [
+            "Modules",
+            "Classes",
+            "Functions",
+            "Blocks"
+        ],
+        "answer": ["Classes"],
+        "explanation": "In Python, classes are closely associated with objects, serving as templates for creating objects. <br> Objects encapsulate both data (attributes) and functions (methods) that operate on that data."
+    },
+    {
+        "question": "Which Python structure allows us to import code from other external files into our main code?",
+        "options": [
+            "Blocks",
+            "Functions",
+            "Modules",
+            "Classes"
+        ],
+        "answer": ["Modules"],
+        "explanation": "Modules are another way we can save time when coding and decrease the overall size of our main code. By using an import statement, we can insert custom created modules or built-in Python modules into our code from an external file. This also helps modularize and organize code"
+    },
+    {
+        "question": "Which design method leverages the Separation of Concerns (SoC) principle for designing modular code?",
+        "options": [
+            "Model-View-Controller (MVC)",
+            "Observer",
+            "Version Control",
+            "Git"
+        ],
+        "answer": ["Model-View-Controller (MVC)"],
+        "explanation": "Model-View-Controller (MVC) leverages the Separation of Concerns (SoC) principle. SoC is a design principle for breaking our code into smaller, separate modular pieces. By doing this, we have more opportunity for upgrading software by changing the smaller components, rather than changing the larger overall code."
+    },
+    {
+        "question": "Which design pattern is commonly used to implement distributed event handling systems, where an object maintains a list of its dependents and notifies them of state changes?",
+        "options": [
+            "Model-View-Controller (MVC)",
+            "Singleton",
+            "Factory Method",
+            "Observer"
+        ],
+        "answer": ["Observer"],
+        "explanation": "The Observer pattern is used to implement distributed event handling systems. In this pattern, a subject (the object of interest) maintains a list of its dependents (observers) and notifies them of any state changes. This pattern is commonly used for scenarios where multiple objects need to be updated when the state of a subject changes."
+    },
+    {
+        "question": "Which principle means we are tracking all the changes made to a file or a set of files in a historical perspective?",
+        "options": [
+            "Observer",
+            "Version Control",
+            "Model-View-Controller (MVC)",
+            "Logging"
+        ],
+        "answer": ["Version Control"],
+        "explanation": "Version control, often implemented using systems like Git, is a fundamental practice in software development. It involves systematically tracking changes made to code files, creating a historical record of modifications. This practice offers several benefits, including the ability to track changes, revert to previous code states, facilitate collaboration among developers, manage code branches for feature development, ensure backup and recovery of code, and more. By maintaining a comprehensive history of code changes, version control systems enhance code stability, support teamwork, and provide a safety net for software projects."
+    },
+    {
+        "question": "Which Git version control operation allows us to create a copy of a repository on our local file system?",
+        "options": [
+            "Commit",
+            "Clone",
+            "Push",
+            "Merge"
+        ],
+        "answer": ["Clone"],
+        "explanation": "The Git 'clone' operation enables us to duplicate an entire repository onto our local computer. This process, executed with the 'git clone' command followed by the repository's URL, creates an independent copy of the project locally, allowing us to work on it without altering the original version. It is akin to borrowing a library book, where you get your own copy to read at home."
+    },
+    {
+        "question": "Which Git version control operation allows us to track the status of a file including any changes made?",
+        "options": [
+            "Add",
+            "Diff",
+            "Branch",
+            "Clone"
+        ],
+        "answer": ["Add"],
+        "explanation": "The Git 'add' operation allows us to track file changes. Using <strong>'git add'</strong>, we specify which files to monitor for changes within our Git repository. This operation is crucial for keeping an eye on file status and alterations."
+    },
+    {
+        "question": "Which Git version control operation moves a file from our index (or staging area) to our local repository?",
+        "options": [
+            "Merge",
+            "Push",
+            "Commit",
+            "Diff"
+        ],
+        "answer": ["Commit"],
+        "explanation": "The commit operation moves a file from our staging area and commits the file changes to our local repository. This is how we sync our staging area to the local repository. In Git, there are three stages: Working Directory, Staging Area, and Local Repository. Changes start in the Working Directory, move to the Staging Area when ready for a commit, and finally get committed to the Local Repository. The 'git status' command will show any changes that are ready to be committed, and the 'git commit' command is how we finalize the file commit."
+    },
+    {
+        "question": "Which Git version control operation will add all tracked files from our local file system to a central remote repository such as GitHub?",
+        "options": [
+            "Commit",
+            "Push",
+            "Clone",
+            "Diff"
+        ],
+        "answer": ["Push"],
+        "explanation": "The 'git push' operation uploads local file changes to a central remote repository, like GitHub, facilitating collaborative development by enabling multiple developers to access and work on the same codebase stored remotely."
+    },
+    {
+        "question": "Which Git version control operation allows us a safe way to separate our development area from a main local repository containing known working code?",
+        "options": [
+            "Clone",
+            "Add/Remove",
+            "Diff",
+            "Branch"
+        ],
+        "answer": ["Branch"],
+        "explanation": "Branches are a feature which allow us to separate our development area from a main local repository, providing a safe way to work on new features or updates without affecting the stable codebase.Some useful commands are:<br><br>- <strong>git branch -v</strong> or <strong>git branch --verbose</strong>: Detailed view of branches, including commit messages and commit hashes of the latest commits.<br>- <strong>git branch</strong> or <strong>git branch --list</strong>: View a list of all local branches.<br>- <strong>git branch <code>&lt;branch_name&gt;</code></strong>: Create a new branch.<br>- <strong>git checkout <code>&ltbranch_name&gt</code></strong>: Switch to a branch when you already have a branch on your local machine."
+    },
+    {
+        "question": "Which Git version control operation allows us to join the contents of a branch development area with a main repository locally?",
+        "options": [
+            "Diff",
+            "Push/Pull",
+            "Merge",
+            "Add/Remove"
+        ],
+        "answer": ["Merge"],
+        "explanation": "The merge operation allows us to join multiple branches together into a main coding repository. When working in the main repository, the 'git merge' command, followed by the name of the branch we want to add into this repository, will show any conflicts and attempt to merge the files. It is important to note that for the merge to be successful, the changes in the branches being merged should have been committed using the 'git commit' command. Git considers only committed changes for merging, so ensure that changes are committed before performing a merge operation."
+    },
+    {
+        "question": "Which Git version control operation is used as a file comparison tool?",
+        "options": [
+            "Merge",
+            "Branch",
+            "Clone",
+            "Diff"
+        ],
+        "answer": ["Diff"],
+        "explanation": "The 'diff' operation serves as a file comparison tool, allowing developers to visualize the differences in a set of files or development branches. This tool is particularly valuable when merging branches or when multiple developers are collaborating on the same files. <br> It provides a detailed, line-by-line breakdown of changes, enabling developers to review and understand modifications made to the codebase. Additionally, it aids in the identification and resolution of conflicts during code collaboration and merging processes."
+    },
+    {
+        "question": "Which method of authentication for REST API is typically limited only to operations where the READ function is required?",
+        "options": [
+            "Basic Authentication",
+            "OAuth Authentication",
+            "Open Authentication",
+            "API Key Authentication"
+        ],
+        "answer": ["API Key Authentication"],
+        "explanation": "<strong>'API Key Authentication' uses pre-shared keys for client-server authentication. It is typically limited to READ operations to minimize security risks if the key is intercepted.</strong><br><br>The other options 'Basic Authentication' and 'OAuth Authentication' offer broader access control, including both READ and WRITE operations.<br>The other option 'Open Authentication' is not a recognized authentication method in this context."
+    },
+    {
+        "question": "What type of HTTP messages are used by Webhooks?",
+        "options": [
+            "HTTP UPDATE",
+            "HTTP READ",
+            "HTTP POST",
+            "HTTP DELETE"
+        ],
+        "answer": ["HTTP POST"],
+        "explanation": "<strong>Webhooks</strong> are <strong>HTTP POST</strong> messages triggered by specific events in an automated manner, designed for receiving real-time notification messages about events on a system.<br><br>HTTP UPDATE, READ, and DELETE are not appropriate options because Webhooks are specifically tailored for event-driven notifications, not for making updates (UPDATE), reading existing data (READ), or deleting resources (DELETE)."
+    },
+    {
+        "question": "Which area in Postman allows you to create preconfigured areas to be used with specific devices, which can hold key:value pairs for variables like the base URL, the token, the username, and the password?",
+        "options": [
+            "Environments",
+            "Flows",
+            "Collections",
+            "Requests"
+        ],
+        "answer": ["Environments"],
+        "explanation": "A Postman environment is a set of variables that can be used for requests.<br>An environment can store key:value pairs for specific devices, which can be referenced in our requests using variables, which saves us from entering the same information multiple times with our methods.<br><strong>Common information stored in an environment</strong> include the <strong>device base URL, the token, the username,</strong> and <strong>the password</strong>.<br><br>The other options:<br>'Flows' in Postman refer to the sequence of requests within a collection, not to store variables.<br>'Collections' are sets of saved requests, not specifically designed for storing variables.<br>'Requests' are individual API call configurations within a collection and do not provide the environment for storing variables."
+    },
+    {
+        "question": "With Cisco Network Services Orchestrator, what are required to translate between XML format and our network configuration?",
+        "options": [
+            "YAML",
+            "JSON",
+            "NEDS",
+            "LIB"
+        ],
+        "answer": ["NEDS"],
+        "explanation": "<strong>Network Element Drivers (NEDS) are necessary to translate between XML data and a valid network configuration.</strong> Cisco NSO provides NEDS for various versions of the Cisco CLI since many devices use different commands. Some of those include NEDS for Cisco ASA, Cisco IOS-XR, and Cisco IOS-NX.<br><br>A Network Element Driver (NED) in the context of Cisco Network Services Orchestrator (NSO) is designed to interface with specific network devices or platforms and translate between NSO's XML-based configuration model and the device's native configuration language.<br><br>A NED template for example, can be used to translate configuration data provided by NSO into the XML format expected by the Cisco IOS-XE device, ensuring that the device's configuration is synchronized with NSO's intended state."
+    },
+    {
+        "question": "Which of the following is the correct syntax for a Python function?",
+        "options": [
+            "define function (arg)",
+            "function function(arg)",
+            "def function(arg)",
+            "func function(arg)"
+        ],
+        "answer": ["def function(arg)"],
+        "explanation": "In Python, functions are defined using the <strong>'def'</strong> keyword followed by the <strong>function name</strong> and a pair of <strong>parentheses'()'</strong> that may contain optional function parameters.<br>The correct syntax for defining a Python function is as follows: <strong>'def function_name(parameters):'</strong>"
+    },
+    {
+        "question": "Which of the following is a valid Python function name?",
+        "options": [
+            "1function",
+            "__init__",
+            "True",
+            "Funct1on"
+        ],
+        "answer": ["__init__"],
+        "explanation": "In Python, valid function names must follow certain rules. They should start with a letter or an underscore, followed by letters, numbers, or underscores.<br>Other options: '1function' starts with a digit, which is not a valid starting character for function names.<br>'True' is not recommended as it can conflict with a Python keyword.<br>'Funct1on' is a valid function name but not the best practice due to the use of numbers.<br><strong>'__init__'</strong> is a <strong>valid and commonly used function name</strong>, often associated with constructors in Python classes."
+    },
+    {
+        "question": "When three single quotation marks are used on the next line directly after defining a function, what does this indicate?",
+        "options": [
+            "Multi-line text",
+            "A docstring",
+            "A string value including double or single quotation marks",
+            "None of the above"
+        ],
+        "answer": ["A docstring"],
+        "explanation": "When three single quotation marks or double, are used directly after defining a function, it indicates a docstring.<br>A docstring is a multi-line string that provides documentation or a description of the function's purpose, parameters, and behavior.<br>It is used to document code and provide information for developers."
+    },
+    {
+        "question": "What is a method?",
+        "options": [
+            "A variable applied to a class",
+            "Syntax notation",
+            "A function within a class or an object",
+            "Something that is not used in a class"
+        ],
+        "answer": ["A function within a class or an object"],
+        "explanation": "A method, is a function that is defined within a class or an object. Methods are used to define the behavior and operations associated with the class or object.<br>They allow you to perform actions and manipulate data specific to that class or object."
+    },
+    {
+        "question": "Which of the following describes inheritance?",
+        "options": [
+            "A hierarchy for functions in Python",
+            "Class attributes and methods used as the starting point for another class",
+            "A function only applied to methods being used in another class",
+            "None of the above"
+        ],
+        "answer": ["Class attributes and methods used as the starting point for another class"],
+        "explanation": "Inheritance, is a fundamental concept in object-oriented programming where class attributes and methods are used as the starting point for creating a new class.<br>This allows the new class to inherit the properties and behaviors of the parent class, promoting code reusability and creating a hierarchy of classes."
+    },
+    {
+        "question": "Which module provides access to the file system and directory structure?",
+        "options": [
+            "filesystem",
+            "open",
+            "devnetats",
+            "ncclient"
+        ],
+        "answer": ["open"],
+        "explanation": "The <strong>'open'</strong> module in Python provides access to the file system and directory structure. It allows you to <strong>open, read, write, and manipulate files and directories</strong>.<br>The other options do not provide direct access to the file system."
+    },
+    {
+        "question": "Which module is a testing framework for Cisco infrastructure?",
+        "options": [
+            "pyATS",
+            "pyang",
+            "devnetats",
+            "ncclient"
+        ],
+        "answer": ["pyATS"],
+        "explanation": "The 'pyATS' (Python Automation and Test System) framework is a testing framework designed for Cisco infrastructure and network automation testing.<br>It provides a comprehensive set of tools and libraries for testing Cisco devices and network configurations.<br>Other options do not relate to testing Cisco infrastructure."
+    },
+    {
+        "question": "Within a Cisco UCS-based network, what type of device is used to interconnect all UCS-capable servers into a single point of management?",
+        "options": [
+            "UCS Fabric Extender",
+            "UCS Series Servers",
+            "UCS Fabric Interconnects",
+            "UCS Manager"
+        ],
+        "answer": ["UCS Fabric Interconnects"],
+        "explanation": "In a Cisco UCS Manager environment, UCS Fabric Interconnects serve as the key devices for integrating UCS-capable servers into a unified fabric of connectivity dedicated to management. It is a best practice to deploy UCS Fabric Interconnects in pairs, ensuring failover capability and high availability. This design enhances the reliability and robustness of the overall network infrastructure."
+    },
+    {
+        "question": "Which component used within Cisco UCS Director represents the largest units of information?",
+        "options": [
+            "Workflows",
+            "Tasks",
+            "Volumes",
+            "Libraries"
+        ],
+        "answer": ["Libraries"],
+        "explanation": "In Cisco UCS Director, Libraries serve as the largest unit of information. They encompass collections of workflows or pre-defined tasks.<br>Tasks, on the other hand, constitute the smallest unit, representing individual actions.<br>Workflows are organized as collections of tasks, and multiple workflows can be contained within a library. This hierarchical structure provides a systematic approach to managing and organizing information within Cisco UCS Director. This version maintains accuracy while refining the structure and wording for improved clarity within a professional certification context."
+    },
+    {
+        "question": "Within Cisco Intersight, which area displays all the devices under our control that have been claimed?",
+        "options": [
+            "Assets",
+            "Profiles",
+            "Targets",
+            "Policies"
+        ],
+        "answer": ["Targets"],
+        "explanation": "In the Cisco Intersight management portal, selecting the Targets area from the admin menu allows us to view all claimed devices under our control. This section provides a comprehensive overview of devices that have been successfully claimed and are currently managed within Cisco Intersight."
+    },
+    {
+        "question": "Which method is necessary to create a new room in Cisco Webex through API interaction?",
+        "options": [
+            "POST",
+            "PUT",
+            "GET",
+            "UPDATE"
+        ],
+        "answer": ["POST"],
+        "explanation": "To create a new room using the Cisco Webex API, the required method is POST. Utilizing the POST method involves sending a request to https://webexapis.com/v1/rooms, and providing a title for the room in order to establish the new space. In contrast, the GET method, if used, would point to the same URL but is designed for retrieving information rather than creating new rooms."
+    },
+    {
+        "question": "Which API is utilized by Cisco collaboration endpoint software, including Cisco CE and Cisco RoomOS?",
+        "options": [
+            "ceAPI",
+            "cAPI",
+            "osAPI",
+            "xAPI"],
+        "answer": ["xAPI"],
+        "explanation": "The xAPI (xAPI) is the designated interface for Cisco collaboration endpoint software, such as Cisco CE (Collaboration Endpoint) and Cisco RoomOS. This API enables developers to programmatically execute commands and retrieve the status of devices running these software platforms. The xAPI facilitates bi-directional communication with third-party applications and control systems, providing a robust framework for integration and control."
+    },
+    {
+        "question": "Which type of API interface is employed for Cisco CUCM interaction?",
+        "options": [
+            "Open API",
+            "xAPI",
+            "AXL API",
+            "SDK API"
+        ],
+        "answer": ["AXL API"],
+        "explanation": "For Cisco Unified Communications Manager (CUCM) interaction, the Administrative XML Web Service (AXL) API is utilized. AXL is an XML-based interface that facilitates the insertion, retrieval, updating, and removal of data from the Unified Communication configuration database. Developers leverage AXL to perform actions such as creating, reading, updating, and deleting objects like gateways, users, devices, route patterns, and more within the Cisco CUCM environment."
+    },
+    {
+        "question": "Which Cisco collaboration solution offers an agent and supervisor desktop that can be accessed and manipulated through REST API interaction?",
+        "options": [
+            "Finesse",
+            "Cisco UCM",
+            "Cisco Webex",
+            "Cisco UCS"
+        ],
+        "answer": ["Finesse"],
+        "explanation": "Cisco Finesse is the Cisco collaboration solution that provides an agent and supervisor desktop. This desktop can be interacted with through REST API, allowing users to affect and customize their experience. Finesse integrates traditional contact center functions into a thin-client desktop, and its robust API facilitates the creation of custom applications."
+    },
+    {
+        "question": "Which key:value pair is used to identify the authentication token when interacting with the Firepower API?",
+        "options": [
+            "X-auth-token:<authentication token value>",
+            "X-auth-access-token:<authentication token value>",
+            "X-auth-bearer-token:<authentication token value>",
+            "X-auth-secure-token:<authentication token value>"
+        ],
+        "answer": ["X-auth-access-token:<authentication token value>"],
+        "explanation": "To identify the authentication token with the Firepower API, the correct key:value pair is X-auth-access-token: followed by the actual authentication token value. For example, X-auth-access-token:<actual token value>. It's crucial to use the accurate key:value pair as specified by the Firepower API documentation. Additionally, Firepower requires a separate key:value pair for the refresh token, as outlined in the API documentation."
+    },
+    {
+        "question": "Which cloud-based Cisco platform is used as a secure internet gateway for things like malware prevention and secure DNS routing?",
+        "options": [
+            "AMP",
+            "Umbrella",
+            "ISE",
+            "ThreatGrid"
+        ],
+        "answer": ["Umbrella"],
+        "explanation": "Cisco Umbrella acts as a secure internet gateway and provides DNS-layer security. This allows us to route endpoints over secure DNS destinations, prevent malware and ransomware, and more."
+    },
+    {
+        "question": "What does YAML stand for?",
+        "options": [
+            "Yet Another Markup Language",
+            "YAML Ain't Markup Language",
+            "The name of its creator",
+            "None of the above"
+        ],
+        "answer": ["YAML Ain't Markup Language"],
+        "explanation": "YAML stands for 'YAML Ain't Markup Language.' According to the official YAML site <strong>https://yaml.org</strong> It is a human-readable data serialization format that is commonly used for configuration files and data exchange, especially in applications where human readability is a priority."
+    },   
+    {
+        "question": "What is the syntax for error handling in Python?",
+        "options": [
+            "try-except-else-finally",
+            "raise ErrorMessage",
+            "assertErrorValue",
+            "All of the above"
+        ],
+        "answer": ["try-except-else-finally"],
+        "explanation": "The syntax for error handling in Python involves the try-except-else-finally blocks. <br> <br> 'try' is used to wrap the code that might raise an exception, <br> 'except' is used to handle specific exceptions, <br> 'else' is executed if no exceptions are raised, and <br> 'finally' is executed regardless of whether an exception occurred or not."
+    },
+    {
+        "question": "When does the finally block execute?",
+        "options": [
+            "After the try block is successful",
+            "After the except block",
+            "At the end of every try block",
+            "When an error code stops the else block"
+        ],
+        "answer": ["At the end of every try block"],
+        "explanation": "The finally block in Python executes at the end of every try block, regardless of whether an exception occurred or not. It is typically used to perform cleanup operations such as closing files or releasing resources."
+    },
+    {
+        "question": "Test-driven development requires that developers:",
+        "options": [
+            "Create a unit test for every bit of code they write",
+            "Know how to use DevOps tools for automated testing",
+            "Create a simple test that fails and then write code that allows the test to succeed",
+            "Completely unnecessary in an Agile development shop"
+        ],
+        "answer": ["Create a simple test that fails and then write code that allows the test to succeed"],
+        "explanation": "Test-driven development (TDD) requires developers to follow the 'Red-Green-Refactor' cycle. This means writing a failing test first, then writing the code to make the test pass, and finally refactoring the code while ensuring that the tests still pass. It emphasizes writing tests before writing the actual code, ensuring that the code meets the requirements set by the tests."
+    },
+    {
+        "question": "What is the difference between a <strong> unit test </strong> and an <strong>integration test</strong>? (Choose two)",
+        "options": [
+            "An integration test is for validation of how different parts of the application work together",
+            "An integration test verifies that the application operates as expected",
+            "A unit test verifies API functionality",
+            "A unit test is most specific in scope and tests small bits of code"
+        ],
+        "answer": ["An integration test is for validation of how different parts of the application work together", "A unit test is most specific in scope and tests small bits of code"],
+        "explanation": "Integration tests validate the interaction between different parts of the application, ensuring that they work together as expected. Unit tests focus on testing small, specific bits of code in isolation from the rest of the application, typically verifying individual functions or methods."
+    },
+    {
+        "question": "Which class is inherited as part of a unit test?",
+        "options": [
+            "unittest.testcase",
+            "unittest.TestCase",
+            "unittest",
+            "TestCase"
+        ],
+        "answer": ["unittest.TestCase"],
+        "explanation": "In Python, the class to be inherited as part of a unit test is 'unittest.TestCase'. This class provides various methods and assertions to facilitate writing and running unit tests using the unittest framework."
+    },
+    {
+        "question": "Which of the following is a sample use case of a southbound API?",
+        "options": [
+            "Pushing network configuration changes down to devices",
+            "Increasing security",
+            "Streaming telemetry",
+            "Sending information to the cloud"
+        ],
+        "answer": ["Pushing network configuration changes down to devices"],
+        "explanation": "A southbound API typically refers to an interface used to communicate from a controller (such as a network controller or SDN controller) to the devices it manages. <br><br> One common use case of a southbound API is pushing network configuration changes down to devices."
+    },
+    {
+        "question": "True or False: RESTful API authentication can use API keys or custom tokens.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": ["True"],
+        "explanation": "RESTful API authentication can indeed utilize API keys or custom tokens.<br>API keys are typically used for authenticating third-party applications or services, while custom tokens, such as JWT (JSON Web Tokens), are often used for user authentication."
+    },
+    {
+        "question": "What does SOAP stand for?",
+        "options": [
+            "Software Operations and Procedures",
+            "Software Operations Authentication Protocol",
+            "Simple Object Access Protocol",
+            "Simple Operations Automation Platform",
+            "Support Object Abstract Protocol"
+        ],
+        "answer": ["Simple Object Access Protocol"],
+        "explanation": "SOAP stands for Simple Object Access Protocol.<br>It is a protocol for exchanging structured information in the implementation of web services in computer networks. <br><br> SOAP provides a standardized messaging framework that allows programs running on different operating systems to communicate with each other."
+    },
+    {
+        "question": "Remote-procedure calls (RPCs) behave similarly to which of the following?",
+        "options": [
+            "Synchronous API",
+            "Asynchronous API"
+        ],
+        "answer": ["Synchronous API"],
+        "explanation": "In RPC, a client makes a request to a remote server, and waits until it receives a response from the server before continuing its execution. This synchronous behavior contrasts with asynchronous APIs, where the client can continue without waiting for a response. For example: A client-server communication where a client program invokes a procedure on a remote server as if it were a local. <br><br> A client Python program needs to perform some calculations, but it lacks computational power. It wants to offload these calculations to a more powerful server.<br><br> On the server side, there is a function called 'calculate_square' that takes a number as input and returns its square. The client wants to invoke this function remotely. Here's how it works: <br><br> 1. The client program makes an RPC request to the server, passing the number whose square needs to be calculated.<br> 2. The server receives the RPC request and executes the 'calculate_square' function with the provided input.<br> 3. The server then sends back the result (the square of the input number) to the client.<br> 4. The client receives the result and continues its execution based on the returned value."
+    },
+    {
+        "question": "Which of the following describes the method of including an API key directly in the URL or query parameters?",
+        "options": [
+            "Request Header API key",
+            "String-based API key",
+            "Cookie API key",
+            "Token-based API key"
+        ],
+        "answer": ["String-based API key"],
+        "explanation": "String-based API keys are included directly in the URL or query parameters of the request, making them visible in the request URL. For Example, it might look something like this: <br><br>https://api.example.com/resource?<strong>key=your_api_key</strong>"
+    },
+    {
+        "question": "Which of the following methods is NOT commonly used for passing API keys in HTTP requests?",
+        "options": [
+            "Request Header API key",
+            "String-based API key",
+            "Cookie API key",
+            "Query Parameter API key"
+        ],
+        "answer": ["Query Parameter API key"],
+        "explanation": "While API keys can be passed as query parameters in URLs, it's not as common as using request headers, strings in the URL, or cookies. Passing API keys as query parameters can lead to security concerns due to visibility in URLs."
+    },
+    {
+        "question": "In the given example, which type of API key is being used?<br><br>GET /resource HTTP/1.1<br>Host: api.example.com<br>X-API-Key: your_api_key",
+        "options": [
+            "String-based API key",
+            "Request Header API key",
+            "Cookie API key",
+            "Token-based API key"
+        ],
+        "answer": ["Request Header API key"],
+        "explanation": "In the provided example, the API key is included as a value in the <strong>X-API-Key</strong> header of the HTTP request. This method is characteristic of a Request Header API key."
+    },
+    {
+        "question": "What is the purpose of custom tokens in authentication and authorization systems?",
+        "options": [
+            "To provide a standardized method for user authentication",
+            "To generate random strings for session management",
+            "To securely authenticate users and authorize access to resources",
+            "To encrypt sensitive user data during transmission"
+        ],
+        "answer": ["To securely authenticate users and authorize access to resources"],
+        "explanation": "'Custom Tokens' refer to a method of authentication or authorization where unique, custom-generated tokens are used to authenticate users or authorize access to certain resources. Popular implementations of custom tokens include JSON Web Tokens (JWT) and opaque tokens. Here's how custom tokens typically work:<br><br><strong>Generation:</strong> User authenticates/logs in and the server generates a unique token for that user (typically a long random string of characters).<br><strong>Storage:</strong> The token is associated with the user's session/account on the server and stored in a database, cache, or session storage.<br><strong>Issuance:</strong> The token is issued to the client (e.g., a web browser or mobile app) and returned in the authentication response.<br><strong>Subsequent Requests:</strong> The client includes the token in subsequent requests to the server, typically as an 'Authorization' header.<br><strong>Validation:</strong> When the server receives a request with a token, it validates the token to ensure it's legitimate (checking the token's signature, expiration date, and/or consulting a database or cache).<br><strong>Authorization:</strong> The server grants access to the requested resource/operation if the token is valid.<br><br>"
+    },
+    {
+        "question": "What is SOAP primarily used for?",
+        "options": [
+            "Accessing web services",
+            "Managing databases",
+            "Creating web pages",
+            "Storing data"
+        ],
+        "answer": ["Accessing web services"],
+        "explanation": "SOAP is a protocol used primarily for facilitating communication between different applications over the internet, particularly for accessing web services. It provides a standard way for applications to exchange structured information regardless of the platforms and programming languages they are built on, such as Java, .NET, and PHP."
+    },
+    {
+        "question": "Which technology does SOAP use to communicate between web services and clients?",
+        "options": [
+            "JSON",
+            "XML",
+            "HTML",
+            "YAML"
+        ],
+        "answer": ["XML"],
+        "explanation": "SOAP uses XML as its messaging format for communication between web services and clients. XML provides a standardized way to structure data, making it suitable for exchanging information between systems that may be built on different technologies."
+    },
+    {
+        "question": "Which of the following is not an HTTP method?",
+        "options": [
+            "GET",
+            "HEAD",
+            "TRIGGER",
+            "PATCH"
+        ],
+        "answer": ["TRIGGER"],
+        "explanation": "Among the provided options, 'TRIGGER' is not an HTTP method. The HTTP methods <strong>GET</strong>, <strong>HEAD</strong>, and <strong>PATCH</strong> are all standard HTTP methods used for specific operations: <br><br> - <strong>GET</strong>: Retrieves data from the server <br> - <strong>HEAD</strong>: Retrieves headers from the server without the body of the response <br> - <strong>PATCH</strong>: Partially updates a resource on the server."
+    },
+    {
+        "question": "Which response code indicates that a resource has moved?",
+        "options": [
+            "201",
+            "301",
+            "401",
+            "501"
+        ],
+        "answer": ["301"],
+        "explanation": "The HTTP response code <strong>301</strong> indicates that a resource has permanently moved to a new location.<br>This status code is often used for URL redirection, informing the client that the requested resource has been moved to a different URL."
+    },
+    {
+        "question": "What does the HTTP response code 201 indicate?",
+        "options": [
+            "Resource Created",
+            "Resource Moved Permanently",
+            "Unauthorized",
+            "Internal Server Error"
+        ],
+        "answer": ["Resource Created"],
+        "explanation": "The HTTP response code <strong>201</strong> indicates that a new resource has been successfully created on the server.<br>It is commonly used in RESTful APIs to indicate that a POST request has been processed successfully and a new resource has been created."
+    },
+    {
+        "question": "What does the HTTP response code 501 signify?",
+        "options": [
+            "Resource Created",
+            "Not Found",
+            "Not Implemented",
+            "Service Unavailable"
+        ],
+        "answer": ["Not Implemented"],
+        "explanation": "The HTTP response code <strong>501</strong> indicates that the server does not support the functionality required to fulfill the request. It means that the server lacks the ability to perform the requested operation, often because it has not been implemented or is not supported."
+    },
+    {
+        "question": "Which of the following, model the interactions between various objects in a single use case?",
+        "options": [
+            "REST APIs",
+            "Sequence diagrams",
+            "Excel sheets",
+            "Venn diagrams"
+        ],
+        "answer": ["Sequence diagrams"],
+        "explanation": "Sequence diagrams model the interactions between various objects in a single use case. They illustrate the sequence of messages exchanged between objects or components in a system to accomplish a particular task or scenario.<br>Sequence diagrams are commonly used in software engineering and systems analysis to visualize the flow of interactions during runtime."
+    },
+    {
+        "question": "Which REST API architectural constraint allows you to download code and execute it?",
+        "options": [
+            "Client/server",
+            "Statelessness",
+            "Code on demand",
+            "Layered systems"
+        ],
+        "answer": ["Code on demand"],
+        "explanation": "The REST API architectural constraint that allows you to download code and execute it is <strong>Code on demand</strong>. This constraint enables servers to temporarily extend or customize the functionality of a client by transferring executable code, such as scripts or applets, for the client to execute.<br><br>While the other options are also architectural constraints of REST APIs, they do not directly involve downloading code for execution:<br><br>- <strong>Client/server:</strong> Separates the concerns of the client and the server.<br>- <strong>Statelessness:</strong> Requires that each request from a client to the server must contain all the information necessary to understand the request, in which the server completes every client request independently of all the previous ones. Clients can request resources in any order, and every request is isolated from other requests.<br>- <strong>Layered systems:</strong> Allows for the use of intermediaries, such as proxies or gateways, to improve scalability."
+    },
+    {
+        "question": "Rate limiting is an essential REST API design method for developers. Rate-limiting techniques are used to ________.",
+        "options": [
+            "increase security",
+            "have business impact",
+            "enhance efficiency end to end",
+            "do all above"
+        ],
+        "answer": ["do all above"],
+        "explanation": "Rate limiting is an essential REST API design method that serves multiple purposes:<br><br>- <strong>Increase security:</strong> Can help mitigate certain types of attacks, such as denial-of-service (DoS) attacks, by limiting the number of requests an attacker can make within a specific timeframe.<br>- <strong>Have business impact:</strong> Allows businesses to control access to their APIs and services, ensuring fair usage and preventing abuse. It can also be used to enforce subscription tiers or pricing plans based on usage limits.<br>- <strong>Enhance efficiency end to end:</strong> By preventing abuse and ensuring fair usage, it can enhance the overall efficiency of the system. It helps in maintaining system stability, optimizing resource utilization, and providing a better experience for legitimate users."
+    },
+    {
+        "question": "To add HTTP headers to a Python request, you can simply pass them in as which of the following?",
+        "options": [
+            "list",
+            "dict",
+            "tuple",
+            "set"
+        ],
+        "answer": ["dict"],
+        "explanation": "To add HTTP headers to a Python request, you can simply pass them in as a <strong>dictionary (dict)</strong>. In Python, the requests library allows you to include headers in your HTTP requests by passing a dictionary where the keys are the header names and the values are the header values. This dictionary-based approach makes it straightforward to include custom headers in your requests. For example:<br><br><code>import requests<br><br>headers = {<br>    'User-Agent': 'MyCustomUserAgent',<br>    'Authorization': 'Bearer my_access_token'<br>}<br><br>response = requests.get('https://api.example.com', headers=headers)<br>print(response.status_code)</code>"
+    },
+    {
+        "question": "Payment Systems, User Management, and Social Media Handler. All those are examples of which type of APIs?",
+        "options": [
+            "Service API",
+            "Informational API",
+            "Hardware API"
+        ],
+        "answer": ["Service API"],
+        "explanation": "Payment Systems, User Management, and Social Media Handler are all examples of <strong>Service APIs</strong>. Service APIs provide access to various functionalities and services offered by a system or platform, allowing developers to integrate and interact with these services programmatically."
+    },
+    {
+        "question": "What does the 'http://' part of a URL represent?",
+        "options": [
+            "The protocol used for communication",
+            "The domain name of the website",
+            "The specific resource being requested",
+            "The port number for the server"
+        ],
+        "answer": ["The protocol used for communication"],
+        "explanation": "The 'http://' part of a URL indicates the protocol used for communication, which is typically HTTP (Hypertext Transfer Protocol) for accessing web pages over the internet. Other protocols such as HTTPS (HTTP Secure) or FTP (File Transfer Protocol) may also be used."
+    },
+    {
+        "question": "What does the 'query string' in a URL typically contain?",
+        "options": [
+        "The protocol used for communication",
+        "Parameters for the requested resource",
+        "The domain name of the website",
+        "The path to the specific resource"
+        ],
+        "answer": ["Parameters for the requested resource"],
+        "explanation": "The 'query string' in a URL refers to the portion of the URL that follows the question mark (?) and consists of key-value pairs separated by ampersands (&). These parameters provide additional details to the server to influence the response. For example, consider the URL:<br><br>https://example.com/search?<strong>q=apple&category=fruits</strong><br><br>In this URL, the query string ?q=apple&category=fruits contains two parameters: q=apple (indicating a search for 'apple') and category=fruits (specifying the category as 'fruits'). These parameters help narrow down the search results returned by the server. While the term 'query string' specifically refers to this formatted part of the URL, it is often used interchangeably with the broader concept of 'parameters' in URLs."
+    },
+    {
+        "question": "In the context of RESTful applications, how are CRUD operations typically mapped to HTTP methods?",
+        "options": [
+            "Create: HTTP GET, Read: HTTP POST, Update: HTTP PUT, Delete: HTTP DELETE",
+            "Create: HTTP POST, Read: HTTP GET, Update: HTTP DELETE, Delete: HTTP PUT",
+            "Create: HTTP PUT, Read: HTTP GET, Update: HTTP POST, Delete: HTTP DELETE",
+            "Create: HTTP POST, Read: HTTP GET, Update: HTTP PUT or PATCH, Delete: HTTP DELETE"
+        ],
+        "answer": ["Create: HTTP POST, Read: HTTP GET, Update: HTTP PUT or PATCH, Delete: HTTP DELETE"],
+        "explanation": "In RESTful applications, CRUD operations are typically mapped to corresponding HTTP methods. CRUD operations are not HTTP methods themselves, but in RESTful applications, HTTP methods are often used to perform CRUD operations on resources.<br><br>For CRUD update operations there are:<br>- <strong>PUT:</strong> A complete update method that replaces an existing record with a new one.<br>- <strong>PATCH:</strong> A partial update method that changes the values of one or more fields on a record"
+    },
+    {
+        "question": "Which of the following is not one of the six constraints of the REST architectural style?",
+        "options": [
+            "Uniform Interface",
+            "Code on demand",
+            "Cache",
+            "RPC"
+        ],
+        "answer": ["RPC"],
+        "explanation": "The six constraints of the REST architectural style are Client/Server, Stateless, Cache, Uniform Interface, Layered System, and Code on Demand. RPC (Remote Procedure Call) is not one of these constraints. RPC is a different communication paradigm often used in distributed systems, but it is not a fundamental constraint of the REST architectural style."
+    },
+    {
+        "question": "Which HTTP request method is typically treated as cacheable by browsers by default?",
+        "options": [
+            "POST",
+            "PUT",
+            "GET",
+            "DELETE"
+        ],
+        "answer": ["GET"],
+        "explanation": "GET requests are typically treated as cacheable by browsers by default. This means that browsers may cache the response to a GET request to avoid repeatedly fetching the same resource."
+    },
+    {
+        "question": "How can a POST request be made cacheable?",
+        "options": [
+            "By including an Authorization header in the response",
+            "By setting the \"Cache-Control: max-age\" header in the request",
+            "By adding an \"Expires\" header or a \"Cache-Control\" header in the response",
+            "By using a different HTTP request method"
+        ],
+        "answer": ["By adding an \"Expires\" header or a \"Cache-Control\" header in the response"],
+        "explanation": "POST requests are not cacheable by default, but they can be made cacheable by including either an \"Expires\" header or a \"Cache-Control\" header in the response. These headers provide instructions to browsers and other caching mechanisms on how long the response should be considered fresh and cacheable."
+    },
+    {
+        "question": "Which statement accurately describes a difference between a GET request and a POST request in HTTP?",
+        "options": [
+            "GET requests are used for submitting data to a server, while POST requests are used for retrieving data from a server.",
+            "GET requests include request parameters in the URL, while POST requests include request parameters in the body.",
+            "GET requests are generally faster and more efficient than POST requests due to their simpler structure.",
+            "GET requests are more secure than POST requests because they do not expose request parameters in the request body."
+        ],
+        "answer": ["GET requests include request parameters in the URL, while POST requests include request parameters in the body."],
+        "explanation": "GET requests retrieve data from a server, and the parameters are appended to the URL in the query string. In contrast, POST requests submit data to a server, and the parameters are included in the request body. <br><br>For example, to <strong>search for users by name</strong>, the URL might look like this:<br><br><code><strong>GET</strong> /api/users?name=John HTTP/1.1<br>Host: example.com</code><br><br>For example, to <strong>create a new user</strong>, the data is sent in the request body as JSON:<br><br><code><strong>POST</strong> /api/users HTTP/1.1<br>Host: example.com<br>Content-Type: application/json<br>{<br>\"name\": \"John\",<br>\"age\": 30<br>}</code>"
+    },
+    {
+        "question": "Which pagination approach is also known as a continuation token or cursor pagination?",
+        "options": [
+            "Offset-based pagination",
+            "Keyset-based pagination"
+        ],
+        "answer": ["Keyset-based pagination"],
+        "explanation": "<strong>Keyset-based pagination</strong>, also referred to as <strong>continuation token</strong> or <strong>cursor pagination</strong>, is a method used for fetching large datasets from a database in a controlled manner.<br>Unlike offset-based pagination, where records are retrieved based on their position in the dataset, <strong>keyset-based pagination</strong> relies on unique identifiers or keys to fetch subsequent pages of data.<br><br>This approach is particularly useful for datasets that frequently change, as it ensures consistent results without relying on fixed offsets.<br><br>Additionally, keyset-based pagination is more efficient for large datasets, as it avoids the need to scan through potentially millions of records to find the next page."
+    },
+    {
+        "question": "When specifying the timestamp parameter with the Cisco DNA Center APIs, what format should the time be in?",
+        "options": [
+            "UNIX time",
+            "OS/2",
+            "Open VMS",
+            "SYSTEMTIME"
+        ],
+        "answer": ["UNIX time"],
+        "explanation": "When specifying the timestamp parameter with the Cisco DNA Center APIs, the time should be in UNIX time format. UNIX time, also known as POSIX time or epoch time, represents the number of seconds that have elapsed since the UNIX epoch (00:00:00 UTC on January 1, 1970).<br>This format is commonly used in APIs and software systems for representing time as a simple integer value, making it easy to work with and convert across different platforms and programming languages."
+    },
+    {
+        "question": "What is the output of the multivendor SDK for Cisco DNA Center platform?",
+        "options": [
+            "Device driver",
+            "Device package",
+            "Software driver",
+            "Software package"
+        ],
+        "answer": ["Device package"],
+        "explanation": "The output of the multivendor SDK for Cisco DNA Center platform is a \"Device package\".<br><br>A device package contains information and configurations specific to network devices, allowing developers to interact with and manage various network elements through the Cisco DNA Center platform.<br><br>These device packages enable seamless integration and interoperability with a wide range of network devices, providing a unified interface for network management and automation tasks."
+    },
+    {
+        "question": "Which component of the Cisco SD-WAN fabric exposes a public REST API interface?",
+        "options": [
+            "vSmart",
+            "vBond",
+            "vManage",
+            "vEdge"
+        ],
+        "answer": ["vManage"],
+        "explanation": "The component of the Cisco SD-WAN fabric that exposes a public REST API interface is \"vManage\". It provides a centralized management and orchestration platform for the SD-WAN solution, offering RESTful APIs that allow administrators and developers to programmatically interact with the SD-WAN fabric.<br><br>These APIs enable automation, configuration, monitoring, and troubleshooting of SD-WAN deployments, empowering organizations to integrate SD-WAN functionality into their existing workflows and systems."
+    },
+    {
+        "question": "When initially authenticating to the Cisco SD-WAN REST API, how are the username and password encoded?",
+        "options": [
+            "application/postscript",
+            "application/xml",
+            "application/json",
+            "application/x-www-form-urlencoded"
+        ],
+        "answer": ["application/x-www-form-urlencoded"],
+        "explanation": "When initially authenticating to the Cisco SD-WAN REST API, the username and password are encoded using the \"application/x-www-form-urlencoded\" format. This encoding format is commonly used for submitting form data over HTTP requests.<br><br>For example:<br><br>If the username is \"user\" and the password is \"password123\", they would be encoded as \"username=user&password=password123\".<br><br>This allows the credentials to be sent securely as part of the request body when authenticating to the SD-WAN REST API."
+    },
+    {
+        "question": "On what family of switches does Cisco ACI run?",
+        "options": [
+            "Cisco Catalyst 9000",
+            "Cisco Nexus 9000",
+            "Cisco Nexus 7000",
+            "Cisco Catalyst 6800"
+        ],
+        "answer": ["Cisco Nexus 9000"],
+        "explanation": "Cisco ACI (Application Centric Infrastructure) runs on the Cisco Nexus 9000 family of switches. Cisco ACI is a software-defined networking solution that provides centralized automation and policy-driven application profiles to simplify network provisioning and management. It is specifically designed to work with Cisco Nexus 9000 switches to deliver scalable and programmable network infrastructure for modern data centers.<br><br>Other options are not accurate because:<br>- Cisco Catalyst 9000 switches, while part of Cisco's portfolio, are not typically associated with Cisco ACI. They are more commonly used for enterprise access and aggregation layers.<br>- Cisco Nexus 7000 switches, though part of the Nexus family, do not support ACI. They are older models primarily used for data center core and aggregation layers.<br>- Cisco Catalyst 6800 switches are also not compatible with ACI. They are modular switches designed for campus core and distribution layers in enterprise networks."
+    },
+    {
+        "question": "True or false: An ACI bridge domain can be associated with multiple VRF instances.",
+        "options": [
+            "true",
+            "false"
+        ],
+        "answer": ["true"],
+        "explanation": "An ACI bridge domain can indeed be associated with multiple VRF (Virtual Routing and Forwarding) instances. This allows for logical separation and isolation of network traffic within the same physical infrastructure.<br><br>In Cisco ACI (Application Centric Infrastructure), a bridge domain represents a Layer 2 forwarding domain that can span multiple switches and pods in the fabric. By associating a bridge domain with multiple VRF instances, different sets of endpoints can be segregated into distinct routing contexts, each with its own forwarding and security policies."
+    },
+    {
+        "question": "What Cisco ACI REST API endpoint is used for authentication?",
+        "options": [
+            "https://APIC_IP_or_Hostname/api/aaaLogin.json",
+            "https://APIC_IP_or_Hostname/api/login",
+            "https://APIC_IP_or_Hostname/api/v1/aaaLogin",
+            "https://APIC_IP_or_Hostname/api/vi/login.json"
+        ],
+        "answer": ["https://APIC_IP_or_Hostname/api/aaaLogin.json"],
+        "explanation": "The endpoint for authentication using the Cisco ACI REST API is: https://APIC_IP_or_Hostname/api/aaaLogin.json. This endpoint is specifically designed for logging in and obtaining a session token, which is required for subsequent API calls. The aaaLogin.json endpoint is part of the authentication, authorization, and accounting (AAA) framework in ACI, providing a secure mechanism for user authentication before accessing other API functionalities.<br><br>The ACI REST API uses token-based authentication, where users authenticate by providing their credentials (username and password) to the aaaLogin.json endpoint. Upon successful authentication, the ACI fabric issues a session token, which the user must include in subsequent API requests to authenticate and authorize those requests."
+    },
+    {
+        "question": "In Cisco UCS Manager, what is the logical construct that contains the complete configuration of a physical server?",
+        "options": [
+            "Server profile",
+            "Service profile",
+            "Template profile",
+            "None of the above"
+        ],
+        "answer": ["Service profile"],
+        "explanation": "In Cisco UCS Manager, the logical construct that contains the complete configuration of a physical server is called a 'Service profile.' A service profile abstracts the server's hardware configuration, including identity, connectivity, firmware policies, and other settings. It allows for easy provisioning, mobility, and management of server resources within the Cisco UCS (Unified Computing System) infrastructure. Service profiles provide a way to define server configurations independent of the underlying hardware, enabling rapid deployment and flexibility in managing server resources."
+    },
+    {
+        "question": "What does a load balancer distribute in a network environment?",
+        "options": [
+            "Different TCP connections to the routers",
+            "Incoming traffic across multiple servers",
+            "Traffic in the network by leveraging the switch architecture",
+            "Outgoing connections to the network"
+        ],
+        "answer": ["Incoming traffic across multiple servers"],
+        "explanation": "A load balancer distributes incoming network traffic across multiple servers in a network environment. This helps to ensure high availability and reliability by spreading the workload across multiple servers, preventing any single server from becoming overwhelmed with requests.<br><br>Load balancers can employ various algorithms to distribute traffic effectively, such as round-robin, least connections, or weighted distribution based on server capacity."
+    },
+    {
+        "question": "Using Python, what is the result of the following command?<br><code>filtered_items = filter(lambda x: x.get('type') == 'fruit', data)<br>result = next(filtered_items, None)<br>print(result)</code><br><br>data = [    {\n        \"type\": \"fruit\",\n        \"items\": [\n            {\n                \"color\": \"green\",\n                \"items\": [\"kiwi\", \"grape\"]\n            },\n            {\n                \"color\": \"red\",\n                \"items\": [\"strawberry\", \"apple\"]\n            }\n        ]\n    },\n    {\n        \"type\": \"vegs\",\n        \"items\": [\n            {\n                \"color\": \"green\",\n                \"items\": [\"lettuce\"]\n            },\n            {\n                \"color\": \"red\"\n            }\n        ]\n    }\n]",
+        "options": [
+            "['kiwi', 'grape']",
+            "{'color': 'green', 'items': ['kiwi', 'grape']}",
+            "kiwi",
+            "grape"
+        ],
+        "answer": ["{'color': 'green', 'items': ['kiwi', 'grape']}"],
+        "explanation": "The provided command filters a list of dictionaries to find items whose 'type' is 'fruit'. The lambda function inside the filter checks each element x from the list of dictionaries and retrieves the value associated with the key 'type'. It then checks if that value is equal to 'fruit'.<br><br>The expected output matches the structure of one of the items whose type is indeed 'fruit'."
+    },
+    {
+        "question": "Which HTTP response code should be returned when the request is completed but there is no content to send for the request?",
+        "options": [
+            "100",
+            "204",
+            "302",
+            "402"
+        ],
+        "answer": ["204"],
+        "explanation": "The status code 204 indicates that the server has successfully fulfilled the request and that there is no additional content to send in the response payload body.<br>This is commonly used for DELETE and PUT requests where the server successfully processed the request but does not need to return any content.<br><br> A 204 status code is used when the server has processed the request successfully, but there is no content to return to the client"
+    },
+    {
+       "question": "Which of the following is NOT a characteristic of a true RESTful API?",
+        "options": [
+            "Stateful", 
+            "Uniform Interface", 
+            "Cacheable or Non-cacheable Label",
+            "Layered System"
+        ],
+        "answer": ["Stateful"],
+        "explanation": "True <strong> RESTful APIs </strong> adhere to specific rules, including a Uniform Interface, Cacheable or Non-cacheable Label, and a Layered System. However, they should be <strong> 'stateless' </strong> rather than 'stateful.' <br><br>  Being stateless means that the server does not retain information about client actions between requests, treating each request independently."
+    },
+    {
+        "question": "When using Python to make a REST API call, which built-in library can be used in the script to perform a GET request?",
+        "options": [
+            "Requests", 
+            "Get", 
+            "Math", 
+            "XML"
+        ],
+        "answer": ["Requests"],
+        "explanation": "When using Python to make a REST API call, you can leverage the built-in <strong> 'requests' library </strong>. <br> To get started, you need to import this library at the beginning of your script using <strong> 'import requests' </strong> Then, you can use the <strong>'requests.get()' </strong> method to send a GET request to the defined URL for example: <br><br> 'api_url = 'https://api.example.com/data', <br> and then send a GET request with: <br><br> 'response = requests.get(api_url)'. <br><br> After receiving the response, you can handle it, check the status code, and parse the data as needed. This library provides various features and options for making HTTP requests and is a powerful tool for interacting with RESTful APIs."
+    },
+    {
+        "question": "Which range of HTTP response codes are used to indicate a client-side error?",
+        "options": [
+            "2XX codes", 
+            "3XX codes", 
+            "4XX codes", 
+            "5XX codes"
+        ],
+        "answer": ["4XX codes"],
+        "explanation": "The 400 range of HTTP response codes are sent by the server to indicate that the client's request has issues, such as: <br><br> - incorrect syntax/bad request (400), <br> - unauthorized (401), <br> - forbidden (403) <br> - not found (404)<br> - request timeout (408) <br><br> When you encounter a '4XX' response code, it typically means there is something wrong with the client's request, and the client needs to take corrective action."
+    },
+    {
+        "question": "In which part of an HTTP response would we see things like the host, user agent, and cookie?",
+        "options": [
+            "URL", 
+            "Response code", 
+            "Arguments", 
+            "Headers"
+        ],
+        "answer": ["Headers"],
+        "explanation": "In an HTTP response, the headers contain important metadata and information about the response details like the host, user agent, and cookies, also include details about the server, the client (user agent),and more."
+    },
+    {
+        "question": "Which HTTP response code indicates a likely issue with incorrect authentication credentials?",
+        "options": [
+            "500 Internal Server Error",
+            "403 Forbidden", 
+            "401 Unauthorized", 
+            "501 Not Implemented"
+        ],
+        "answer": ["401 Unauthorized"],
+        "explanation": "The <strong> 401 Unauthorized HTTP </strong> response code indicates that <strong> authentication credentials have not been provided or are incorrect. </strong> <br> This is in contrast to a 403 Forbidden HTTP response code, where credentials are valid but the account does not have the required permission to access the resource."
+    },
+    {
+        "question": "Which API authentication mechanism is the least secure?",
+        "options": [
+            "OAUTH Authentication", 
+            "Basic Authentication", 
+            "Token Authentication", 
+            "API Key Authentication"
+        ],
+        "answer": ["Basic Authentication"],
+        "explanation": "<strong> Basic authentication </strong> is the <strong> least secure </strong> method for <strong> API authentication </strong>. With basic authentication, credentials (typically a username and password) are transmitted in an unencrypted manner, especially vulnerable when used over HTTP instead of HTTPS."
+    },
+    {
+        "question": "Which API authentication mechanism allows us to enter our username and password a single time to generate an encrypted value for accessing resources?",
+        "options": [
+            "Token Authentication", 
+            "API Key Authentication", 
+            "Basic Authentication", 
+            "Secure Authentication"
+        ],
+        "answer": ["Token Authentication"],
+        "explanation": "<strong>Token authentication</strong> allows us to use a valid username and password combination to retrieve a valid encrypted token for access to resource access. This method means we do not have to continuously enter the login credentials or pass those in an unsecure manner inside of the request we are making. Tokens can have limited time-based access which will provide expiring access rather than indefinite access."
+    },
+    {
+        "question": "Which API authentication mechanism is primarily used for overall project access rather than at the individual user level?",
+        "options": [
+            "General Authentication", 
+            "Encrypted Authentication", 
+            "Token Authentication", 
+            "API Key Authentication"
+        ],
+        "answer": ["API Key Authentication"],
+        "explanation": "<strong>'API key authentication'</strong> is straightforward and commonly used for <strong>project-level access</strong>, such as when your entire app needs access to an API, rather than individual user-level authentication. <br> This is in contrast with token authentication, which is primarily utilized at the individual user level."
+    },
+    {
+        "question": "Which subset of common HTTP methods are used by Remote Procedure Calls (RPCs)?",
+        "options": [
+            "POST and PUT", 
+            "PATCH and DELETE",
+            "GET and POST", 
+            "PUT and GET"
+        ],
+        "answer": ["GET and POST"],
+        "explanation": "As opposed to REST APIs which use GET, POST, PUT, PATCH, and DELETE HTTP methods, <strong>'Remote Procedure Calls (RPCs)</strong> use only the <strong> GET and POST methods </strong>. <br> For this reason, RPCs are action-oriented, where we are concerned with executing code on a remote device. Remote Procedure Calls (RPCs) are a way to invoke functions or procedures on a remote server, as if they were local. <br><br> In Python you can use <strong> 'xmlrpc.client' </strong> library to <strong> make RPC's over HTTP </strong>"
+    },
+    {
+        "question": "Which style of API does not use real-time communication?",
+        "options": [
+            "Synchronous", 
+            "Asynchronous", 
+            "One-way", 
+            "Delayed"
+        ],
+        "answer": ["Asynchronous"],
+        "explanation": "Asynchronous APIs do not communicate in real-time, as opposed to synchronous APIs which feature scheduled real-time communication and interaction. <br> Like Email communication, where there is no need to instantly respond within a timeframe and responses can be delayed."
+    },
+    {
+        "question": "What is the common name for a set of tools, libraries, and documentation that allows us to interact with a REST API?",
+        "options": [
+            "Framework", 
+            "Program", 
+            "Script", 
+            "SDK"
+        ],
+        "answer": ["SDK"],
+        "explanation": "A <strong> Software Development Kit (SDK) </strong> is a comprehensive set of tools, libraries, and documentation offered by the manufacturer of a hardware platform, operating system, or programming language. It serves as a cohesive package facilitating interaction with a system or service. <br> For example, Cisco offers various SDK products such as the <strong> DevNet SDK </strong>, <strong> Meraki SDK </strong>, and <strong> Webex SDK </strong>, each tailored to provide developers with the necessary resources for integration and development within their respective ecosystems."
+    },
+    {
+        "question": "Which of the following is appropriate for obtaining a list of the organizations available through the GET method when using Postman to interact with the Cisco Meraki API?",
+        "options": [
+            "{{baseURL}}/organizations/:organizationId",
+            "{{baseURL}}/organizations",
+            "{{baseURL}}/organizations/:organizationId/networks",
+            "{{baseURL}}/organizations/:organizationId/devices"
+        ],
+        "answer": ["{{baseURL}}/organizations"],
+        "explanation": "When using the GET method to perform a request against the Meraki API using Postman the URLs follow a hierarchical structure, starting from the base URL and drilling down to specific resources or actions, making the API organized and easy to navigate.: <br><br> - {{baseURL}}: &nbsp The base URL where all API requests begin.  <br>- /organizations: &nbsp Retrieves a list of organizations. <br><br>Below is what other options would retrieve:  <br><br>- /organizations/:organizationId/devices: &nbsp Retrieves details about devices associated with a specific organization<br>- /organizations/:organizationId/networks: &nbsp Fetches information about networks within a specific organization.<br>- /organizations/:organizationId: &nbsp Accesses a specific organization using its unique ID."
+    },
+    {
+        "question": "Which type of API authentication method is used by Cisco DNA Center?",
+        "options": [
+            "Token Authentication",
+            "Basic Authentication",
+            "API Key Authentication",
+            "Open Authentication"
+        ],
+        "answer": ["Token Authentication"],
+        "explanation": "<strong> Cisco DNA Center </strong> uses <strong> token authentication </strong>, where we need to retrieve a token to obtain access to information. <br> Using the Cisco DNAC Sandbox collection provides a preconfigured POST method that can be used to retrieve a token, which we can save in our Postman environment for interaction. <br> An example of a Cisco DNA Center (DNAC) token might look like a long string of alphanumeric characters and symbols, similar to this: <br> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MTU4ODMwNjF9.m4zP1bC5Kchxq8VKR-5Dk1kVv1hJ4DVOHavvcgr_JfE <br><br>  To confirm Token Authentication, you can make an <strong> API request </strong> with the obtained token included in the Authorization header. For example, you can use a tool like curl or Postman <strong> to make a GET request <strong> to this endpoint: <br><br> <strong> curl -X GET https://YOUR_DNAC_URL/dna/intent/api/v1/network-device -H 'Authorization: Bearer YOUR_TOKEN_HERE' </strong> <br><br> Replace 'YOUR_DNAC_URL' with the URL of your Cisco DNA Center instance and 'YOUR_TOKEN_HERE' with your actual token"
+    },
+    {
+        "question": "Which type of API authentication method is used by Cisco APIC?",
+        "options": [
+            "Open Authentication", 
+            "API Key Authentication",
+            "Basic Authentication", 
+            "Token Authentication"
+        ],
+        "answer": ["Token Authentication"],
+        "explanation": "Just as with Cisco DNA Center, <strong> Cisco APIC requires a token to interact through the API. </strong> This requires sending a POST method with the basic username and password, requesting a validation token from APIC. <br> Performing methods without this token will result in a 403 Forbidden HTTP response code."
+    },
+    {
+        "question": "A company is looking for a cloud deployment which will only use the on-premise infrastructure, is user self-service, and is easy to scale. Which cloud solution should be selected for these requirements?",
+        "options": [
+            "multi",
+            "private",
+            "hybrid",
+            "public"
+        ],
+        "answer": ["private"],
+        "explanation": "A private cloud deployment allows organizations to provision and manage resources within their own infrastructure, providing the benefits of cloud computing while retaining full control and privacy over their data and infrastructure. Users can access self-service portals to provision and manage resources, making it user self-service. Additionally, a private cloud environment can be designed to be easily scalable, allowing organizations to dynamically allocate resources as needed.<br><br>While hybrid and public cloud solutions offer scalability and self-service capabilities, they involve the use of external cloud resources, which may not align with the requirement to solely use on-premise infrastructure. A multi-cloud deployment involves using multiple cloud providers, which may introduce complexity and may not be necessary given the specified requirements. Therefore, a private cloud deployment is the most suitable option for these requirements."
+    },
+    {
+        "question": "Users cannot access a webserver and after the traffic is captured, the capture tool shows an ICMP packet that reports 'time exceeded in-transit'. What is the cause of this webserver access issue?",
+        "options": [
+            "A router along the path has the wrong time.",
+            "A router along the path is misrouting the packets in a wrong direction.",
+            "The server is too loaded and the connection could not be handled in time.",
+            "The server is too far away and the packets require too much time to reach it."
+        ],
+        "answer": ["A router along the path is misrouting the packets in a wrong direction."],
+        "explanation": "The ICMP packet 'time exceeded in-transit' indicates that a router along the path of the packet's journey encountered a time-to-live (TTL) or hop limit exceeded error. This typically occurs when the TTL value of the packet reaches 0 before it reaches its destination, causing the router to discard the packet and send an ICMP message back to the source.<br>The most common cause of this issue is a router along the path misrouting the packets in the wrong direction or sending them to a dead-end, causing them to expire before reaching the destination."
+    },
+    {
+        "question": "Which OWASP threat does the message 'This is not a secure web page' demonstrate in a web page with an HTTP link?",
+        "options": [
+            "broken access control",
+            "cross-site scripting",
+            "SQL injection",
+            "man-in-the-middle"
+        ],
+        "answer": ["man-in-the-middle"],
+        "explanation": "In a man-in-the-middle attack, an attacker intercepts communication between two parties and can eavesdrop on or modify the data transmitted between them. Without HTTPS, the communication between the user's browser and the web server is not encrypted, making it vulnerable to interception and tampering by malicious actors, which is indicative of a man-in-the-middle threat.<br><br>Broken Access Control: This refers to the failure in enforcing proper access controls, such as authorization checks, leading to unauthorized access to resources. The message 'This is not a secure web page' does not directly indicate a failure in access control mechanisms. Instead, it suggests a lack of secure communication, which is a different type of vulnerability.<br>Cross-Site Scripting (XSS): XSS occurs when attackers inject malicious scripts into web pages viewed by other users. While XSS can lead to security issues, such as stealing cookies or session tokens, it does not directly relate to the absence of secure communication indicated by the message 'This is not a secure web page'. XSS vulnerabilities are about injecting and executing client-side scripts within the context of a web page, not about the absence of secure communication protocols like HTTPS."
+    }      
 ]
