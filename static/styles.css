@@ -102,12 +102,22 @@ body {
     margin-right: 20vh;
 }
 
+/* Styles for content in result.html */
 .result-text{
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10vh;
     margin-left: 20vh;
     margin-right: 20vh;
+}
+
+/* Styles for code elements */
+code {
+    font-size: 15px;
+    font-family: Consolas, Monaco, 'Courier New', Courier, monospace; /* Set a monospace font */
+    background-color: #f9f9f9; /* Light background color for code blocks */
+    padding: 2px 4px; /* Padding around the code text */
+    border-radius: 10px; /* Rounded corners */
 }
 
 /* Styles for correct and incorrect result messages */

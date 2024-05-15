@@ -1,13 +1,13 @@
 [
     {
-        "question": "What is the difference between a unit test and an integration test?",
+        "question": "What is the difference between a unit test and an integration test? (Choose two)",
         "options": [
             "An integration test is for validation of how different parts of the application work together",
             "An integration test verifies that the application operates as expected",
             "A unit test verifies API functionality",
             "A unit test is most specific in scope and tests small bits of code"
         ],
-        "answer": ["A unit test verifies API functionality", "An integration test is for validation of how different parts of the application work together"],
+        "answer": ["A unit test is most specific in scope and tests small bits of code", "An integration test is for validation of how different parts of the application work together"],
         "explanation": "A <strong>unit test</strong> is focused on testing individual units or components of code in isolation. These tests aim to verify the correctness of small, specific parts of the codebase, such as functions, methods, or classes. In the context of API development, unit tests are designed to validate the behavior and functionality of individual API endpoints or functions, typically by supplying input data and asserting the expected output or behavior.<br><br>On the other hand, an <strong>integration test</strong> evaluates how different parts of the application work together as a whole. Instead of testing isolated units of code, integration tests focus on testing the interactions and dependencies between various components or modules within the application. In the context of integration testing for an API, these tests may involve scenarios where multiple API endpoints interact with each other, along with any external dependencies such as databases or third-party services. The primary goal of integration testing is to ensure that the integrated components function correctly together and that the overall behavior of the application meets the expected requirements.",
         "multiple_choice": true
     },
