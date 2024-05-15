@@ -1,7 +1,7 @@
 ## Usage
 1. Clone repository and install requirements.txt file:
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/The-Mikest-Mike/WebQuiz-DevNet.git
    ```
    ```bash
    pip3 install -r requirements.txt
