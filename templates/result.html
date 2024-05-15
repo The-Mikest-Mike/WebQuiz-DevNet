@@ -3,21 +3,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the page -->
     <title>Results</title>
     
     <!-- Link to styles.css file -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <!-- Header section -->
     <header class="header">
     </header>
 
-    <h1>Exam Results</h1>
-    <p>You answered {{ correct_answers }} out of {{ total_questions }} questions correctly</p>
-    <p class="result-text">{{ result }}</p>
+    <!-- Heading for the results -->
+    <h1 class="center-text"> Results </h1>
+
+    <!-- Display the result text with safe filter to allow HTML tags -->
+    <p class="result-text center-text"> You answered {{ correct_answers }} out of {{ total_questions }} questions correctly {{ result }}</p>
 
     <!-- Footer section -->
     <footer class="footer">
