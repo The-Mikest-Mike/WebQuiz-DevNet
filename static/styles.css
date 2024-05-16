@@ -190,18 +190,22 @@ p.question-text {
 /* Styles for the colored square container based on the result */
 .colored-square {
     position: fixed;
-    width: 99.3%; 
-    height: 93.4%;
-    margin: auto;   
-    offset-position: 20;
+    top: 0;
+    left: 0;
+    margin: 0; 
+    width: 100vw; 
+    height: 100vh;  
+    box-sizing: border-box;
 }
 
 .correct-square {
-    border: 5px solid green; /* Border line color when correct */
+    border: 1px solid green; /* Border line color when correct */
+    box-shadow: inset 0px 19px 10px 0px green; /* Glow effect */
 }
 
 .incorrect-square {
-    border: 5px solid red; /* Border line color when incorrect */
+    border: 1px solid red; /* Border line color when incorrect */
+    box-shadow: inset 0px 19px 10px 0px red; /* Glow effect */ 
 }
 
 /* Flash message styles */
