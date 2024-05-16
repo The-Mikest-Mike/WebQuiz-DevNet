@@ -14,8 +14,11 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-     <!-- Header section -->
-     <header class="header">
+    <!-- Colored square container -->
+    <div class="colored-square {% if result == 'Correct' %}correct-square{% else %}incorrect-square{% endif %}"></div>
+
+    <!-- Header section -->
+    <header class="header">
     </header>
 
     <!-- Conditional rendering based on 'result' -->
@@ -31,7 +34,7 @@
     <h1 class="explanation-title"> Explanation</h1>
     
     <!-- Display the explanation text with safe filter to allow HTML tags -->
-    <p  class="explanation-text">{{ explanation|safe }}</p>
+    <p class="explanation-text">{{ explanation|safe }}</p>
 
     <!-- Navigation buttons container-->
     <nav class="button-container button-container-right fixed-nav">

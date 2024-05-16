@@ -19,7 +19,7 @@
 - User friendly interface.
 - Single and Multiple-choice questions with options.
 - Keeps track of user answers and calculates the score.
-- Instantly know by colors whether correct or incorrect.
+- Instantly visualize whether answered correct or incorrect.
 - Provides explanations for answers.
 - Simple navigation between questions.
 

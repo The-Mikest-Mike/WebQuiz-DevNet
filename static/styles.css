@@ -187,6 +187,23 @@ p.question-text {
     top: 0; /* Align at the top */
 }
 
+/* Styles for the colored square container based on the result */
+.colored-square {
+    position: fixed;
+    width: 99.3%; 
+    height: 93.4%;
+    margin: auto;   
+    offset-position: 20;
+}
+
+.correct-square {
+    border: 5px solid green; /* Border line color when correct */
+}
+
+.incorrect-square {
+    border: 5px solid red; /* Border line color when incorrect */
+}
+
 /* Flash message styles */
 .flash-message {
     font-size: 18px;
@@ -234,3 +251,6 @@ p.question-text {
         opacity: 0;
     }
 }
+
+  
+
