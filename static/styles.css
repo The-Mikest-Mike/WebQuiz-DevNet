@@ -30,6 +30,7 @@ p {
     cursor: pointer;
     font-size: 23px;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 40px;
 }
 
 /* Hover effects for all buttons */
@@ -213,7 +214,7 @@ p.question-text {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 40px;
     width: 300px;
     position: fixed;  /* Remain visible regardless of scrolling */
     top: 20px; /* Adjust distance from top */
