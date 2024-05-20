@@ -84,7 +84,6 @@ def index():
     else:
         return render_template("start.html")
 
-
 # Route for starting exam and redirecting to the first question
 @app.route('/start', methods=['GET', 'POST'], endpoint='start_exam')
 def start_exam():
@@ -106,6 +105,11 @@ def display_question():
     current_question_index = session.get('current_question_index', 0)
     if current_question_index < total_questions:
         current_question_data = questions_pool[current_question_index]
+
+        # Shuffle the list of options before displaying a question
+        random.shuffle(current_question_data['options'])
+        print('Shuffled options') # Debug Line Only
+
         # If the question is absent of "multiple_choice" key) in "current_question data dictionary, 
         # return the default value 'False', indicating a single choice question
         if current_question_data.get('multiple_choice', False):
