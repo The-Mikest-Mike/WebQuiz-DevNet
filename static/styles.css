@@ -140,6 +140,7 @@ p.incorrect-result {
     font-size: 22px;
     margin-left: 22vh;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;    
 }
 
 /* Styles for question text */
@@ -168,6 +169,7 @@ p.question-text {
 .margin-right{ 
     margin-right: 12vh;
 }
+
 
 /* Styles for footer */
 .footer {
