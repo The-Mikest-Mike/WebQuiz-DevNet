@@ -44,7 +44,13 @@ p {
 .button-style {
     transition: transform 0.3s;
 }
-    
+
+/* Checkbox effects */
+input[type="checkbox"]:hover {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.997);
+    background-color: white; /* Match with the form background color */
+}
+
 body {
     position: relative;
     margin:0; /* Reset for the body to get rid of default margin applied by the browser */
