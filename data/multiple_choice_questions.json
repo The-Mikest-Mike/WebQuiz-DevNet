@@ -36,7 +36,7 @@
         "multiple_choice": true
     },
     {
-        "question": "What are the main components of SOAP messages? (Choose all that apply)",
+        "question": "What are the main components of SOAP messages? (Choose four)",
         "options": [
             "Envelope",
             "Header",

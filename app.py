@@ -110,31 +110,26 @@ def display_question():
         random.shuffle(current_question_data['options'])
         print('Shuffled options') # Debug Line Only
 
-        # If the question is absent of "multiple_choice" key) in "current_question data dictionary, 
-        # return the default value 'False', indicating a single choice question
-        if current_question_data.get('multiple_choice', False):
-            # Data considered when Question is multiple choice
-            current_question = Question(current_question_data['question'], current_question_data['options'], current_question_data['answer'], current_question_data['explanation'], multiple_choice=True)
-        else:
-            # Data considered when Question is single choice
-            current_question = Question(current_question_data['question'], current_question_data['options'], current_question_data['answer'], current_question_data['explanation'])
+        # Determine if the current question is multiple choice or single choice
+        is_multiple_choice = current_question_data.get('multiple_choice', False)
+
+        # Create a Question object
+        current_question = Question(current_question_data['question'], current_question_data['options'], current_question_data['answer'], current_question_data['explanation'], multiple_choice=is_multiple_choice)
+
+        # Determine the required number of answers for multiple-choice questions
+        required_answers = len(current_question_data['answer']) if is_multiple_choice else 1
 
         if request.method == 'POST':
             print('Button press: submit_answer') # Debug Line Only
             user_selected_options = request.form.getlist('user_answer') # Get user's selection from the form
-            explanation = current_question_data['explanation']  # Get the explanation from the JSON data
-
-            # Check if at least one option is selected
-            if current_question_data.get('multiple_choice', False) and not user_selected_options:
-                flash('Please select at least one option')
-                return redirect(url_for('display_question'))
-           
-            if not user_selected_options:
-                print("No option was selected")
-                flash('No option was selected', 'error') # Display a red message following CSS styles
-                return render_template('question.html', question=current_question, current_question_index=current_question_index, error=True)
             
-            explanation = current_question_data['explanation']  # Get the explanation from the JSON data
+            # Check if the number of selected options is correct
+            if len(user_selected_options) != required_answers:
+                if is_multiple_choice:
+                    flash(f'Please select exactly {required_answers} options', 'error') # Display a red message following CSS styles
+                else:
+                    flash('Please select exactly one option', 'error') # Display a red message following CSS styles
+                return render_template('question.html', question=current_question, current_question_index=current_question_index, error=True)
 
             # Check whether user's answer is correct using check_answer method and handle accordingly
             result = current_question.check_answer(user_selected_options) # Return either "Correct" or "Incorrect" based on the user's answer
@@ -147,7 +142,7 @@ def display_question():
             # Update the question index
             session['current_question_index'] = current_question_index + 1   
             print('Display: explanation page') # Debug Line Only 
-            return render_template('explanation.html', explanation=explanation, result=result)
+            return render_template('explanation.html', explanation=current_question.explanation, result=result)
                 
         else:
             return render_template('question.html', question=current_question, current_question_index=current_question_index, error=None)
@@ -155,7 +150,6 @@ def display_question():
         flash('Invalid access to question.html')
         print('Display: result_page')
         return redirect(url_for('result'))
-        
 
 # Route for displaying the result of the quiz
 @app.route('/result', endpoint='result')
