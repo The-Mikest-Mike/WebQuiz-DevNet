@@ -217,7 +217,7 @@
             "Branch"
         ],
         "answer": ["Branch"],
-        "explanation": "Branches are a feature which allow us to separate our development area from a main local repository, providing a safe way to work on new features or updates without affecting the stable codebase.Some useful commands are:<br><br>- <strong>git branch -v</strong> or <strong>git branch --verbose</strong>: Detailed view of branches, including commit messages and commit hashes of the latest commits.<br>- <strong>git branch</strong> or <strong>git branch --list</strong>: View a list of all local branches.<br>- <strong>git branch <code>&lt;branch_name&gt;</code></strong>: Create a new branch.<br>- <strong>git checkout <code>&ltbranch_name&gt</code></strong>: Switch to a branch when you already have a branch on your local machine."
+        "explanation": "Branches are a feature which allow us to separate our development area from a main local repository, providing a safe way to work on new features or updates without affecting the stable codebase.Some useful commands are:<br><br>- <strong>git branch -v</strong>: Detailed view of branches, including commit messages and commit hashes of the latest commits.<br>- <strong>git branch</strong> or <strong>git branch --list</strong>: View a list of all local branches.<br>- <strong>git branch <code>&lt;branch_name&gt;</code></strong>: Create a new branch.<br>- <strong>git checkout <code>&ltbranch_name&gt</code></strong>: Switch to a branch when you already have a branch on your local machine."
     },
     {
         "question": "Which Git version control operation allows us to join the contents of a branch development area with a main repository locally?",
@@ -705,9 +705,9 @@
             "increase security",
             "have business impact",
             "enhance efficiency end to end",
-            "do all above"
+            "all other options"
         ],
-        "answer": ["do all above"],
+        "answer": ["all other options"],
         "explanation": "Rate limiting is an essential REST API design method that serves multiple purposes:<br><br>- <strong>Increase security:</strong> Can help mitigate certain types of attacks, such as denial-of-service (DoS) attacks, by limiting the number of requests an attacker can make within a specific timeframe.<br>- <strong>Have business impact:</strong> Allows businesses to control access to their APIs and services, ensuring fair usage and preventing abuse. It can also be used to enforce subscription tiers or pricing plans based on usage limits.<br>- <strong>Enhance efficiency end to end:</strong> By preventing abuse and ensuring fair usage, it can enhance the overall efficiency of the system. It helps in maintaining system stability, optimizing resource utilization, and providing a better experience for legitimate users."
     },
     {

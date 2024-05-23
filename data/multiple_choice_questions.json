@@ -51,7 +51,7 @@
         "multiple_choice": true
     },
     {
-        "question": "SOAP can include fault messages. Which ones are mandatory fields? (Choose all that apply)",
+        "question": "SOAP can include fault messages. Which ones are mandatory fields? (Choose two)",
         "options": [
             "faultCode",
             "faultString",
@@ -107,7 +107,7 @@
             "Infrastructure API"
         ],
         "answer": ["Captive Portal API", "Scanning API", "Dashboard API"],
-        "explanation": "From a programmability perspective, the Cisco Meraki cloud platform provides developers with several APIs. Tree of these APIs are the <strong>Captive Portal API</strong>, which allows developers to extend the built-in Meraki splash page functionality by providing complete control of the content and authentication process that a user interacts with when connecting to a Meraki wireless network. It allows administrators to customize the portal, including the oclients experience connecting to the network, how the web page looks and feels and authentication and billing process.<br><br><strong>Scanning API</strong> take advantage of mMeraki smart devices with wireless and BLE functionality to provide location, analystics and report on user behavior<br><br><strong>Dashboard api</strong>, provides endpoints and resources for configuration, management and monitoring automation of Meraki cloud platform, common use cases are Provisioning neworganizations, administrators, networks, devices and more. , Configuring networks at scale, Onboarding and decommissioningg of clients, Build custom dashboards and applications.",
+        "explanation": "From a programmability perspective, the Cisco Meraki cloud platform provides developers with several APIs. Tree of these APIs are the <strong>Captive Portal API</strong>, which allows developers to extend the built-in Meraki splash page functionality by providing complete control of the content and authentication process that a user interacts with when connecting to a Meraki wireless network. It allows administrators to customize the portal, including the clients experience connecting to the network, how the web page looks and feels and authentication and billing process.<br><br><strong>Scanning API</strong> take advantage of mMeraki smart devices with wireless and BLE functionality to provide location, analystics and report on user behavior<br><br><strong>Dashboard api</strong>, provides endpoints and resources for configuration, management and monitoring automation of Meraki cloud platform, common use cases are Provisioning neworganizations, administrators, networks, devices and more. , Configuring networks at scale, Onboarding and decommissioningg of clients, Build custom dashboards and applications.",
         "multiple_choice": true
     },
     {
