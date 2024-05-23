@@ -44,7 +44,7 @@
         "explanation": "In the print statement, the 'hostname' key is associated with the value 'R1'. Therefore, the output of the print statement will be 'R1'."
     },
     {
-        "question": "Which of the following print statements can be used to return the value 'R1' when parsing through the YAML data in Python?<br><br><strong>yaml snippet:</strong><br><pre>OFFICE:<br>  device:<br>    hostname: R1<br>  interface:<br>    GigabitEthernet:<br>      ...</pre>",
+        "question": "Which of the following print statements can be used to return the value 'R1' when parsing through the YAML data in Python?<br><br><strong>yaml snippet:</strong><br><code>office:<br>&nbsp;&nbsp;&nbsp;&nbsp;device:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hostname: R1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;interface:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- GigabitEthernet 0/1:<br></code>",
         "options": [
             "print(data['OFFICE'])",
             "print(data['OFFICE']['device']['hostname'])",
@@ -915,7 +915,7 @@
         "explanation": "A load balancer distributes incoming network traffic across multiple servers in a network environment. This helps to ensure high availability and reliability by spreading the workload across multiple servers, preventing any single server from becoming overwhelmed with requests.<br><br>Load balancers can employ various algorithms to distribute traffic effectively, such as round-robin, least connections, or weighted distribution based on server capacity."
     },
     {
-        "question": "Using Python, what is the result of the following command?<br><code>filtered_items = filter(lambda x: x.get('type') == 'fruit', data)<br>result = next(filtered_items, None)<br>print(result)</code><br><br>data = [    {\n        \"type\": \"fruit\",\n        \"items\": [\n            {\n                \"color\": \"green\",\n                \"items\": [\"kiwi\", \"grape\"]\n            },\n            {\n                \"color\": \"red\",\n                \"items\": [\"strawberry\", \"apple\"]\n            }\n        ]\n    },\n    {\n        \"type\": \"vegs\",\n        \"items\": [\n            {\n                \"color\": \"green\",\n                \"items\": [\"lettuce\"]\n            },\n            {\n                \"color\": \"red\"\n            }\n        ]\n    }\n]",
+        "question": "Using Python, what is the result of the following command?<br><br><code>filtered_items = filter(lambda x: x.get('type') == 'fruit', data)<br>result = next(filtered_items, None)<br>print(result)</code><br><br><code>data = [    {\n        \"type\": \"fruit\",\n        \"items\": [\n            {\n                \"color\": \"green\",\n                \"items\": [\"kiwi\", \"grape\"]\n            },\n            {\n                \"color\": \"red\",\n                \"items\": [\"strawberry\", \"apple\"]\n            }\n        ]\n    },\n    {\n        \"type\": \"vegs\",\n        \"items\": [\n            {\n                \"color\": \"green\",\n                \"items\": [\"lettuce\"]\n            },\n            {\n                \"color\": \"red\"\n            }\n        ]\n    }\n]</code>",
         "options": [
             "['kiwi', 'grape']",
             "{'color': 'green', 'items': ['kiwi', 'grape']}",
