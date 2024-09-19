@@ -1,4 +1,4 @@
-## Usage
+## How to Use
 1. Clone repository and install requirements.txt file:
    ```bash
    git clone https://github.com/The-Mikest-Mike/WebQuiz-DevNet.git
