@@ -1,3 +1,11 @@
+## Features
+- User friendly interface.
+- Single and Multiple-choice questions with options.
+- Keeps track of user answers and calculates the score.
+- Instantly visualize whether answered correct or incorrect.
+- Provides explanations for answers.
+- Simple navigation between questions.
+
 ## How to Use
 1. Clone repository and install requirements.txt file:
    ```bash
@@ -15,13 +23,7 @@
    http://127.0.0.1:5000/
    ``` 
 
-## Features
-- User friendly interface.
-- Single and Multiple-choice questions with options.
-- Keeps track of user answers and calculates the score.
-- Instantly visualize whether answered correct or incorrect.
-- Provides explanations for answers.
-- Simple navigation between questions.
+
 
 ## Project Directory Structure:
 ```
