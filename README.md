@@ -1,10 +1,10 @@
 ## Features
-- User friendly interface.
-- Single and Multiple-choice questions with options.
-- Keeps track of user answers and calculates the score.
-- Instantly visualize whether answered correct or incorrect.
-- Provides explanations for answers.
-- Simple navigation between questions.
+✨ User friendly interface.<br>
+✨ Single and Multiple-choice questions with options.<br>
+✨ Keeps track of user answers and calculates the score.<br>
+✨ Instantly visualize whether answered correct or incorrect.<br>
+✨ Provides explanations for answers.<br>
+✨ Simple navigation between questions.<br>
 
 ## How to Use
 1. Clone repository and install requirements.txt file:
