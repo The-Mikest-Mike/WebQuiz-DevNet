@@ -7,11 +7,10 @@
 ✨ Simple navigation between questions.<br>
 
 ## How to Use
-1. Clone repository and install requirements.txt file:
+1. Clone repository, move to the directory and install requirements.txt file:
    ```bash
    git clone https://github.com/The-Mikest-Mike/WebQuiz-DevNet.git
-   ```
-   ```bash
+   cd <repo-directory>
    pip3 install -r requirements.txt
    ```
 3. Run app.py file:
