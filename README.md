@@ -49,7 +49,7 @@ WebQuiz-DevNet/
        └── single_choice_questions.json                # Pool of single-choice questions
 ```
 
-
-
+## License
+This project is licensed under the MIT License - see the [LICENSE](license) file for details.
 
 
