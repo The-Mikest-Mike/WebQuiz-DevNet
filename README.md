@@ -7,12 +7,12 @@
 ✨ Simple navigation between questions.<br>
 
 ## How to Use
-1. Clone repository, move to the directory and install requirements.txt file:
-   ```bash
-   git clone https://github.com/The-Mikest-Mike/WebQuiz-DevNet.git
-   ```
+1. Move to the desired directory, Clone repository and, install requirements.txt file:
     ```bash
    cd <repo-directory>
+   ```
+   ```bash
+   git clone https://github.com/The-Mikest-Mike/WebQuiz-DevNet.git
    ```
      ```bash
    pip3 install -r requirements.txt
