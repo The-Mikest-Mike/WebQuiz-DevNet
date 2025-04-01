@@ -27,7 +27,6 @@
    ``` 
 
 
-
 ## Project Directory Structure:
 ```
 WebQuiz-DevNet/
