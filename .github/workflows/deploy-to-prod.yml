@@ -1,0 +1,40 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - release/*
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Placeholder Test
+        run: echo "✅ No tests configured yet. Skipping for now."
+
+  deploy:
+    needs: validate
+    if: success()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "eng.miguelaz+tmmsoftware@gmail.com"
+          git config --global user.name "The Mikest Mike"
+
+      - name: Push to TMMSoftware/WebQuiz-Devnet
+        run: |
+          git clone https://github.com/TMMSoftware/WebQuiz-Devnet.git prod_repo
+          rsync -av --exclude='.git' --exclude='.github/workflows' ./ prod_repo/
+          cd prod_repo
+          git add .
+          git commit -m "Auto-deploy from release branch: $GITHUB_REF" || echo "Nothing to commit"
+          git push https://${{ secrets.TMM_PAT }}@github.com/TMMSoftware/WebQuiz-Devnet.git main
+        env:
+          TMM_PAT: ${{ secrets.TMM_PAT }}
